@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ECardDetailController">
+            <connections>
+                <outlet property="btnContainer" destination="s55-Sf-uGZ" id="ppF-Q5-nHQ"/>
+                <outlet property="detailView" destination="3ei-VS-OQd" id="IgV-QK-5gz"/>
+                <outlet property="menuHeight" destination="Aqb-r3-mYc" id="Iy4-VI-d3S"/>
+                <outlet property="view" destination="3ei-VS-OQd" id="bR1-nY-9oI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3ei-VS-OQd" customClass="DMDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s55-Sf-uGZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcN-KJ-8xH" customClass="DMButton">
+                            <rect key="frame" x="0.0" y="1" width="124" height="58"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="解绑" image="ic_ecard_unbind.png">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onUnbind:" destination="-1" eventType="touchUpInside" id="qoE-CP-wSr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoK-oj-CbH" customClass="DMButton">
+                            <rect key="frame" x="125" y="1" width="124" height="58"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="修改" image="ic_ecard_update.png">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onUpdate:" destination="-1" eventType="touchUpInside" id="Azv-Ep-gKS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzT-Jr-nx3" customClass="DMButton">
+                            <rect key="frame" x="250" y="1" width="124" height="58"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="实名绑卡" image="menu_card.png">
+                                <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onReal:" destination="-1" eventType="touchUpInside" id="dSm-8R-AGP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8986028439" green="0.8986028439" blue="0.8986028439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="TcN-KJ-8xH" firstAttribute="leading" secondItem="s55-Sf-uGZ" secondAttribute="leading" id="5MS-66-nNP"/>
+                        <constraint firstAttribute="height" constant="60" id="Aqb-r3-mYc"/>
+                        <constraint firstItem="RzT-Jr-nx3" firstAttribute="width" secondItem="CoK-oj-CbH" secondAttribute="width" id="D4d-lF-x41"/>
+                        <constraint firstItem="RzT-Jr-nx3" firstAttribute="top" secondItem="s55-Sf-uGZ" secondAttribute="top" constant="1" id="EiT-iK-y38"/>
+                        <constraint firstAttribute="bottom" secondItem="CoK-oj-CbH" secondAttribute="bottom" constant="1" id="JSI-oy-uLz"/>
+                        <constraint firstItem="RzT-Jr-nx3" firstAttribute="leading" secondItem="CoK-oj-CbH" secondAttribute="trailing" constant="1" id="KAZ-d9-4ZK"/>
+                        <constraint firstItem="TcN-KJ-8xH" firstAttribute="top" secondItem="s55-Sf-uGZ" secondAttribute="top" constant="1" id="TPH-lX-KEb"/>
+                        <constraint firstItem="CoK-oj-CbH" firstAttribute="width" secondItem="TcN-KJ-8xH" secondAttribute="width" id="Umi-Pg-cqW"/>
+                        <constraint firstAttribute="bottom" secondItem="TcN-KJ-8xH" secondAttribute="bottom" constant="1" id="WLk-tM-yYp"/>
+                        <constraint firstAttribute="bottom" secondItem="RzT-Jr-nx3" secondAttribute="bottom" constant="1" id="XAa-JC-akf"/>
+                        <constraint firstAttribute="trailing" secondItem="RzT-Jr-nx3" secondAttribute="trailing" constant="1" id="a48-7s-uRX"/>
+                        <constraint firstItem="CoK-oj-CbH" firstAttribute="leading" secondItem="TcN-KJ-8xH" secondAttribute="trailing" constant="1" id="aK8-mB-Chu"/>
+                        <constraint firstItem="CoK-oj-CbH" firstAttribute="top" secondItem="s55-Sf-uGZ" secondAttribute="top" constant="1" id="vZf-xA-LpX"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" tag="8" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hqw-79-cjC" customClass="DMTableView">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="refreshable" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskHeader" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="useCache" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="tableHeader" value="ECardHeader"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="hisList"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="noResultView" value="ECardHisNoResult"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="cellName" value="ECardDetailCell"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="bundleName" value="myecardbundle.bundle"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hqw-79-cjC" firstAttribute="top" secondItem="s55-Sf-uGZ" secondAttribute="bottom" id="0AP-Di-qx5"/>
+                <constraint firstItem="hqw-79-cjC" firstAttribute="leading" secondItem="3ei-VS-OQd" secondAttribute="leading" id="6Cx-TG-JCH"/>
+                <constraint firstAttribute="trailing" secondItem="s55-Sf-uGZ" secondAttribute="trailing" id="Aro-xS-QGe"/>
+                <constraint firstAttribute="trailing" secondItem="hqw-79-cjC" secondAttribute="trailing" id="Dyk-d2-nZJ"/>
+                <constraint firstItem="s55-Sf-uGZ" firstAttribute="leading" secondItem="3ei-VS-OQd" secondAttribute="leading" id="JS2-dB-QLA"/>
+                <constraint firstItem="s55-Sf-uGZ" firstAttribute="top" secondItem="3ei-VS-OQd" secondAttribute="top" id="OXx-ae-r0G"/>
+                <constraint firstAttribute="bottom" secondItem="hqw-79-cjC" secondAttribute="bottom" id="scz-3b-Aqm"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="api" value="myecard/detail"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="server">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="cardId"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="paramKey" value="cardid"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="autoExecute" value="YES"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="setValueOnInit" value="YES"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="ecardDetailView"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="entityName" value="ECardDetail"/>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_ecard_unbind.png" width="14" height="14"/>
+        <image name="ic_ecard_update.png" width="14" height="14"/>
+        <image name="menu_card.png" width="24" height="18"/>
+    </resources>
+</document>

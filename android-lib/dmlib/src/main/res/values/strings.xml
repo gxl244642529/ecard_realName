@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="scan_text1">将卡片背面[e通卡APP绑卡条码]</string>
+    <string name="scan_text2">放入框内，即可自动扫描</string>
+    <string name="scan_text3">若无找到此条码，请输入卡号绑卡</string>
+    <string name="_cancel">取消</string>
+    <string name="_ok">确定</string>
+    <string name="donot_show_next_time">下次不再显示</string>
+    <string name="agree">同意</string>
+    <string name="cus_dialog_text_hint">请输入文本</string>
+    <string name="_pull_to_refresh_pull_label">正在刷新…</string>
+    <string name="_pull_to_refresh_release_label">放开刷新…</string>
+    <string name="_pull_to_refresh_refreshing_label">正在加载…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="_pull_to_refresh_from_bottom_pull_label">@string/_pull_to_refresh_pull_label</string>
+    <string name="_pull_to_refresh_from_bottom_release_label">@string/_pull_to_refresh_release_label</string>
+    <string name="_pull_to_refresh_from_bottom_refreshing_label">@string/_pull_to_refresh_refreshing_label</string>
+
+</resources>

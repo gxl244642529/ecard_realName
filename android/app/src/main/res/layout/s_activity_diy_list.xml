@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@id/_title_left"
+            android:layout_width="@dimen/title_left_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_button_bg"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/new_title_left" />
+
+        <TextView
+            android:id="@id/_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/s_title_text" />
+
+        <include layout="@layout/cart_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/s_title_button_bg_color" />
+    </RelativeLayout>
+
+    <!--
+    <com.citywithincity.widget.TabPaneView2
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tabpaneview="http://schemas.android.com/apk/res-auto"
+        android:id="@id/_tab_pane_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        tabpaneview:contents_array="@array/my_diy_list_contents"
+        android:orientation="vertical" >
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:background="#ffffff" >
+                <RadioGroup
+                    android:id="@id/_tab_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="38.0dip"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:checkedButton="@id/tab_1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@id/tab_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/new_nav_tab_btn_left"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="草稿"
+                        android:textSize="14.0sp" 
+                        android:layout_weight="1"
+                        android:textColor="@color/s_tab_host_text_normal_color"/>
+
+                    <RadioButton
+                        android:id="@id/tab_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/new_nav_tab_btn_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="优秀作品"
+                        android:textSize="14.0sp"
+                        android:layout_weight="1" 
+                        android:textColor="@color/s_tab_host_text_normal_color"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/tab_bottom_line" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/_tab_pane_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </com.citywithincity.widget.TabPaneView2>
+    -->
+
+    <com.citywithincity.widget.TabPaneView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tab_host="http://schemas.android.com/apk/res-auto"
+        android:id="@id/_tab_pane_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tab_host:tab_subs="@array/state_list_grid_views" >
+
+        <LinearLayout
+            android:id="@id/_id_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="草稿"
+                    android:textColor="@color/top_menu_text_selector"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="优秀作品"
+                    android:textColor="@color/top_menu_text_selector"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_below="@id/_id_tabs"
+            android:scaleType="fitXY"
+            android:src="@drawable/tab_bottom_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line"
+            android:persistentDrawingCache="animation" />
+    </com.citywithincity.widget.TabPaneView>
+
+</LinearLayout>

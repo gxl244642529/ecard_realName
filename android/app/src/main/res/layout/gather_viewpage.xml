@@ -1,0 +1,228 @@
+<com.citywithincity.ecard.ui.views.MainView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="e通卡"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/_title_text_color" />
+
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header_container"
+            android:layout_width="match_parent"
+            android:layout_height="210dp" >
+
+            <include layout="@layout/user_image" />
+
+            <Button
+                android:id="@id/main_news"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_news_bg"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_menu1"
+                    android:gravity="center_horizontal"
+                    android:text="卟噔充值"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round2"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_menu2"
+                    android:gravity="center_horizontal"
+                    android:text="买卡"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round3"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_menu3"
+                    android:gravity="center_horizontal"
+                    android:text="我的e通卡"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round4"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_menu4"
+                    android:gravity="center_horizontal"
+                    android:text="学生卡"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/item_selector"
+                android:drawableTop="@drawable/ic_licai"
+                android:gravity="center"
+                android:text="惠民理财"
+                android:textColor="@color/_title_text_color"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40dp"
+                android:background="#60000000"
+                android:textColor="@color/_title_text_color" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/item_selector"
+                android:drawableTop="@drawable/ic_bus"
+                android:gravity="center"
+                android:text="公交"
+                android:textColor="@color/_title_text_color"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40dp"
+                android:background="#60000000"
+                android:textColor="@color/_title_text_color" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/item_selector"
+                android:drawableTop="@drawable/ic_ent"
+                android:gravity="center"
+                android:text="娱乐"
+                android:textColor="@color/_title_text_color"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40dp"
+                android:background="#60000000"
+                android:textColor="@color/_title_text_color" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/item_selector"
+                android:drawableTop="@drawable/ic_insurance"
+                android:gravity="center"
+                android:text="保险"
+                android:textColor="@color/_title_text_color"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <com.damai.widget.AdvView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@id/adv_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:module="1"
+            android:padding="7dp" >
+
+        </com.damai.widget.AdvView>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/main_pane_container" />
+
+</com.citywithincity.ecard.ui.views.MainView>

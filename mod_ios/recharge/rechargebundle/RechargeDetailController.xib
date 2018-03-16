@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechargeDetailController">
+            <connections>
+                <outlet property="btnInvoce" destination="TPa-AO-UYb" id="kzX-Be-bL3"/>
+                <outlet property="view" destination="QQQ-1g-5zd" id="NqS-U8-rbp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QQQ-1g-5zd" customClass="DMDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Riu-tF-xPU">
+                    <rect key="frame" x="10" y="20" width="355" height="170"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fdasfdf" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMv-Z3-JUW">
+                            <rect key="frame" x="63.5" y="35" width="44" height="18.5"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="cardId"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="17" contentMode="left" verticalHuggingPriority="251" text="2015-01-01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNT-7z-ZbA">
+                            <rect key="frame" x="10" y="5" width="92.5" height="24"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="payTime"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡　号: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxm-LS-jJl">
+                            <rect key="frame" x="10" y="34" width="50.5" height="20"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fdafd" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQh-Du-MpZ">
+                            <rect key="frame" x="63.5" y="60" width="32.5" height="18.5"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="tyId"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充值金额: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruv-ru-p8C">
+                            <rect key="frame" x="10" y="87" width="78.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单号: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWB-1M-t4J">
+                            <rect key="frame" x="10" y="59" width="50.5" height="20"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZV2-oI-Dio" userLabel="fee">
+                            <rect key="frame" x="92.5" y="97.5" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.89019607840000003" green="0.20784313730000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="fee"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cS-LS-adG">
+                            <rect key="frame" x="0.0" y="122.5" width="355" height="1"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="lp1-aU-9JA"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2z-yI-TpI" customClass="RechargeButton">
+                            <rect key="frame" x="285" y="133.5" width="60" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="7oy-z5-lj6"/>
+                                <constraint firstAttribute="height" constant="30" id="Jlm-Q0-22G"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="去卟噔">
+                                <color key="titleColor" red="0.89019607840000003" green="0.20784313730000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.89019607840000003" green="0.20784313730000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="btnGo"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onGo:" destination="-1" eventType="touchUpInside" id="Ljx-bb-MK8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPa-AO-UYb" customClass="RechargeButton">
+                            <rect key="frame" x="285" y="133.5" width="60" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="W8F-EE-0YU"/>
+                                <constraint firstAttribute="height" constant="30" id="xPW-z8-qzj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="领发票">
+                                <color key="titleColor" red="0.89019607840000003" green="0.20784313730000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.89019607840000003" green="0.20784313730000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="btnInvoce"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onInvoce:" destination="-1" eventType="touchUpInside" id="PbH-rE-1aR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Kr-rc-h7y" customClass="RechargeButton">
+                            <rect key="frame" x="215" y="133.5" width="60" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="3gG-Nk-o3Y"/>
+                                <constraint firstAttribute="width" constant="60" id="E6C-pD-Oft"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="退款">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="btnRefund"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onRefund:" destination="-1" eventType="touchUpInside" id="Hrs-Zj-Yk2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="UNT-7z-ZbA" firstAttribute="leading" secondItem="Riu-tF-xPU" secondAttribute="leading" constant="10" id="1M5-du-TZR"/>
+                        <constraint firstItem="ZV2-oI-Dio" firstAttribute="leading" secondItem="ruv-ru-p8C" secondAttribute="trailing" constant="4" id="7nm-Bn-l08"/>
+                        <constraint firstItem="gMv-Z3-JUW" firstAttribute="leading" secondItem="Dxm-LS-jJl" secondAttribute="trailing" constant="3" id="BEq-i0-iWs"/>
+                        <constraint firstItem="Dxm-LS-jJl" firstAttribute="top" secondItem="UNT-7z-ZbA" secondAttribute="bottom" constant="5" id="Bgf-HB-VXn"/>
+                        <constraint firstAttribute="trailing" secondItem="TPa-AO-UYb" secondAttribute="trailing" constant="10" id="Cy8-r8-TEK"/>
+                        <constraint firstItem="QQh-Du-MpZ" firstAttribute="leading" secondItem="iWB-1M-t4J" secondAttribute="trailing" constant="3" id="E2n-Xb-gAP"/>
+                        <constraint firstItem="Dxm-LS-jJl" firstAttribute="leading" secondItem="Riu-tF-xPU" secondAttribute="leading" constant="10" id="HI0-QJ-Iis"/>
+                        <constraint firstAttribute="trailing" secondItem="5cS-LS-adG" secondAttribute="trailing" id="Hhk-HN-176"/>
+                        <constraint firstItem="5cS-LS-adG" firstAttribute="top" secondItem="ruv-ru-p8C" secondAttribute="bottom" constant="15" id="KTG-83-bpW"/>
+                        <constraint firstItem="iWB-1M-t4J" firstAttribute="top" secondItem="Dxm-LS-jJl" secondAttribute="bottom" constant="5" id="MEf-N8-QVp"/>
+                        <constraint firstItem="5cS-LS-adG" firstAttribute="leading" secondItem="Riu-tF-xPU" secondAttribute="leading" id="PKt-Q7-7rz"/>
+                        <constraint firstItem="QQh-Du-MpZ" firstAttribute="centerY" secondItem="iWB-1M-t4J" secondAttribute="centerY" id="TvE-cp-jHA"/>
+                        <constraint firstItem="q2z-yI-TpI" firstAttribute="top" secondItem="5cS-LS-adG" secondAttribute="bottom" constant="10" id="XnZ-e9-fOt"/>
+                        <constraint firstAttribute="trailing" secondItem="q2z-yI-TpI" secondAttribute="trailing" constant="10" id="XrD-qa-uhC"/>
+                        <constraint firstItem="8Kr-rc-h7y" firstAttribute="top" secondItem="5cS-LS-adG" secondAttribute="bottom" constant="10" id="bhQ-8a-89e"/>
+                        <constraint firstItem="ruv-ru-p8C" firstAttribute="top" secondItem="iWB-1M-t4J" secondAttribute="bottom" constant="8" id="bhR-4E-r7D"/>
+                        <constraint firstItem="ZV2-oI-Dio" firstAttribute="centerY" secondItem="ruv-ru-p8C" secondAttribute="centerY" id="ct0-gm-fR7"/>
+                        <constraint firstAttribute="height" constant="170" id="hAl-ed-gD8"/>
+                        <constraint firstItem="iWB-1M-t4J" firstAttribute="leading" secondItem="Riu-tF-xPU" secondAttribute="leading" constant="10" id="lms-0F-kz1"/>
+                        <constraint firstItem="gMv-Z3-JUW" firstAttribute="centerY" secondItem="Dxm-LS-jJl" secondAttribute="centerY" id="mQ6-Zm-LnX"/>
+                        <constraint firstItem="ruv-ru-p8C" firstAttribute="leading" secondItem="Riu-tF-xPU" secondAttribute="leading" constant="10" id="oN7-EQ-nC1"/>
+                        <constraint firstItem="UNT-7z-ZbA" firstAttribute="top" secondItem="Riu-tF-xPU" secondAttribute="top" constant="5" id="r6L-QV-zlH"/>
+                        <constraint firstItem="TPa-AO-UYb" firstAttribute="top" secondItem="5cS-LS-adG" secondAttribute="bottom" constant="10" id="sCD-J4-72U"/>
+                        <constraint firstItem="q2z-yI-TpI" firstAttribute="leading" secondItem="8Kr-rc-h7y" secondAttribute="trailing" constant="10" id="xDR-vf-ySa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YrX-oq-ytL">
+                    <rect key="frame" x="266" y="10" width="89" height="36"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" tag="16" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recharge_status_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Ov-3L-c6G">
+                            <rect key="frame" x="0.0" y="0.0" width="89" height="36"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="statusImg"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60X-wB-iyl">
+                            <rect key="frame" x="24.5" y="4" width="40.5" height="22.5"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="statusStr"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="7Ov-3L-c6G" secondAttribute="bottom" id="4LP-GB-VlO"/>
+                        <constraint firstItem="60X-wB-iyl" firstAttribute="centerY" secondItem="YrX-oq-ytL" secondAttribute="centerY" constant="-3" id="58e-hP-ju6"/>
+                        <constraint firstItem="7Ov-3L-c6G" firstAttribute="top" secondItem="YrX-oq-ytL" secondAttribute="top" id="jDd-kx-CLe"/>
+                        <constraint firstAttribute="trailing" secondItem="7Ov-3L-c6G" secondAttribute="trailing" id="m6l-xd-SlK"/>
+                        <constraint firstItem="60X-wB-iyl" firstAttribute="centerX" secondItem="YrX-oq-ytL" secondAttribute="centerX" id="wZf-B9-GZv"/>
+                        <constraint firstItem="7Ov-3L-c6G" firstAttribute="leading" secondItem="YrX-oq-ytL" secondAttribute="leading" id="wxg-bi-wNP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Riu-tF-xPU" firstAttribute="leading" secondItem="QQQ-1g-5zd" secondAttribute="leading" constant="10" id="PB8-oQ-l3l"/>
+                <constraint firstItem="YrX-oq-ytL" firstAttribute="top" secondItem="QQQ-1g-5zd" secondAttribute="top" constant="10" id="W5Q-xa-gd7"/>
+                <constraint firstAttribute="trailing" secondItem="Riu-tF-xPU" secondAttribute="trailing" constant="10" id="aQg-FF-zij"/>
+                <constraint firstAttribute="trailing" secondItem="YrX-oq-ytL" secondAttribute="trailing" constant="20" id="cnO-mg-Fm2"/>
+                <constraint firstItem="Riu-tF-xPU" firstAttribute="top" secondItem="QQQ-1g-5zd" secondAttribute="top" constant="20" id="hTR-ul-jv6"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="setValueOnInit" value="YES"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="rechargeDetail"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="202" y="375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="recharge_status_1.png" width="89" height="36"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

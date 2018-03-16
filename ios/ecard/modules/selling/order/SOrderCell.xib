@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="SOrderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSc-RF-Tfr">
+                        <rect key="frame" x="10" y="9" width="140" height="87"/>
+                        <color key="backgroundColor" red="0.88235300780000003" green="0.86666673419999996" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="厦门金老卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEc-pC-G1I">
+                        <rect key="frame" x="158" y="10" width="159" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df0-do-TH3">
+                        <rect key="frame" x="246" y="45" width="12" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.98431378599999997" green="0.3058823645" blue="0.27450981740000002" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW0-Sq-mcP">
+                        <rect key="frame" x="261" y="39" width="46" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.98431378599999997" green="0.3058823645" blue="0.27450981740000002" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl0-9G-96X">
+                        <rect key="frame" x="247" y="69" width="60" height="27"/>
+                        <color key="backgroundColor" red="0.98431378599999997" green="0.3058823645" blue="0.27450981740000002" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="Jeo-fZ-XYf"/>
+                            <constraint firstAttribute="width" constant="60" id="rZe-di-s2M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="去支付">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="共2张" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQa-eE-Q8D">
+                        <rect key="frame" x="158" y="75" width="64" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="共2张" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrI-67-iL0">
+                        <rect key="frame" x="158" y="42" width="64" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2n-h8-9Kc">
+                        <rect key="frame" x="247" y="69" width="60" height="27"/>
+                        <color key="backgroundColor" red="0.98431378599999997" green="0.3058823645" blue="0.27450981740000002" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="VFc-dO-KS9"/>
+                            <constraint firstAttribute="width" constant="60" id="mn7-A1-54s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="确认收货">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JW0-Sq-mcP" firstAttribute="leading" secondItem="df0-do-TH3" secondAttribute="trailing" constant="3" id="1Ao-By-u0k"/>
+                    <constraint firstItem="I2n-h8-9Kc" firstAttribute="top" secondItem="tl0-9G-96X" secondAttribute="top" id="5az-eR-0HP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tl0-9G-96X" secondAttribute="trailing" constant="5" id="7s0-bP-Jnr"/>
+                    <constraint firstItem="JW0-Sq-mcP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-5" id="gNT-GQ-bPu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="df0-do-TH3" secondAttribute="bottom" constant="36" id="hDB-vE-Pps"/>
+                    <constraint firstItem="tl0-9G-96X" firstAttribute="top" secondItem="JW0-Sq-mcP" secondAttribute="bottom" constant="8" id="jmk-D8-0hZ"/>
+                    <constraint firstItem="tl0-9G-96X" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="rHX-Tc-9Zd"/>
+                    <constraint firstItem="I2n-h8-9Kc" firstAttribute="leading" secondItem="tl0-9G-96X" secondAttribute="leading" id="wj5-xU-os0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnConfirm" destination="I2n-h8-9Kc" id="f1l-t0-Nok"/>
+                <outlet property="btnPay" destination="tl0-9G-96X" id="j7K-HM-XP6"/>
+                <outlet property="image" destination="cSc-RF-Tfr" id="xZf-LB-reh"/>
+                <outlet property="price" destination="JW0-Sq-mcP" id="bNe-iA-oSq"/>
+                <outlet property="status" destination="PQa-eE-Q8D" id="B9a-fp-dR1"/>
+                <outlet property="title" destination="yEc-pC-G1I" id="HhY-Nd-Ir2"/>
+                <outlet property="total" destination="XrI-67-iL0" id="257-pd-ndZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

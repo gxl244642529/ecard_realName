@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/travel_page_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_title_height" >
+
+        <EditText
+            android:id="@id/_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/_id_ok"
+            android:ems="10"
+            android:hint="请输入搜索关键字" />
+
+        <ImageButton
+            android:id="@id/_id_ok"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/school_search_btn_bg"
+            android:src="@drawable/ic_query" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

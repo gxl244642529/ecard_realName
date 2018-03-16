@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SafeInsuredShowController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="DMDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-Ch-GeP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXt-di-6H5">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XFZ-Pu-p9O" customClass="DMNetworkImage">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="dDc-mP-kyP"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="backgroundUrl"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="keepRate" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72e-2Z-Oap" customClass="PageButton">
+                                    <rect key="frame" x="10" y="20" width="355" height="35"/>
+                                    <state key="normal" title="热线电话: 4000040506" backgroundImage="s_ic_btn.png">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onCall:" destination="-1" eventType="touchUpInside" id="iU5-JI-JZQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="72e-2Z-Oap" secondAttribute="bottom" constant="10" id="2Qt-7y-jEH"/>
+                                <constraint firstAttribute="trailing" secondItem="XFZ-Pu-p9O" secondAttribute="trailing" id="AVf-VF-pwD"/>
+                                <constraint firstItem="72e-2Z-Oap" firstAttribute="leading" secondItem="NXt-di-6H5" secondAttribute="leading" constant="10" id="D4z-YQ-9iZ"/>
+                                <constraint firstItem="XFZ-Pu-p9O" firstAttribute="leading" secondItem="NXt-di-6H5" secondAttribute="leading" id="I7d-Eu-C8b"/>
+                                <constraint firstItem="72e-2Z-Oap" firstAttribute="top" secondItem="XFZ-Pu-p9O" secondAttribute="bottom" constant="10" id="KhB-9D-NyG"/>
+                                <constraint firstAttribute="trailing" secondItem="72e-2Z-Oap" secondAttribute="trailing" constant="10" id="bcx-cp-iFI"/>
+                                <constraint firstItem="XFZ-Pu-p9O" firstAttribute="top" secondItem="NXt-di-6H5" secondAttribute="top" id="rUM-Vw-z4v"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NXt-di-6H5" secondAttribute="trailing" id="0Iv-jB-8wZ"/>
+                        <constraint firstItem="NXt-di-6H5" firstAttribute="leading" secondItem="sfg-Ch-GeP" secondAttribute="leading" id="3bg-nG-6ld"/>
+                        <constraint firstAttribute="bottom" secondItem="NXt-di-6H5" secondAttribute="bottom" id="MJL-TI-6Vg"/>
+                        <constraint firstItem="NXt-di-6H5" firstAttribute="top" secondItem="sfg-Ch-GeP" secondAttribute="top" id="unK-OH-1jK"/>
+                        <constraint firstItem="NXt-di-6H5" firstAttribute="centerX" secondItem="sfg-Ch-GeP" secondAttribute="centerX" id="ygM-qI-5y2"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sfg-Ch-GeP" secondAttribute="trailing" id="1bW-SE-OYs"/>
+                <constraint firstAttribute="bottom" secondItem="sfg-Ch-GeP" secondAttribute="bottom" id="NiG-OV-Sqb"/>
+                <constraint firstItem="sfg-Ch-GeP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cOn-1B-yzi"/>
+                <constraint firstItem="sfg-Ch-GeP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uHo-g5-ry3"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="api" value="i_safe/detail"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="inId"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="autoExecute" value="YES"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="paramKey" value="id"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="entityName" value="SafeShowDetailVo"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="server">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="safeCardShowDetail"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="setValueOnInit" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="356" y="297"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="s_ic_btn.png" width="111" height="35"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

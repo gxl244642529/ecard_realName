@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Zxing -->
+    <color name="zxin_transparent">#0000</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+     
+    <!-- 页面颜色 -->
+    <color name="_page">#F0F0F0</color>
+    <color name="_line">#D7D7D7</color>
+    <!-- 个人中心的分割线颜色 -->
+
+
+    <!-- 省市区选择 -->
+    <color name="province_line_border">#C7C7C7</color>
+    <!-- 标准控件开始 -->
+    <!-- main button -->
+    <!-- select -->
+    <!-- radio group -->
+    <!-- radio on/off -->
+    <!-- backbutton -->
+    <!-- right arraw -->
+    <!-- date picker -->
+    <!-- image picker -->
+    <!-- area picker -->
+    <!-- title tab -->
+    <!-- content tab -->
+    <color name="_tab_group_button_selected">#ff3d2c</color>
+    <color name="_tab_group_button_unselected">#9f9f9f</color>
+    <!-- form textfield -->
+    <!-- form textfield mutil lines -->
+    <!-- title right button -->
+
+
+    <!-- 可点击按下去 -->
+    <color name="_item_pressed">#E4E4E4</color>
+    <color name="_radio_button_checked">#000000</color>
+    <color name="_radio_button_unchecked">#333333</color>
+
+    <!-- 标题栏 -->
+    <color name="_title_btn_pressed">#f2f2f2</color>
+    <color name="_title_color">#FFF</color>
+    <color name="_title_shadow_color">#f2f2f2</color>
+    <color name="_title_text_color">#333333</color>
+
+    <!-- ActionSheet -->
+    <color name="_action_sheet_bg">#ededed</color>
+    <color name="_action_sheet_button_border">#c1c1c3</color>
+    <color name="_action_sheet_button_cancel_bg">#858c96</color>
+    <color name="_action_sheet_button_normal_bg">#ffffff</color>
+    <color name="_action_sheet_pressed">#E4E4E4</color>
+
+    <!-- 自定义对话框 -->
+    <color name="cus_dialog_color">#f3542d</color>
+    <color name="cus_dialog_line">#b8b8b8</color>
+
+    <!-- TopMenu -->
+    <color name="_top_menu_divider">#E0E0E0</color>
+    <!-- listview 分割线 -->
+    <color name="_tree_right_list_bg">#f2f2f2</color>
+    <!-- 树形菜单右边listview背景颜色 -->
+    <color name="_tree_main_selected">#f2f2f2</color>
+    <color name="_top_menu_item_text_highlight">#ff0000</color>
+    <!-- 项目高亮颜色 -->
+    <color name="_top_menu_item_text_normal">#000000</color>
+    <!-- 项目 -->
+
+
+    <!-- statelist -->
+    <color name="_state_list_bg">#fff</color>
+    
+
+     <color name="light_gray">#ccc</color>
+     <color name="dark_gray">#666</color>
+     <color name="dark_text">#333</color>
+    
+</resources>

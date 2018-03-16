@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.damai.widget.FormView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dip"
+            lib:init_set_data="true" >
+
+            <com.damai.widget.AddressPickerView
+                android:id="@+id/addressVo"
+              
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/_white_item_selector"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@id/_select_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="请选择地区"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/_ic_arrow" />
+            </com.damai.widget.AddressPickerView>
+
+            <com.damai.widget.FormEditText
+                android:id="@id/jie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@android:color/white"
+                android:hint="请输入街道地址"
+                android:padding="10dp"
+                android:textColor="@color/s_edit_addr_text_color"
+                android:textSize="16sp" />
+
+            <com.damai.widget.FormEditText
+                android:id="@id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@android:color/white"
+                android:hint="请输入收货人姓名"
+                android:padding="10dp"
+                android:textColor="@color/s_edit_addr_text_color"
+                android:textSize="16sp" />
+
+            <com.damai.widget.FormEditText
+                android:id="@id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@android:color/white"
+                android:hint="请输入收货人联系电话"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/s_edit_addr_text_color"
+                android:textSize="16sp" />
+
+            <com.damai.widget.FormEditText
+                android:id="@id/postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="请输入六位邮编"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/s_edit_addr_text_color"
+                android:textSize="16sp" />
+
+            <com.damai.widget.FormCheckBox
+                android:id="@+id/def"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                style="@style/_check_box"
+                android:background="@drawable/_white_item_selector"
+                android:padding="10dp"
+                android:text="设为默认地址"
+                android:checked="false" />
+
+            <com.damai.widget.SubmitButton
+                android:id="@id/_id_ok"
+                style="@style/_main_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:text="保存"
+                lib:api="address/save"
+                lib:server="1" />
+        </com.damai.widget.FormView>
+    </ScrollView>
+
+</LinearLayout>

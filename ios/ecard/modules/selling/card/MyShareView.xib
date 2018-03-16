@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyShareView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择分享方式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aL-t4-Qhv">
+                    <rect key="frame" x="0.0" y="30" width="320" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="RQG-WF-89Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uel-IF-Kyv">
+                    <rect key="frame" x="20" y="70" width="280" height="141"/>
+                    <subviews>
+                        <view autoresizesSubviews="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsI-1a-JTF" customClass="ItemView">
+                            <rect key="frame" x="0.0" y="0.0" width="93.5" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_weixin.png" translatesAutoresizingMaskIntoConstraints="NO" id="avP-Tm-wVe">
+                                    <rect key="frame" x="0.0" y="8" width="92" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeg-ud-ug8">
+                                    <rect key="frame" x="0.0" y="41" width="92" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="La0-cS-LHW"/>
+                            </constraints>
+                        </view>
+                        <view autoresizesSubviews="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtu-cz-ky0" customClass="ItemView">
+                            <rect key="frame" x="93.5" y="0.0" width="93" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_friend.png" translatesAutoresizingMaskIntoConstraints="NO" id="BtL-Pz-ccz">
+                                    <rect key="frame" x="0.0" y="8" width="92" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信朋友圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frZ-Yo-Lx6">
+                                    <rect key="frame" x="0.0" y="41" width="92" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="Rex-k8-yls"/>
+                            </constraints>
+                        </view>
+                        <view autoresizesSubviews="NO" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb4-et-mUd" customClass="ItemView">
+                            <rect key="frame" x="186.5" y="0.0" width="93.5" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_sina.png" translatesAutoresizingMaskIntoConstraints="NO" id="jse-eb-C9a">
+                                    <rect key="frame" x="0.0" y="8" width="92" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新浪微博" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xta-iz-0zn">
+                                    <rect key="frame" x="0.0" y="41" width="92" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="kxK-Ug-3bT"/>
+                            </constraints>
+                        </view>
+                        <view autoresizesSubviews="NO" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-XA-0tZ" customClass="ItemView">
+                            <rect key="frame" x="0.0" y="70" width="93.5" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_qq.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Nv-sR-xgG">
+                                    <rect key="frame" x="0.0" y="8" width="92" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ 好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHj-Wu-O5i">
+                                    <rect key="frame" x="0.0" y="41" width="92" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="N6S-D3-2yA"/>
+                            </constraints>
+                        </view>
+                        <view autoresizesSubviews="NO" tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVy-CQ-nRe" customClass="ItemView">
+                            <rect key="frame" x="93.5" y="70" width="93" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_qzone.png" translatesAutoresizingMaskIntoConstraints="NO" id="DMZ-7B-TUd">
+                                    <rect key="frame" x="0.0" y="8" width="92" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qzone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9n-Ew-jc8">
+                                    <rect key="frame" x="0.0" y="41" width="92" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="pie-GE-vi1"/>
+                            </constraints>
+                        </view>
+                        <view autoresizesSubviews="NO" tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygq-0u-uUA" customClass="ItemView">
+                            <rect key="frame" x="186.5" y="70" width="93.5" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_tecentweibo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vlt-0M-a1I">
+                                    <rect key="frame" x="0.0" y="8" width="92" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="腾讯微博" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THI-TG-CHr">
+                                    <rect key="frame" x="0.0" y="41" width="92" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="MmP-q7-o0d"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rtu-cz-ky0" firstAttribute="leading" secondItem="DsI-1a-JTF" secondAttribute="trailing" id="3kd-pT-nns"/>
+                        <constraint firstAttribute="bottom" secondItem="ygq-0u-uUA" secondAttribute="bottom" constant="1" id="5lK-Vo-2OG"/>
+                        <constraint firstItem="ygq-0u-uUA" firstAttribute="leading" secondItem="DVy-CQ-nRe" secondAttribute="trailing" id="HB4-0r-kw6"/>
+                        <constraint firstItem="DVy-CQ-nRe" firstAttribute="leading" secondItem="Mhm-XA-0tZ" secondAttribute="trailing" id="N1U-H8-h29"/>
+                        <constraint firstItem="jb4-et-mUd" firstAttribute="leading" secondItem="rtu-cz-ky0" secondAttribute="trailing" id="QW5-XJ-HyO"/>
+                        <constraint firstItem="rtu-cz-ky0" firstAttribute="top" secondItem="Uel-IF-Kyv" secondAttribute="top" id="VZ7-at-4bO"/>
+                        <constraint firstItem="Mhm-XA-0tZ" firstAttribute="width" secondItem="ygq-0u-uUA" secondAttribute="width" id="WI3-ww-0Ad"/>
+                        <constraint firstItem="Mhm-XA-0tZ" firstAttribute="leading" secondItem="Uel-IF-Kyv" secondAttribute="leading" id="eVK-cZ-uV5"/>
+                        <constraint firstAttribute="bottom" secondItem="Mhm-XA-0tZ" secondAttribute="bottom" constant="1" id="f9q-Nm-RDn"/>
+                        <constraint firstItem="jb4-et-mUd" firstAttribute="top" secondItem="Uel-IF-Kyv" secondAttribute="top" id="h00-lb-bUR"/>
+                        <constraint firstAttribute="bottom" secondItem="DVy-CQ-nRe" secondAttribute="bottom" constant="1" id="hmF-J5-iqM"/>
+                        <constraint firstAttribute="trailing" secondItem="ygq-0u-uUA" secondAttribute="trailing" id="iCB-vh-DMe"/>
+                        <constraint firstItem="jb4-et-mUd" firstAttribute="width" secondItem="DsI-1a-JTF" secondAttribute="width" id="id0-kd-YMV"/>
+                        <constraint firstItem="jb4-et-mUd" firstAttribute="width" secondItem="rtu-cz-ky0" secondAttribute="width" id="l44-Zd-GTz"/>
+                        <constraint firstAttribute="height" constant="141" id="qBH-o9-hEU"/>
+                        <constraint firstAttribute="trailing" secondItem="jb4-et-mUd" secondAttribute="trailing" id="qOC-Lt-99Z"/>
+                        <constraint firstItem="Mhm-XA-0tZ" firstAttribute="width" secondItem="DVy-CQ-nRe" secondAttribute="width" id="ut6-WU-hIx"/>
+                        <constraint firstItem="DsI-1a-JTF" firstAttribute="top" secondItem="Uel-IF-Kyv" secondAttribute="top" id="vll-Rc-Db6"/>
+                        <constraint firstItem="DsI-1a-JTF" firstAttribute="leading" secondItem="Uel-IF-Kyv" secondAttribute="leading" id="yC0-hJ-yej"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McV-Rr-ThE" userLabel="Line">
+                    <rect key="frame" x="0.0" y="231" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.85373902320861816" green="0.83569526672363281" blue="0.80695855617523193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="DW0-XX-XvV"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfg-U3-0jr">
+                    <rect key="frame" x="105" y="239" width="111" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="b2h-7F-BTn"/>
+                        <constraint firstAttribute="height" constant="35" id="xHF-RA-kLV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="取消" backgroundImage="s_ic_btn.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.9503856897354126" green="0.93577539920806885" blue="0.93611127138137817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="McV-Rr-ThE" secondAttribute="trailing" id="5ji-LG-Gxv"/>
+                <constraint firstItem="1aL-t4-Qhv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GQX-Tz-hhK"/>
+                <constraint firstItem="Uel-IF-Kyv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Hdm-BA-xVN"/>
+                <constraint firstItem="McV-Rr-ThE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HjT-kJ-CLY"/>
+                <constraint firstAttribute="centerX" secondItem="vfg-U3-0jr" secondAttribute="centerX" id="JFv-E1-3Dz"/>
+                <constraint firstItem="1aL-t4-Qhv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="Taf-ky-QSq"/>
+                <constraint firstItem="McV-Rr-ThE" firstAttribute="top" secondItem="Uel-IF-Kyv" secondAttribute="bottom" constant="20" id="bSo-TO-MJa"/>
+                <constraint firstAttribute="trailing" secondItem="1aL-t4-Qhv" secondAttribute="trailing" id="fx3-Gx-Crw"/>
+                <constraint firstAttribute="bottom" secondItem="vfg-U3-0jr" secondAttribute="bottom" constant="6" id="r9W-2G-4sv"/>
+                <constraint firstAttribute="trailing" secondItem="Uel-IF-Kyv" secondAttribute="trailing" constant="20" id="sQ2-rR-aDw"/>
+                <constraint firstItem="Uel-IF-Kyv" firstAttribute="top" secondItem="1aL-t4-Qhv" secondAttribute="bottom" constant="19" id="z4S-LX-WHb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn0" destination="DsI-1a-JTF" id="zxj-gf-N6T"/>
+                <outlet property="btn1" destination="rtu-cz-ky0" id="35a-yU-STh"/>
+                <outlet property="btn2" destination="jb4-et-mUd" id="4Mi-IL-UZo"/>
+                <outlet property="btn3" destination="Mhm-XA-0tZ" id="dTk-AG-Wvg"/>
+                <outlet property="btn4" destination="DVy-CQ-nRe" id="ZTL-eg-BdR"/>
+                <outlet property="btn5" destination="ygq-0u-uUA" id="MhB-RZ-kIv"/>
+                <outlet property="btnCancel" destination="vfg-U3-0jr" id="Aya-8u-hnS"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="s_ic_btn.png" width="111" height="35"/>
+        <image name="s_ic_friend.png" width="31" height="31"/>
+        <image name="s_ic_qq.png" width="31" height="31"/>
+        <image name="s_ic_qzone.png" width="31" height="31"/>
+        <image name="s_ic_sina.png" width="31" height="31"/>
+        <image name="s_ic_tecentweibo.png" width="31" height="31"/>
+        <image name="s_ic_weixin.png" width="31" height="31"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

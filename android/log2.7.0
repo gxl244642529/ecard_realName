@@ -1,0 +1,14 @@
+1、将扫码功能全部屏蔽（代码层面）
+涉及文件:
+MainApplication
+RCTBusQrView
+BusQrModule
+
+app/build.gradle
+
+
+_home/HeadTitleBar.js
+personal/PersonalCenter.js
+
+
+2、

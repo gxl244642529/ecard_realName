@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <ImageView
+        android:id="@id/_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/nav_route_result_start_point" />
+
+    <TextView
+        android:id="@id/_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/_image_view"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/come_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableTop="@drawable/ic_real_come"
+        android:gravity="center"
+        android:text="2辆"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/arive_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableTop="@drawable/ic_real_arived"
+        android:gravity="center"
+        android:text="2辆"
+        android:textSize="9sp" />
+
+</RelativeLayout>

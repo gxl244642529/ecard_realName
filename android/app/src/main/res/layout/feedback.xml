@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@id/_title_left"
+            android:layout_width="@dimen/title_left_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_button_bg"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:paddingLeft="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_title_left" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="联盟商家"
+            android:textAppearance="@style/title_text"
+            android:textColor="@color/_title_text_color" />
+
+        <LinearLayout
+            android:id="@id/_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="发送"
+                android:textColor="@color/_title_text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <EditText
+            android:id="@id/feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="请描述您在客户端使用中遇到的问题，我们很期待您的意见与建议。"
+            android:inputType="textMultiLine"
+            android:lines="5" />
+
+        <EditText
+            android:id="@id/feedback_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:ems="10"
+            android:hint="联系电话、QQ或电子邮件" />
+    </LinearLayout>
+
+</LinearLayout>

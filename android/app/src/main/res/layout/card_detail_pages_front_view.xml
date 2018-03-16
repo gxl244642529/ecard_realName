@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.alan.roundimageview.XCRoundRectImageView
+        android:id="@id/card_carddetail_front_image"
+        android:layout_width="529px"
+        android:layout_height="325px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px" />
+
+</RelativeLayout>

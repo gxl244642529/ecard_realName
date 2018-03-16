@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交给店员扫描" />
+
+    <TextView
+        android:id="@id/qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="codee"
+        android:textColor="@color/dialog_color" />
+
+    <ImageView
+        android:id="@id/qr_image"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        android:src="@drawable/default_coupon_logo" />
+
+</LinearLayout>

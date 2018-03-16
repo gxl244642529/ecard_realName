@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/travel_page_color"
+    android:clipChildren="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/titlebar"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:padding="10dp"
+        android:text="  卟噔充值流程：\n
+						①输入您的易通卡卡号\n
+						②使用微信支付付款;\n
+						③付款成功后，通过“卟噔机”贴卡写入充值金额，最终完成充值。\n
+						（拥有NFC功能的安卓手机也可通过NFC在线卟噔）" />
+
+    <TextView
+        android:id="@id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:padding="10dp"
+        android:text="	小贴士：目前卟噔机仅在软件园二期试点运行，其它地区我们正在积极布设中，敬请期待！" />
+
+    <ImageView
+        android:id="@id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text3"
+        android:layout_below="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/budeng_bg" />
+
+    <TextView
+        android:id="@id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="卟噔机"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <!-- <com.citywithincity.ecard.insurance.widgets.MyGridView
+        android:id="@id/_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/new_divider_color"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:visibility="gone"
+        android:verticalSpacing="1dp" >
+    </com.citywithincity.ecard.insurance.widgets.MyGridView> -->
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/travel_page_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@id/safe_ecard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/new_item_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_safe_ecard"
+                    android:drawablePadding="5dp"
+                    android:padding="7dp"
+                    android:text="@string/safe_ecard"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@id/safe_family"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/new_item_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_safe_family"
+                    android:drawablePadding="5dp"
+                    android:padding="7dp"
+                    android:text="@string/safe_family"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@id/safe_accident"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/new_item_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_safe_accident"
+                    android:drawablePadding="5dp"
+                    android:padding="7dp"
+                    android:text="@string/safe_accident"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@id/safe_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/new_item_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_safe_age"
+                    android:drawablePadding="5dp"
+                    android:padding="7dp"
+                    android:text="@string/safe_age"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@id/safe_car"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/new_item_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_safe_car"
+                    android:drawablePadding="5dp"
+                    android:padding="7dp"
+                    android:text="@string/safe_car"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@id/safe_cashier"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/new_item_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_safe_cashier"
+                    android:drawablePadding="5dp"
+                    android:padding="7dp"
+                    android:text="@string/safe_cashier"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/transparent"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:text="推荐产品"
+        android:clickable="false"
+        android:textColor="@color/_title_text_color"
+        android:textSize="17sp" />
+
+</LinearLayout>

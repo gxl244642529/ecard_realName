@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <!--
+         <com.citywithincity.widget.AdvView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@id/adv_view"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:item_layout="@layout/base_loading_image_view" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@id/_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e1e1e1" />
+            </com.citywithincity.widget.AdvView>
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/m_ic_head2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/zy_raffle_bg_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/zy_raffle_bg_color"
+                android:orientation="horizontal"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp" >
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/new_rectangle_item_selector" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="25dp"
+                        android:background="@drawable/ic_raffle_left" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_rectangle_item_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/exam_card_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@id/tools"
+                            android:background="@null"
+                            android:hint="@string/input_card_or_user_no"
+                            android:padding="5dip"
+                            android:singleLine="true"
+                            android:textColor="@color/_title_text_color"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:id="@id/tools"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true" >
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:background="@color/text_color_gray" />
+
+                            <ImageButton
+                                android:id="@id/id_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/btn_exam_more_bg"
+                                android:src="@drawable/ic_raffle_right" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@id/_id_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_common_btn_bg"
+                        android:text="确定"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/zy_raffle_bg_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="20元观影免费抢"
+                    android:textColor="@color/text_color_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f0f0"
+                    android:padding="10dp"
+                    android:text="活动规则"
+                    android:textColor="@color/new_btn_normal_bg_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="1.每天早上10点准时开抢，输入卡号即可参与"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="2.获奖用户请凭获得的e通劵，到中影任意门店兑换影票"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="3.每张e通劵码有效期为7天，过期的e通劵无法使用，该e通劵不与中影其他优惠同时使用"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="4.e通卡APP享有对此活动的所有解释权，客服电话：0592-5195866"
+                    android:textColor="@color/_title_text_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

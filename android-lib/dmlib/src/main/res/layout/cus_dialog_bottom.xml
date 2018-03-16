@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@id/cus_dialog_buttons_ok_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@id/_id_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cus_dialog_btn_left"
+            android:padding="15dip"
+            android:text="@string/_cancel" />
+
+        <Button
+            android:id="@id/_id_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cus_dialog_btn_right"
+            android:padding="15dip"
+            android:text="@string/_ok" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/cus_dialog_buttons_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@id/_id_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cus_dialog_btn_bottom"
+            android:padding="15dip"
+            android:text="@string/_ok" />
+
+        <Button
+            android:id="@id/_id_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cus_dialog_btn_bottom"
+            android:padding="15dip"
+            android:text="@string/_cancel" />
+    </FrameLayout>
+
+</merge>

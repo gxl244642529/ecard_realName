@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dip"
+        android:text="jkfds"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <AbsoluteLayout
+        android:id="@id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/_bottom_bar"
+        android:layout_below="@id/_title_text" >
+
+        <ImageView
+            android:id="@id/_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY" />
+    </AbsoluteLayout>
+
+    <LinearLayout
+        android:id="@id/_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@id/_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:progressDrawable="@drawable/progress_holo_light"
+            android:thumb="@drawable/detail_icon_schedule_ball" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <LinearLayout
+                android:id="@id/editor_tools"
+                android:layout_width="wrap_content"
+                android:layout_height="58dip"
+                android:layout_centerHorizontal="true" >
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/e_ic_rotation1"
+                        android:text="旋转"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/e_ic_flip_h"
+                        android:text="水平"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/e_ic_flip_v"
+                        android:text="垂直"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@id/_id_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="10dip"
+                android:src="@drawable/e_ic_cancel" />
+
+            <ImageButton
+                android:id="@id/_id_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="10dip"
+                android:src="@drawable/e_ic_ok" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

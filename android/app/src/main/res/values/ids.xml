@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <item name="cardName" type="id"/>
+    <item name="defShow" type="id"/>
+    <item name="cardId" type="id"/>
+
+    <!-- e通卡后台账户 -->
+    <item name="idCard" type="id"/>
+    <item name="type" type="id"/>
+    <item name="_select_ecard" type="id"/>
+
+
+
+    <!-- 自定义对话框 -->
+
+    <item name="cardid" type="id"/>
+
+
+    <!-- pulltorefresh -->
+    <item name="_wrapped_grid_view" type="id"></item>
+    <item name="_wrapped_list_view" type="id"></item>
+    <item name="_wrapped_web_view" type="id"></item>
+    <item name="_wrapped_scroll_view" type="id"></item>
+    <item name="_fl_inner" type="id"></item>
+    <item name="_pull_to_refresh_image" type="id"></item>
+    <item name="_pull_to_refresh_progress" type="id"></item>
+    <item name="_pull_to_refresh_text" type="id"></item>
+    <item name="_pull_to_refresh_sub_text" type="id"></item>
+
+    <item name="_radio_button" type="id"/>
+
+
+
+
+
+
+
+
+    <!-- e通卡后台账户 -->
+    <item name="ec_account" type="id"/>
+    <item name="ec_pwd" type="id"/>
+    <item name="ec_fee" type="id"/>
+
+    <item name="picc_id" type="id"></item>
+    <item name="picc_id_container" type="id"></item>
+
+    <item name="insured" type="id"></item>
+    <item name="insured1" type="id"></item>
+
+    <item name="insured_id" type="id"></item>
+    <item name="insured_id1" type="id"></item>
+
+    <item name="safe_accident" type="id"></item>
+    <item name="safe_age" type="id"></item>
+    <item name="safe_car" type="id"></item>
+    <item name="safe_cashier" type="id"></item>
+    <item name="safe_ecard" type="id"></item>
+    <item name="safe_family" type="id"></item>
+
+    <item name="radio_button" type="id"></item>
+    <item name="radio_button1" type="id"></item>
+    <item name="radio_button2" type="id"></item>
+    <item name="radio_button3" type="id"></item>
+
+    <item name="car_no" type="id"></item>
+    <item name="car_frame" type="id"></item>
+
+    <item name="back" type="id"></item>
+    <item name="id_name1" type="id"></item>
+    <item name="id_idcard_no1" type="id"></item>
+    <item name="id_phone1" type="id"></item>
+    <item name="id_name2" type="id"></item>
+    <item name="id_idcard_no2" type="id"></item>
+    <item name="id_phone2" type="id"></item>
+
+    <!-- 保险 -->
+    <item name="id_insurance" type="id"></item>
+    <item name="insurance_clause" type="id"></item>
+    <item name="date_purchase" type="id"></item>
+    <item name="date_starting" type="id"></item>
+    <item name="date_expiring" type="id"></item>
+    <item name="effective_date" type="id"></item>
+    <item name="company" type="id"></item>
+    <item name="insurance_step1" type="id"></item>
+    <item name="insurance_step2" type="id"></item>
+    <item name="insurance_step3" type="id"></item>
+    <item name="id_safeguard1" type="id"></item>
+    <item name="id_safeguard2" type="id"></item>
+    <item name="id_safeguard3" type="id"></item>
+    <item name="thumb" type="id"></item>
+    <item name="phone_num" type="id"></item>
+    <item name="card_model" type="id"></item>
+
+    <item name="card_id" type="id"></item>
+    <item name="id_container" type="id"></item>
+
+    <item name="order_container" type="id"></item>
+
+    <item name="flag" type="id"></item>
+
+    <item name="original_price" type="id"></item>
+
+    <item name="company_container" type="id"></item>
+
+    <item name="price_container" type="id"></item>
+
+    <item name="express" type="id"></item>
+
+    <item name="text_container" type="id"></item>
+    <item name="id_purchase" type="id"></item>
+
+    <!-- 绑定手机 -->
+    <item name="bind_phone" type="id"></item>
+    <!-- 换绑手机 -->
+    <item name="change_phone" type="id"></item>
+
+    <!-- 地址 -->
+    <item name="id_address" type="id"></item>
+
+    <!-- Editor -->
+
+    <item name="contrast" type="id"></item>
+    <item name="editor_tools" type="id"></item>
+    <item name="image_container" type="id"></item>
+    <item name="rotate_tool" type="id"></item>
+    <item name="rotate_bar" type="id"></item>
+    <item name="undo_redo" type="id"></item>
+    <item name="editor_tools_container" type="id"></item>
+    <item name="redo" type="id"></item>
+    <item name="undo" type="id"></item>
+    <item name="seek_bar1" type="id"></item>
+    <item name="seek_bar2" type="id"></item>
+    <item name="seek_bar3" type="id"></item>
+    <item name="editor_draw_text" type="id"></item>
+    <!-- Editor End -->
+
+    <item name="user_head" type="id"></item>
+    <item name="id_thumb1" type="id"/>
+    <item name="id_thumb2" type="id"/>
+    <item name="id_thumb3" type="id"/>
+    <item name="_container1" type="id"/>
+    <item name="_container2" type="id"/>
+    <item name="_container3" type="id"/>
+    <item name="checkBox1" type="id"/>
+    <item name="checkBox2" type="id"/>
+    <item name="checkBox3" type="id"/>
+    <item name="price1" type="id"/>
+    <item name="price2" type="id"/>
+    <item name="price3" type="id"/>
+    <item name="view1" type="id"/>
+    <item name="view2" type="id"/>
+    <item name="view3" type="id"/>
+    <item name="recharge1" type="id"/>
+    <item name="recharge2" type="id"/>
+    <item name="recharge3" type="id"/>
+    <item name="idcard" type="id"/>
+    <item name="ecard_service_point" type="id"/>
+    <item name="adv_view_container" type="id"/>
+    <item name="text" type="id"></item>
+
+    <!-- 易充值 -->
+    <item name="e_recharge" type="id"/>
+    <item name="radio_precharge_300" type="id"/>
+    <item name="radio_precharge_500" type="id"/>
+    <item name="progress" type="id"/>
+    <item name="max_progress" type="id"/>
+
+    <!-- 惠民理财 -->
+    <item name="btn_licai" type="id"/>
+    <item name="web_view" type="id"/>
+
+    <!-- 密码安全 -->
+    <item name="retrieve_password" type="id"/>
+
+    <!-- 中影 -->
+    <item name="jiazhou_locate" type="id"/>
+    <item name="jiazhou_call" type="id"/>
+    <item name="caitang_locate" type="id"/>
+    <item name="caitang_call" type="id"/>
+    <item name="tongan_locate" type="id"/>
+    <item name="tongan_call" type="id"/>
+    <item name="btn_ent" type="id"/>
+    <item name="btn_free_movie" type="id"/>
+    <item name="btn_commen_movie" type="id"/>
+    <item name="btn_vip" type="id"/>
+    <item name="top_container" type="id"/>
+    <item name="id_1" type="id"/>
+    <item name="id_2" type="id"/>
+    <item name="id_3" type="id"/>
+    <item name="id_ticket" type="id"/>
+    <item name="network_error" type="id"/>
+    <item name="loading_layout" type="id"/>
+    <item name="no_result" type="id"/>
+    <item name="btn_nfc" type="id"/>
+    <item name="btn_no_nfc" type="id"/>
+    <item name="user_image" type="id"/>
+
+    <!-- 年审开始 -->
+    <item name="btn_exam_query" type="id"/>
+    <item name="btn_exam_info" type="id"/>
+    <item name="id_validit" type="id"/>
+    <item name="id_card" type="id"/>
+    <item name="id_name" type="id"/>
+    <item name="id_phone" type="id"/>
+    <item name="id_area_in" type="id"/>
+    <item name="id_area_out" type="id"/>
+    <item name="id_area" type="id"/>
+    <item name="id_school" type="id"/>
+    <item name="id_student_card" type="id"/>
+    <item name="id_birthday" type="id"/>
+    <item name="id_user_id" type="id"/>
+    <item name="id_type" type="id"/>
+    <item name="id_idcard" type="id"/>
+    <item name="id_household_register" type="id"/>
+    <item name="id_sex" type="id"/>
+    <item name="id_male" type="id"/>
+    <item name="id_female" type="id"/>
+    <item name="id_btn" type="id"/>
+    <item name="id_btn1" type="id"/>
+    <item name="id_btn2" type="id"/>
+    <item name="id_btn3" type="id"/>
+    <item name="title_container" type="id"></item>
+    <item name="id_idcard_no" type="id"></item>
+    <!-- 年审结束 -->
+    <item name="id_share_time_line" type="id"/>
+    <!-- 数据动作 -->
+    <item name="id_add" type="id"></item>
+    <item name="id_sub" type="id"></item>
+    <item name="id_eidt" type="id"></item>
+    <item name="id_delete" type="id"></item>
+    <item name="id_save" type="id"/>
+    <!-- 保存 -->
+    <item name="id_bind" type="id"/>
+    <item name="bind_account" type="id"/>
+    <item name="id_logout" type="id"/>
+    <item name="id_help" type="id"/>
+
+    <!-- 基本属性 -->
+    <item name="id_province" type="id"/>
+    <!-- 省 -->
+    <item name="id_zipcode" type="id"/>
+    <!-- 邮编 -->
+    <item name="id_country" type="id"/>
+    <!-- 国家 -->
+    <item name="id_city" type="id"/>
+    <!-- 城市 -->
+    <item name="id_stock" type="id"/>
+    <!-- 库存 -->
+    <item name="id_detail" type="id"/>
+    <!-- 性别 -->
+    <item name="id_status" type="id"/>
+    <!-- 状态 -->
+    <item name="id_thumb" type="id"/>
+    <!-- 缩略图 -->
+    <item name="id_trans_fee" type="id"/>
+    <!-- 邮费价格 -->
+    <item name="id_bonus" type="id"/>
+    <!-- 积分 -->
+    <item name="id_price" type="id"/>
+    <!-- 价格(原价) -->
+    <item name="id_total_price" type="id"/>
+    <!-- 价格(总价,商品总价,全部的总价,不包含邮费) -->
+    <item name="id_single_total_price" type="id"/>
+    <!-- 价格(总价,商品总价,单品的总价,不包含邮费) -->
+    <item name="id_disprice" type="id"/>
+    <!-- 价格(优惠价) -->
+    <item name="id_real_price" type="id"/>
+    <!-- 价格(实付价,一般来说是总价的) id_total_price + id_trans_fee -->
+    <item name="id_image" type="id"/>
+    <!-- 大图 -->
+    <item name="id_sub_title" type="id"/>
+    <!-- 副标题 -->
+    <item name="id_title" type="id"/>
+    <!-- 标题 -->
+    <item name="id_info" type="id"/>
+    <!-- 说明 -->
+    <item name="id_default" type="id"/>
+    <!-- 默认 -->
+    <item name="id_idcode" type="id"/>
+    <item name="id_street" type="id"/>
+    <!-- 手机 -->
+    <item name="id_barcode" type="id"/>
+    <!-- 条形码 -->
+    <item name="id_qrcode" type="id"/>
+    <!-- 二维码 -->
+
+
+    <!-- 时间 -->
+    <item name="id_left" type="id"/>
+    <!-- 剩余时间 -->
+    <item name="id_date" type="id"/>
+    <!-- 日期 -->
+    <item name="id_time" type="id"/>
+    <!-- 时间 -->
+    <item name="id_month" type="id"/>
+    <!-- 月份 -->
+    <item name="id_expire" type="id"/>
+    <!-- 过期时间 -->
+
+    <item name="main_button" type="id"></item>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <!-- end zxing -->
+    <!-- 改版 -->
+    <item name="main_leifeng" type="id"></item>
+    <item name="main_selling" type="id"></item>
+    <item name="btn_travel" type="id"></item>
+    <item name="btn_bus" type="id"></item>
+    <item name="btn_store_query" type="id"></item>
+    <item name="main_query" type="id"></item>
+    <item name="pane_exam_query" type="id"></item>
+    <item name="pane_store_query" type="id"></item>
+    <item name="pane_question" type="id"></item>
+    <item name="travel_zca" type="id"></item>
+    <item name="my_order" type="id"></item>
+    <item name="my_activity" type="id"></item>
+    <item name="setting" type="id"></item>
+    <item name="my_us" type="id"></item>
+    <item name="travel_food_img" type="id"></item>
+    <item name="travel_food_title" type="id"></item>
+    <item name="travel_food_intruduce" type="id"></item>
+    <item name="travel_recommand" type="id"></item>
+    <item name="rating" type="id"></item>
+    <item name="btn_instru" type="id"></item>
+    <item name="container_fragment" type="id"></item>
+    <item name="checkbox" type="id"></item>
+    <item name="stock" type="id"></item>
+    <item name="price" type="id"></item>
+    <item name="recharge_tianyu" type="id"></item>
+    <item name="recharge_dudu" type="id"></item>
+    <item name="deliver" type="id"></item>
+    <item name="deliver_code" type="id"></item>
+    <item name="check_container" type="id"></item>
+    <item name="get_check_num" type="id"></item>
+    <item name="input_check_container" type="id"></item>
+    <item name="check_num" type="id"></item>
+    <item name="password_container" type="id"></item>
+    <item name="tools" type="id"></item>
+    <item name="order_refund" type="id"/>
+    <item name="refund_num" type="id"/>
+    <item name="text6" type="id"/>
+    <item name="faild_text" type="id"/>
+    <item name="success_text" type="id"/>
+    <item name="tip" type="id"/>
+    <item name="tip1" type="id"/>
+    <item name="tip2" type="id"/>
+    <item name="tip3" type="id"/>
+    <item name="go_order" type="id"/>
+    <item name="s_ali_pay" type="id"/>
+    <item name="s_weixin_pay" type="id"/>
+    <item name="s_ecard_pay" type="id"/>
+    <item name="s_union_pay" type="id"/>
+    <item name="btn_pay" type="id"/>
+    <item name="address_def" type="id"/>
+    <item name="order_pay" type="id"/>
+    <item name="order_confirm" type="id"/>
+    <item name="s_no_address" type="id"/>
+    <item name="s_contact" type="id"/>
+    <item name="text1" type="id"/>
+    <item name="login_container" type="id"/>
+    <item name="text2" type="id"/>
+    <item name="text3" type="id"/>
+    <item name="text4" type="id"/>
+    <item name="text5" type="id"/>
+    <item name="button" type="id"/>
+    <item name="titlebar" type="id"/>
+    <item name="radio_group1" type="id"/>
+    <item name="radio_no_precharge" type="id"/>
+    <item name="radio_precharge_10" type="id"/>
+    <item name="radio_precharge_20" type="id"/>
+    <item name="radio_precharge_30" type="id"/>
+    <item name="radio_group2" type="id"/>
+    <item name="radio_precharge_50" type="id"/>
+    <item name="radio_precharge_100" type="id"/>
+    <item name="radio_precharge_150" type="id"/>
+    <item name="radio_precharge_200" type="id"/>
+    <item name="bg_container" type="id"/>
+    <item name="btn_container" type="id"/>
+    <item name="s_cart_collection" type="id"/>
+    <item name="s_address" type="id"/>
+    <item name="id_collection" type="id"/>
+    <item name="id_add_cart" type="id"/>
+    <item name="content" type="id"/>
+    <item name="total_pay_price" type="id"/>
+    <item name="formcustomspinner_list" type="id"/>
+    <item name="label" type="id"/>
+    <item name="go_shopping" type="id"/>
+    <item name="btn_delete" type="id"/>
+    <item name="real_price" type="id"/>
+    <item name="s_pay_btn" type="id"/>
+    <item name="date" type="id"/>
+    <item name="deal_id" type="id"/>
+    <item name="order_id" type="id"/>
+    <item name="s_remark" type="id"/>
+    <item name="count" type="id"/>
+    <item name="parent_container" type="id"/>
+    <item name="add" type="id"/>
+    <item name="s_order_state" type="id"/>
+    <item name="num" type="id"/>
+    <item name="sub" type="id"/>
+    <item name="num_edit" type="id"/>
+    <item name="pre_charge" type="id"/>
+    <item name="s_card_img" type="id"/>
+    <item name="s_card_select" type="id"/>
+    <item name="unit_price" type="id"/>
+    <item name="done_num" type="id"/>
+    <item name="book_num" type="id"/>
+    <item name="wait_for_recieve_num" type="id"/>
+    <item name="wait_for_post_num" type="id"/>
+    <item name="wait_for_pay" type="id"/>
+    <item name="wait_for_pay_num" type="id"/>
+    <item name="img" type="id"/>
+    <item name="head_img" type="id"/>
+    <item name="text_birth" type="id"/>
+    <item name="btn_student" type="id"/>
+    <item name="goods_count" type="id"/>
+    <item name="total_price" type="id"/>
+    <item name="intro" type="id"/>
+    <item name="order_before" type="id"></item>
+    <item name="order_state" type="id"></item>
+    <item name="logout" type="id"></item>
+    <item name="textViewName" type="id"/>
+    <item name="textViewPcode" type="id"/>
+    <item name="spinner1" type="id"/>
+    <item name="spinner2" type="id"/>
+    <item name="spinner3" type="id"/>
+    <item name="city_select" type="id"/>
+    <item name="detail_addr" type="id"/>
+    <item name="post_code" type="id"/>
+    <item name="save" type="id"/>
+    <item name="def_addr" type="id"></item>
+    <item name="senior_name" type="id"/>
+    <item name="senior_id_card" type="id"/>
+    <item name="senior_id_gender" type="id"/>
+    <item name="senior_submit" type="id"/>
+    <item name="senior_idcard_img" type="id"/>
+    <item name="info_container" type="id"/>
+
+    <!-- 卡片 -->
+    <item name="card_image" type="id"/>
+    <item name="card_title" type="id"/>
+    <item name="car_localPhotos" type="id"/>
+    <item name="card_takePhotos" type="id"/>
+    <item name="card_carddetail_image" type="id"/>
+    <item name="card_price_text" type="id"/>
+    <item name="card_cardtype" type="id"/>
+    <item name="card_detail_introduce" type="id"/>
+    <item name="card_diy_onlocalimage" type="id"/>
+    <item name="card_diy_onlineimage" type="id"/>
+    <item name="card_diy_time" type="id"/>
+    <item name="card_diy_edit" type="id"/>
+    <item name="card_diy_delete" type="id"/>
+    <item name="card_diy_diyowner" type="id"/>
+    <item name="card_diy_diyprice" type="id"/>
+    <item name="card_diy_diyname" type="id"/>
+    <item name="card_diy_preview_image" type="id"/>
+    <item name="card_diy_onlocalimage_add" type="id"/>
+    <item name="card_user_to_know" type="id"/>
+    <item name="card_buy_member" type="id"/>
+    <item name="card_diy_changepicture" type="id"/>
+    <item name="card_diy_preview" type="id"/>
+    <item name="card_diy_submit" type="id"/>
+    <item name="card_diy_takepicture" type="id"/>
+    <item name="card_diy_selectpicture" type="id"/>
+    <item name="card_diy_page_front" type="id"/>
+    <item name="card_diy_page_background" type="id"/>
+    <item name="card_diy_background_gallery" type="id"/>
+    <item name="card_diy_background_imageview" type="id"/>
+    <item name="card_diy_submit_pay" type="id"/>
+    <item name="card_diy_price_text" type="id"/>
+    <item name="card_diy_onlinelimage" type="id"/>
+    <item name="diy_online_grid_view" type="id"/>
+    <item name="card_diy_add_shop_car" type="id"/>
+    <item name="card_diy_close" type="id"/>
+    <item name="card_carddetail_bg_image" type="id"/>
+    <item name="card_pages_detail" type="id"/>
+    <item name="card_carddetail_front_image" type="id"/>
+    <item name="diy_grid_view" type="id"/>
+    <item name="card_detail_view1" type="id"/>
+    <item name="card_detail_view2" type="id"/>
+    <item name="diy_work_name" type="id"/>
+    <item name="diy_work_author" type="id"/>
+    <item name="diy_work_date" type="id"/>
+    <item name="diy_detail_view1" type="id"/>
+    <item name="diy_detail_view2" type="id"/>
+    <item name="diy_view_pager" type="id"/>
+    <item name="diy_diydetail_bg_image" type="id"/>
+    <item name="diy_online_thumb_pages" type="id"/>
+    <item name="diy_filter_preview" type="id"/>
+    <item name="diy_filter_filter" type="id"/>
+    <item name="diy_filter_photo" type="id"/>
+    <item name="diy_filter_changePhotoLinearLayout" type="id"/>
+    <item name="diy_onlocal_title" type="id"/>
+    <item name="diy_online_title" type="id"/>
+    <item name="my_diy_online_grid_view" type="id"/>
+    <item name="card_my_diy_posefree" type="id"/>
+    <item name="card_my_diy_onlineimage" type="id"/>
+    <item name="card_my_diy_date_text" type="id"/>
+    <item name="diy_preview_viewpager" type="id"/>
+    <item name="front_page" type="id"/>
+    <item name="back_page" type="id"/>
+    <item name="diy_back_pages" type="id"/>
+    <item name="diy_front_pages" type="id"/>
+    <item name="my_collection" type="id"/>
+    <item name="my_diy" type="id"/>
+    <item name="all_order_list" type="id"/>
+    <item name="order_unpaied" type="id"/>
+    <item name="order_undispatched" type="id"/>
+    <item name="order_unfetched" type="id"/>
+    <item name="order_book" type="id"/>
+    <item name="order_back" type="id"/>
+    <item name="name" type="id"/>
+    <item name="phone" type="id"/>
+    <item name="edit" type="id"/>
+    <item name="delete" type="id"/>
+    <item name="username" type="id"/>
+    <item name="pwd" type="id"/>
+    <item name="save_psd" type="id"/>
+    <item name="btn_login" type="id"/>
+    <item name="ecard_unbind" type="id"></item>
+    <item name="ecard_edit" type="id"></item>
+    <item name="ecard_member" type="id"></item>
+    <item name="ecard_scan" type="id"></item>
+    <item name="bind_by_scan" type="id"/>
+    <item name="item_container" type="id"/>
+    <item name="travel_nonstop_start_time" type="id"></item>
+    <item name="travel_nonstop_station" type="id"></item>
+    <item name="type_yi" type="id"></item>
+    <item name="type_shi" type="id"></item>
+    <item name="type_zhu" type="id"></item>
+    <item name="type_xing" type="id"></item>
+    <item name="type_gou" type="id"></item>
+    <item name="type_yu" type="id"></item>
+    <item name="type_all" type="id"></item>
+    <item name="type_zhoubian" type="id"></item>
+    <item name="search_title" type="id"></item>
+    <item name="current_search" type="id"></item>
+    <item name="title_search" type="id"></item>
+    <item name="travel_loading" type="id"></item>
+    <item name="travel_food_other" type="id"></item>
+    <item name="travel_scenic_info" type="id"></item>
+    <item name="travel_food_around" type="id"></item>
+    <item name="txt_free_register" type="id"></item>
+    <item name="title" type="id"></item>
+    <item name="distance" type="id"></item>
+    <item name="address" type="id"></item>
+    <item name="map" type="id"></item>
+    <item name="more" type="id"></item>
+    <item name="no_stop" type="id"></item>
+    <item name="btn_add" type="id"></item>
+    <item name="head_view" type="id"></item>
+
+    <!-- 旅行 -->
+    <item name="travel_scence" type="id"/>
+    <item name="travel_food" type="id"/>
+    <item name="travel_traffic" type="id"/>
+    <item name="travel_mine" type="id"/>
+    <item name="travel_service" type="id"/>
+    <item name="travel_food_menu_btn" type="id"/>
+    <item name="travel_food_menu_food_btn" type="id"/>
+    <item name="travel_switch_btn" type="id"/>
+    <item name="travel_user_info" type="id"/>
+    <item name="travel_btn_food" type="id"/>
+    <item name="travel_btn_secnery" type="id"/>
+    <item name="travel_btn_bus" type="id"/>
+    <item name="travel_food_menu_distance_btn" type="id"/>
+    <item name="t_food_type1" type="id"/>
+    <item name="t_food_type2" type="id"/>
+    <item name="t_food_type3" type="id"/>
+    <item name="f_food_nearby" type="id"/>
+    <item name="travel_user_login" type="id"/>
+    <item name="travel_phone" type="id"/>
+    <item name="travel_secnery" type="id"/>
+    <item name="bottom" type="id"/>
+    <item name="center_base1" type="id"/>
+    <item name="center_base" type="id"/>
+    <item name="view_center" type="id"/>
+    <item name="view_head" type="id"/>
+    <item name="base_view1" type="id"/>
+    <item name="base_view" type="id"/>
+    <item name="view_bottom" type="id"/>
+    <item name="view_header" type="id"/>
+    <item name="btn_group" type="id"/>
+    <item name="bottom_container" type="id"/>
+
+    <!-- Messages IDs -->
+    <item name="map_rotate" type="id"/>
+    <item name="map_line" type="id"/>
+    <item name="map_position" type="id"/>
+    <item name="map_info_sex" type="id"/>
+    <item name="map_info_name" type="id"/>
+    <item name="map_info_detail" type="id"/>
+    <item name="map_info_action" type="id"/>
+    <item name="map_progress_h" type="id"/>
+    <item name="map_loading_head" type="id"/>
+    <item name="map_loading_info" type="id"/>
+    <item name="map_loading_progress" type="id"/>
+    <item name="map_info_select" type="id"/>
+    <item name="map_info" type="id"/>
+    <item name="map_poi_name" type="id"/>
+
+    <!--
+    <item name="map_me" type="id"/>
+    <item name="map_other" type="id"/>
+    <item name="map_chat" type="id"/>
+    <item name="map_game" type="id"/>
+    <item name="map_exit_game" type="id"/>
+    <item name="map_cancel_wait" type="id"/>
+    <item name="map_cancel_game" type="id"/>
+    <item name="map_help" type="id"/>
+    <item name="map_wait" type="id"/>
+
+
+
+
+
+    -->
+
+    <item name="real_data" type="id"></item>
+    <item name="map_container" type="id"/>
+    <item name="map_view" type="id"/>
+    <item name="map_filter" type="id"/>
+    <item name="bg_high" type="id"/>
+    <item name="bg_normal" type="id"/>
+
+    <!-- 分享 -->
+    <item name="share_title" type="id"/>
+    <item name="share_pecent" type="id"/>
+    <item name="share_value" type="id"/>
+    <item name="share_icon" type="id"/>
+    <item name="share_container" type="id"/>
+    <item name="share_image" type="id"/>
+    <item name="dialog_title" type="id"/>
+    <item name="dialog_content" type="id"/>
+    <item name="dialog_buttons" type="id"/>
+    <item name="coupon_img_group" type="id"/>
+    <item name="buy" type="id"/>
+    <item name="charge" type="id"/>
+    <item name="edit_view" type="id"/>
+    <item name="lost_text" type="id"/>
+    <item name="lost_card_publish" type="id"/>
+    <item name="lost_card_card" type="id"/>
+    <item name="sex_secret" type="id"/>
+    <item name="sex_man" type="id"/>
+    <item name="sex_woman" type="id"/>
+    <item name="push_title" type="id"/>
+    <item name="push_description" type="id"/>
+    <item name="push_time" type="id"/>
+
+    <!-- 拾卡 -->
+    <item name="pick_card_id" type="id"/>
+    <!-- 卡号 -->
+    <item name="pick_card_img" type="id"/>
+    <!-- 卡照片 -->
+    <!-- <item name="pick_card_addr" type="id"/> -->
+    <!-- 拾取地址 -->
+    <item name="pick_card_phone" type="id"/>
+    <!-- 联系电话 -->
+    <item name="pick_card_time" type="id"/>
+    <!-- 拾卡时间 -->
+    <item name="exam_tip" type="id"/>
+
+    <!-- 丢卡 -->
+    <item name="lost_card_id" type="id"/>
+    <!-- 卡号 -->
+    <item name="lost_card_info" type="id"/>
+    <!-- 信息 -->
+    <item name="lost_card_phone" type="id"/>
+    <!-- 电话 -->
+    <item name="lost_card_img" type="id"/>
+    <!-- 图片 -->
+    <item name="lost_card_addr" type="id"/>
+    <!-- 地点 -->
+    <item name="lost_card_time" type="id"/>
+    <!-- 时间 -->
+
+    <!-- 打电话 -->
+    <item name="make_call" type="id"/>
+
+    <!-- 年审 -->
+    <item name="exam_card_id" type="id"/>
+
+    <!-- e通卡信息查询 -->
+
+    <item name="card_value" type="id"/>
+    <item name="card_time" type="id"/>
+    <item name="card_addr" type="id"/>
+    <item name="ecard_info_service" type="id"/>
+    <item name="ecard_info_exam" type="id"/>
+    <item name="ecard_info_card" type="id"/>
+    <item name="ecard_info_my_card" type="id"/>
+    <item name="ecard_info_consume" type="id"/>
+    <item name="ecard_info_recharge" type="id"/>
+    <item name="ecard_info_purch" type="id"/>
+    <item name="baidu_map_view" type="id"/>
+    <item name="first_shop_info" type="id"/>
+    <item name="adv_icon_group" type="id"/>
+    <item name="tab_1" type="id"/>
+    <item name="tab_2" type="id"/>
+    <item name="tab_3" type="id"/>
+    <item name="menu_config" type="id"/>
+    <item name="right_menu_grid" type="id"/>
+    <item name="life_i_1" type="id"/>
+    <item name="life_i_2" type="id"/>
+    <!-- 美食达人 -->
+    <item name="food_young" type="id"/>
+    <item name="food_everyday" type="id"/>
+
+    <!-- 养生益气 -->
+    <item name="life_name" type="id"/>
+    <item name="life_size" type="id"/>
+    <item name="life_price" type="id"/>
+    <item name="life_purch" type="id"/>
+    <item name="life_s1" type="id"/>
+    <item name="life_s2" type="id"/>
+    <item name="life_s3" type="id"/>
+    <item name="life_s4" type="id"/>
+
+    <!-- 电影 -->
+    <!--
+    <item name="movie_director" type="id"/>
+    <item name="movie_actor" type="id"/>
+    <item name="movie_publish" type="id"/>
+    <item name="movie_date" type="id"/>
+    <item name="movie_type" type="id"/>
+    <item name="movie_len" type="id"/>
+    <item name="movie_intro" type="id"/>
+    <item name="movie_img" type="id"/>
+
+
+
+
+
+    -->
+    <!-- ShopIem -->
+    <item name="shop_btn_all_shops" type="id"/>
+    <item name="shop_all_shops_text" type="id"/>
+    <item name="shop_info" type="id"/>
+    <item name="shop_phone" type="id"/>
+    <item name="shop_addr" type="id"/>
+    <item name="shop_name" type="id"/>
+    <item name="shop_distance" type="id"/>
+
+    <!-- 我的奖品 -->
+    <item name="my_lottery_etime" type="id"/>
+    <!-- 设置 -->
+    <item name="setting_version" type="id"/>
+    <item name="setting_phone" type="id"/>
+    <item name="setting_push" type="id"/>
+    <item name="setting_cache" type="id"/>
+    <item name="setting_update" type="id"/>
+    <item name="setting_feedback" type="id"/>
+    <item name="setting_concat" type="id"/>
+    <item name="setting_help" type="id"/>
+    <item name="setting_qr" type="id"/>
+
+    <!-- 反馈 -->
+    <item name="feedback_content" type="id"/>
+    <item name="feedback_by" type="id"/>
+    <!-- ========== -->
+
+    <item name="header_image" type="id"/>
+    <item name="bottom_img" type="id"/>
+    <item name="splash_adv" type="id"/>
+    <item name="icon" type="id"/>
+    <item name="retry" type="id"/>
+    <item name="arrow" type="id"/>
+    <item name="item_icon" type="id"/>
+    <item name="toggle_button" type="id"/>
+    <item name="toggle_button_2" type="id"/>
+
+    <!-- 兜兜公交 -->
+    <item name="bus_download" type="id"/>
+    <item name="bus_progress" type="id"/>
+    <item name="bus_icon" type="id"/>
+    <item name="bus_intro" type="id"/>
+
+    <!-- WaitingButton -->
+    <item name="waiting_btn_label" type="id"/>
+    <item name="waiting_progress" type="id"/>
+    <item name="waiting_bg_view" type="id"/>
+    <!--  -->
+    <item name="selected_view" type="id"/>
+    <item name="update_password" type="id"/>
+
+    <!-- 商家 -->
+    <item name="business_show_more_img" type="id"/>
+    <item name="business_images" type="id"/>
+    <item name="business_detail" type="id"/>
+    <item name="business_image" type="id"/>
+    <item name="business_title" type="id"/>
+    <item name="business_coupon_group" type="id"/>
+    <item name="business_coupon_item0" type="id"/>
+    <item name="business_coupon_item1" type="id"/>
+    <item name="business_coupon_item2" type="id"/>
+    <item name="business_img0" type="id"/>
+    <item name="business_img1" type="id"/>
+    <item name="business_img2" type="id"/>
+    <item name="business_coupon_list" type="id"/>
+    <item name="business_addr" type="id"/>
+    <item name="business_phone" type="id"/>
+    <item name="business_btn_phone" type="id"/>
+    <item name="business_btn_address" type="id"/>
+    <item name="business_btn_route" type="id"/>
+
+    <!-- End -->
+
+
+    <!-- 个人中心 -->
+    <item name="personal_bind" type="id"/>
+    <item name="personal_account" type="id"/>
+    <item name="personal_qrimage" type="id"/>
+    <item name="personal_exit" type="id"/>
+    <item name="personal_update_password" type="id"/>
+    <!-- 优惠券 -->
+    <item name="coupon_img" type="id"/>
+    <item name="coupon_title" type="id"/>
+    <item name="coupon_intro" type="id"/>
+    <item name="coupon_purch" type="id"/>
+    <item name="coupon_price" type="id"/>
+    <item name="coupon_discount" type="id"/>
+    <item name="coupon_img_container" type="id"/>
+    <item name="coupon_bottom_pane" type="id"/>
+    <item name="coupon_bottom_pane_mine" type="id"/>
+    <item name="coupon_fetch" type="id"/>
+    <item name="coupon_tip" type="id"/>
+    <item name="coupon_verify_text" type="id"/>
+    <item name="coupon_period_of_validity" type="id"/>
+    <item name="coupon_used_count" type="id"/>
+    <item name="coupon_lifttime_text" type="id"/>
+    <!-- 领券 -->
+    <item name="coupon_send" type="id"/>
+    <!-- 送礼 -->
+    <item name="coupon_use" type="id"/>
+    <!-- 使用 -->
+
+    <item name="login_baidu" type="id"/>
+    <item name="login_qq" type="id"/>
+    <item name="login_renren" type="id"/>
+    <item name="login_kaixin" type="id"/>
+    <item name="login_sina" type="id"/>
+
+    <!-- 登录/ -->
+    <item name="login_btn" type="id"/>
+    <item name="register_btn" type="id"/>
+    <item name="btn_skip" type="id"/>
+    <item name="btn_finish_register" type="id"/>
+    <item name="password" type="id"/>
+    <item name="register" type="id"/>
+    <item name="next_step" type="id"/>
+    <item name="txt_ecard" type="id"/>
+    <item name="register_step1" type="id"/>
+    <item name="register_step2" type="id"/>
+    <item name="register_step3" type="id"/>
+    <item name="txt_phone" type="id"/>
+    <item name="skip" type="id"/>
+    <item name="fetch_phone_verify" type="id"/>
+    <item name="txt_phone_verify" type="id"/>
+    <item name="finish" type="id"/>
+    <item name="bind_ecard" type="id"/>
+    <item name="bind_normal_card" type="id"/>
+    <item name="bind_ext_card" type="id"/>
+    <item name="card_number" type="id"/>
+    <!-- End -->
+    <item name="qr_image" type="id"/>
+    <item name="qr_code" type="id"/>
+    <item name="qr_view" type="id"/>
+    <!-- TabPaneView -->
+
+
+    <!-- End -->
+
+
+    <!-- news -->
+    <item name="news_main_title" type="id"/>
+    <item name="news_sub_title" type="id"/>
+    <item name="news_img" type="id"/>
+    <item name="news_head_view" type="id"/>
+    <item name="news_web_view" type="id"/>
+    <item name="news_progress_bar" type="id"/>
+    <!-- End -->
+
+
+    <!-- 易通卡查询 -->
+    <item name="ecard_btn_remark" type="id"/>
+    <item name="ecard_info_title" type="id"/>
+    <item name="ecard_card_number" type="id"/>
+    <item name="ecard_card_create" type="id"/>
+    <item name="ecard_card_type" type="id"/>
+    <item name="ecard_last_date" type="id"/>
+    <item name="ecard_card_left" type="id"/>
+    <item name="ecard_item_shopname" type="id"/>
+    <item name="ecard_item_date" type="id"/>
+    <item name="ecard_item_value" type="id"/>
+    <item name="ecard_detail_list" type="id"/>
+    <item name="ecard_item_type" type="id"/>
+    <!-- End -->
+
+    <item name="good_card_info" type="id"/>
+    <item name="good_card_query" type="id"/>
+    <item name="good_card_return" type="id"/>
+
+    <!-- 绑定e通卡 -->
+    <item name="btn_bind_ecard" type="id"/>
+    <item name="txt_bind_ecard" type="id"/>
+    <item name="txt_ecard_remark" type="id"/>
+    <!-- End -->
+
+
+    <!-- 赠送礼物 -->
+    <item name="gift_business_logo" type="id"/>
+    <item name="gift_img" type="id"/>
+    <item name="gift_to" type="id"/>
+    <item name="gift_word" type="id"/>
+    <item name="gift_password" type="id"/>
+    <item name="gift_send" type="id"/>
+    <item name="gift_from" type="id"/>
+    <item name="gift_title" type="id"/>
+    <item name="gift_time" type="id"/>
+
+    <!-- 收藏 -->
+    <item name="toggle_collection" type="id"/>
+    <item name="ic_add_collection" type="id"/>
+    <item name="ic_cancel_collection" type="id"/>
+    <!-- End -->
+
+
+    <!-- End -->
+
+    <item name="nfc_query" type="id"/>
+    <!-- 主菜单 -->
+
+    <item name="main_recharge" type="id"/>
+    <item name="main_coupon" type="id"/>
+    <item name="main_business" type="id"/>
+    <item name="main_news" type="id"/>
+    <item name="main_login" type="id"/>
+    <item name="main_collection" type="id"/>
+    <item name="main_my_ecard" type="id"/>
+    <item name="main_lottery" type="id"/>
+    <item name="main_shopping" type="id"/>
+    <item name="main_life" type="id"/>
+    <item name="main_young" type="id"/>
+    <item name="main_gift" type="id"/>
+    <item name="main_account" type="id"/>
+    <item name="main_building" type="id"/>
+    <item name="main_travel" type="id"/>
+    <item name="main_adv" type="id"/>
+    <item name="main_bus" type="id"/>
+    <item name="main_setting" type="id"/>
+    <item name="main_etravel" type="id"/>
+    <item name="my_coupon" type="id"/>
+    <item name="account_my_lottery" type="id"/>
+    <item name="account_my_gift" type="id"/>
+    <item name="account_my_message" type="id"/>
+    <item name="account_my_coupon" type="id"/>
+
+    <!-- <item name="account_scan" type="id"/> -->
+    <item name="account_setting" type="id"/>
+    <!-- End -->
+
+
+    <!-- 标题 -->
+
+
+    <!-- 全局 -->
+    <item name="error_message" type="id"/>
+    <!-- 错误信息 -->
+    <item name="adv_view" type="id"/>
+    <!-- 广告视图 -->
+    <!-- End -->
+
+
+    <!-- Map -->
+    <item name="map_location" type="id"/>
+    <item name="map_zoomin" type="id"/>
+    <item name="map_zoomout" type="id"/>
+    <item name="map_btn_type" type="id"/>
+    <item name="route_detail" type="id"/>
+    <item name="route_switch" type="id"/>
+    <item name="route_addr" type="id"/>
+    <item name="route_start" type="id"/>
+    <item name="route_end" type="id"/>
+    <item name="route_result" type="id"/>
+    <item name="route_type_car" type="id"/>
+    <item name="route_type_bus" type="id"/>
+    <item name="route_type_foot" type="id"/>
+    <item name="route_title" type="id"/>
+    <item name="route_time" type="id"/>
+    <item name="route_distance" type="id"/>
+    <item name="route_work_len" type="id"/>
+    <item name="route_prev" type="id"/>
+    <item name="route_next" type="id"/>
+    <item name="route_icon" type="id"/>
+    <!-- Map End -->
+
+    <item name="my_ecard_icon" type="id"/>
+    <item name="my_ecard_left" type="id"/>
+    <item name="my_ecard_id" type="id"/>
+    <item name="my_ecard_remark" type="id"/>
+    <item name="my_ecard_info" type="id"/>
+
+    <!-- 切换 -->
+    <item name="tab_pane_head_img" type="id"/>
+    <item name="tab_pane_head_text" type="id"/>
+
+    <!-- 我的优惠券详情 -->
+    <item name="mycoupon_bs_name" type="id"/>
+    <!-- 商家名称 -->
+    <item name="mycoupon_validate_date" type="id"/>
+    <!-- 有效期 -->
+    <item name="mycoupon_code" type="id"/>
+    <!-- 代码 -->
+    <item name="mycoupon_coupon" type="id"/>
+    <!-- 代码 -->
+    <item name="mycoupon_status" type="id"/>
+    <!-- 代码 -->
+    <item name="mycoupon_showqr" type="id"/>
+    <!-- 代码 -->
+    <!-- DM商家 -->
+    <item name="dmbs_title" type="id"/>
+    <!-- 商家名称 -->
+    <item name="dmbs_img" type="id"/>
+    <!-- 图片 -->
+
+    <item name="exam_user_name" type="id"/>
+    <item name="exam_card_type" type="id"/>
+    <item name="exam_expr" type="id"/>
+    <item name="exam_info" type="id"/>
+    <item name="select_local" type="id"/>
+    <item name="select_travel" type="id"/>
+
+    <!-- tree -->
+    <item name="menu_trigger_type" type="id"/>
+    <!-- 菜单触发器(种类) -->
+    <item name="menu_trigger_distance" type="id"/>
+    <!-- 菜单触发器(距离) -->
+    <item name="menu_bg" type="id"></item>
+    <item name="tree_item_arrow" type="id"/>
+    <item name="tree_item_text" type="id"/>
+    <item name="list_view_1" type="id"/>
+    <item name="list_view_2" type="id"/>
+    <item name="tree_menu" type="id"></item>
+
+
+    <item name="_root" type="id"/>
+
+    <!-- 实名信息 -->
+    <item name="jie" type="id"/>
+    <item name="def" type="id"></item>
+    <item name="postcode" type="id"/>
+
+    <!-- 控件 -->
+
+    <item name="pull_to_refresh_header_arrow" type="id"/>
+    <item name="pull_to_refresh_header_progressbar" type="id"/>
+    <item name="pull_to_refresh_header_time" type="id"/>
+    <item name="pull_to_refresh_header_hint_textview" type="id"/>
+    <item name="pull_to_refresh_last_update_time_text" type="id"/>
+    <item name="pull_to_refresh_header_content" type="id"/>
+    <item name="pull_to_refresh_header_text" type="id"/>
+    <item name="pull_to_load_footer_progressbar" type="id"/>
+    <item name="pull_to_load_footer_hint_textview" type="id"/>
+    <item name="pull_to_load_footer" type="id"/>
+    <item name="pull_to_load_footer_content" type="id"/>
+    <item name="_address_container" type="id"/>
+    <item name="_form_view" type="id"/>
+    <item name="_pay_icon" type="id"/>
+    <item name="_pay_title" type="id"/>
+
+    <!-- 自定义对话框 -->
+    <item name="cus_dialog_title" type="id"/>
+    <item name="cus_dialog_buttons_ok_cancel" type="id"/>
+    <item name="cus_dialog_buttons_ok" type="id"/>
+    <item name="cus_dialog_content" type="id"/>
+    <item name="cus_dialog_message" type="id"/>
+    <item name="editor_color_selector" type="id"/>
+    <item name="cus_cdc_content" type="id"/>
+
+    <!-- 常用 -->
+    <item name="_id_address" type="id"/>
+    <item name="_id_no_address" type="id"/>
+    <!-- 常用 -->
+    <item name="_id_cancel" type="id"/>
+    <!-- 自定义对话框标题 -->
+    <item name="_id_ok" type="id"/>
+    <!-- 用于选择的textView或者edittext -->
+    <item name="_select_hint" type="id"/>
+    <!-- 自定义对话框标题 -->
+
+
+    <!-- tab指示器 -->
+    <item name="_tab_indicator" type="id"/>
+    <!-- ViewPager指示器 -->
+    <item name="_view_pager_indicator" type="id"/>
+
+    <!-- 常用动作id -->
+    <item name="_id_refresh" type="id"/>
+    <item name="_id_arrow" type="id"></item>
+    <item name="_id_share" type="id"/>
+    <item name="_tab_container" type="id"/>
+    <item name="_adv_view" type="id"/>
+
+    <!-- 选择 -->
+    <item name="_select" type="id"/>
+    <item name="_select_from_album" type="id"/>
+    <item name="_select_from_capture" type="id"/>
+    <!-- 进度条、网络错误、进度、没有结果 -->
+    <item name="_load_state_loading" type="id"/>
+    <item name="_load_state_error" type="id"/>
+    <item name="_load_state_no_result" type="id"/>
+    <item name="_progress_text" type="id"/>
+    <item name="_area_picker" type="id"/>
+    <!-- 视图属性 -->
+    <item name="_container" type="id"/>
+    <item name="_bottom_bar" type="id"/>
+    <item name="_top_bar" type="id"/>
+    <!-- 标题栏 -->
+    <item name="_title_left" type="id"/>
+    <item name="_title_right" type="id"/>
+    <item name="_title_text" type="id"/>
+    <item name="_title_bar" type="id"/>
+    <!-- 弹出菜单 -->
+    <item name="_popup_bg" type="id"></item>
+    <item name="_popup_menu" type="id"></item>
+    <item name="_list_view_left" type="id"/>
+    <!-- 常用控件id -->
+    <item name="_seek_bar" type="id"></item>
+    <item name="_loading_image_view" type="id"/>
+    <item name="_sub_text_view" type="id"/>
+    <item name="_text_view" type="id"/>
+    <item name="_scroll_view" type="id"/>
+    <item name="_radio_group" type="id"/>
+    <item name="_check_box" type="id"/>
+    <item name="_list_view" type="id"/>
+    <item name="_edit_text" type="id"/>
+    <item name="_grid_view" type="id"/>
+    <item name="_thumb_image_view" type="id"/>
+    <item name="_image_view" type="id"/>
+    <item name="_progress_bar" type="id"/>
+    <item name="_view_pager" type="id"/>
+    <item name="_adv_view_pager" type="id"/>
+    <item name="_web_view" type="id"/>
+    <item name="_action_sheet" type="id"/>
+    <item name="_gard" type="id"/>
+
+    <!-- tabpane tabhost -->
+    <item name="_id_tabs" type="id"/>
+
+    <!-- 导引图 -->
+    <item name="_tab_host" type="id"/>
+    <item name="_top_menu" type="id"/>
+    <item name="_indicator_view" type="id"/>
+
+    <!-- tabpane -->
+    <item name="_tab_group" type="id"/>
+    <item name="_tab_pane_content" type="id"/>
+    <item name="_tab_pane_view" type="id"/>
+    <item name="_tab_pane_header" type="id"/>
+    <item name="_tab_pane_pager" type="id"/>
+
+    <!-- 前一个、后一个 -->
+    <item name="_next" type="id"/>
+    <item name="_prev" type="id"/>
+
+    <!-- private -->
+    <item name="_action_sheet_cancel" type="id"/>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="xyc-8u-rPm" customClass="NewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xyc-8u-rPm" id="KZL-OG-zfn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jbf-T5-H6h" customClass="MyImageView">
+                        <rect key="frame" x="11" y="13" width="72" height="55"/>
+                        <color key="backgroundColor" red="0.85648148150000003" green="0.85648148150000003" blue="0.85648148150000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="0hh-aL-9hv"/>
+                            <constraint firstAttribute="height" constant="55" id="Qj4-dt-Pf5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="IMG"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李克强为工人将晋级" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghf-8b-l0A" userLabel="title">
+                        <rect key="frame" x="93" y="12" width="209" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.22205999493598938" green="0.22205334901809692" blue="0.22205713391304016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="CONTENT"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在中国工会第十六次全国代表大会上对经济形势进行了讲解" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTt-tq-Nff" userLabel="subtitle">
+                        <rect key="frame" x="93" y="33.5" width="209" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.47530508041381836" green="0.47120049595832825" blue="0.47129803895950317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="TITLE"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jbf-T5-H6h" firstAttribute="leading" secondItem="KZL-OG-zfn" secondAttribute="leadingMargin" constant="3" id="4Jy-CB-kYc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ghf-8b-l0A" secondAttribute="trailing" constant="10" id="4TA-Qe-Eaf"/>
+                    <constraint firstItem="BTt-tq-Nff" firstAttribute="leading" secondItem="jbf-T5-H6h" secondAttribute="trailing" constant="10" id="JOv-kS-Alc"/>
+                    <constraint firstItem="BTt-tq-Nff" firstAttribute="top" secondItem="ghf-8b-l0A" secondAttribute="bottom" constant="1" id="Uke-wB-ZNu"/>
+                    <constraint firstItem="ghf-8b-l0A" firstAttribute="leading" secondItem="jbf-T5-H6h" secondAttribute="trailing" constant="10" id="Xuk-R5-dmu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BTt-tq-Nff" secondAttribute="trailing" constant="10" id="efP-vX-Jb0"/>
+                    <constraint firstItem="jbf-T5-H6h" firstAttribute="top" secondItem="KZL-OG-zfn" secondAttribute="topMargin" constant="5" id="hn3-Ke-K3W"/>
+                    <constraint firstItem="ghf-8b-l0A" firstAttribute="top" secondItem="KZL-OG-zfn" secondAttribute="topMargin" constant="4" id="uRM-f7-kkH"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

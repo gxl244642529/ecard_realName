@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>react</key>
+	<string></string>
+	<key>servers_local</key>
+	<dict>
+		<key>tsp</key>
+		<string>https://110.80.22.108</string>
+		<key>tsp_port</key>
+		<string>8089</string>
+		<key>php</key>
+		<string>http://192.168.1.241</string>
+		<key>java</key>
+		<string>http://192.168.1.241:8091/api/</string>
+		<key>picc</key>
+		<string>http://120.55.115.222:8989</string>
+	</dict>
+	<key>back</key>
+	<string>ecardlibbundle.bundle/ic_back</string>
+	<key>amapkey</key>
+	<string>4efd91100423a6799ac63e80311e2554</string>
+	<key>userClass</key>
+	<string>ECardUserInfo</string>
+	<key>servers_test</key>
+	<dict>
+		<key>tsp_port</key>
+		<string>8089</string>
+		<key>tsp</key>
+		<string>https://110.80.22.108</string>
+		<key>picc</key>
+		<string>http://120.55.115.222:8989</string>
+		<key>java</key>
+		<string>http://110.80.22.108:28080/api/</string>
+		<key>php</key>
+		<string>http://110.80.22.108:8887</string>
+	</dict>
+	<key>servers</key>
+	<dict>
+		<key>tsp</key>
+		<string>http://218.5.80.17</string>
+		<key>tsp_port</key>
+		<string>2077</string>
+		<key>picc</key>
+		<string>http://www.xm95518.com:8989</string>
+		<key>java</key>
+		<string>http://218.5.80.17:28095/api/</string>
+		<key>php</key>
+		<string>http://218.5.80.17:8092</string>
+	</dict>
+	<key>colors</key>
+	<dict>
+		<key>recharge</key>
+		<string>47b000</string>
+		<key>consume</key>
+		<string>ff5c4b</string>
+		<key>tint</key>
+		<string>ff0000</string>
+		<key>itemHighlight</key>
+		<string>cccccc</string>
+	</dict>
+</dict>
+</plist>

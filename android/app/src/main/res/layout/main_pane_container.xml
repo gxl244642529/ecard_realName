@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.citywithincity.ecard.widget.PaneContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pane_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        layout="@layout/main_pane" />
+
+    <ImageView
+        android:id="@+id/pane_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+</com.citywithincity.ecard.widget.PaneContainerView>

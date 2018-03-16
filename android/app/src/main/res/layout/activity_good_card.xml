@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/base_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/oval_white_bg"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_leifeng_view" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dip" >
+
+        <LinearLayout
+            android:id="@+id/personal_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@id/good_card_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_rectangle_item_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_good_card_info"
+                    android:drawablePadding="15dp"
+                    android:gravity="center"
+                    android:text="信息登记"
+                    android:textColor="@color/_title_text_color" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="3dip"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:gravity="center"
+                        android:text="去登记"
+                        android:textColor="@color/_title_text_color" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/good_card_return"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/new_rectangle_item_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_good_card_return"
+                    android:drawablePadding="15dip"
+                    android:gravity="center"
+                    android:text="拾卡招领"
+                    android:textColor="@color/_title_text_color" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="3dip"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:gravity="center"
+                        android:text="去招领"
+                        android:textColor="@color/_title_text_color" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/good_card_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_rectangle_item_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_good_card_query"
+                    android:drawablePadding="15dip"
+                    android:gravity="center"
+                    android:text="信息查询"
+                    android:textColor="@color/_title_text_color" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="3dip"
+                        android:drawableRight="@drawable/ic_arrow"
+                        android:gravity="center"
+                        android:text="去查询"
+                        android:textColor="@color/_title_text_color" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@id/_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:gravity="center" />
+
+        <Button
+            android:id="@id/_id_ok"
+            style="@style/common_button"
+            android:text="卡丢了，我要寻找雷锋" />
+
+        <Button
+            android:id="@id/_id_cancel"
+            style="@style/common_button"
+            android:text="我丢失的卡已经找到了" />
+    </LinearLayout>
+
+</LinearLayout>

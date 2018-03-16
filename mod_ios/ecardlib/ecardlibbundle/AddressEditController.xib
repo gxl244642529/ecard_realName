@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressEditController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="ccM-Ti-6sz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9p-Hl-1uE" customClass="DMFormScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mqb-XB-lRv" customClass="DMFormView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jsu-9f-W2d" customClass="DMDetailView">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+                                    <subviews>
+                                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsW-as-7Ez" customClass="ECardAreaSelector">
+                                            <rect key="frame" x="0.0" y="5" width="375" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择地区" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y2n-zd-ypr">
+                                                    <rect key="frame" x="5" y="0.0" width="353" height="40"/>
+                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="kbb-my-hOf">
+                                                    <rect key="frame" x="358" y="14" width="7" height="12"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="y2n-zd-ypr" firstAttribute="leading" secondItem="MsW-as-7Ez" secondAttribute="leading" constant="5" id="46u-aZ-mue"/>
+                                                <constraint firstAttribute="bottom" secondItem="y2n-zd-ypr" secondAttribute="bottom" id="4ww-3w-nQr"/>
+                                                <constraint firstItem="y2n-zd-ypr" firstAttribute="top" secondItem="MsW-as-7Ez" secondAttribute="top" id="5aA-or-rvx"/>
+                                                <constraint firstAttribute="height" constant="40" id="Uiz-8U-7Wl"/>
+                                                <constraint firstItem="kbb-my-hOf" firstAttribute="centerY" secondItem="MsW-as-7Ez" secondAttribute="centerY" id="VLg-aH-Apl"/>
+                                                <constraint firstItem="kbb-my-hOf" firstAttribute="leading" secondItem="y2n-zd-ypr" secondAttribute="trailing" id="azW-Gx-eyt"/>
+                                                <constraint firstAttribute="trailing" secondItem="kbb-my-hOf" secondAttribute="trailing" constant="10" id="lFc-U2-AzY"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="shiId,shengId,quId,area,sheng,shi,qu"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDq-Ki-vOj">
+                                            <rect key="frame" x="0.0" y="50" width="375" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入详细地址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="43t-4z-zcX" customClass="DMFormTextField">
+                                                    <rect key="frame" x="5" y="5" width="365" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="required" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="jie"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="43t-4z-zcX" secondAttribute="bottom" constant="5" id="1Dp-0Y-ktw"/>
+                                                <constraint firstAttribute="height" constant="40" id="B3C-uA-Wse"/>
+                                                <constraint firstItem="43t-4z-zcX" firstAttribute="leading" secondItem="wDq-Ki-vOj" secondAttribute="leading" constant="5" id="BRw-ad-N0l"/>
+                                                <constraint firstItem="43t-4z-zcX" firstAttribute="top" secondItem="wDq-Ki-vOj" secondAttribute="top" constant="5" id="hMb-1J-PZl"/>
+                                                <constraint firstAttribute="trailing" secondItem="43t-4z-zcX" secondAttribute="trailing" constant="5" id="nX4-Rn-RIL"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6NV-of-5eL">
+                                            <rect key="frame" x="0.0" y="95" width="375" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入收货人姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6v-nh-JuJ" customClass="DMFormTextField">
+                                                    <rect key="frame" x="5" y="5" width="300" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="required" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="name"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="jL6-tD-5VK"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipq-rJ-76u">
+                                            <rect key="frame" x="0.0" y="140" width="375" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入收货人电话" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJR-Tr-BnY" customClass="DMFormTextField">
+                                                    <rect key="frame" x="8" y="5" width="300" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="required" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="phone"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="validate" value="phone"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="tS4-bv-24h"/>
+                                            </constraints>
+                                        </view>
+                                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-ss-iRu">
+                                            <rect key="frame" x="0.0" y="185" width="375" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮编" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oig-nT-1sA" customClass="DMFormTextField">
+                                                    <rect key="frame" x="5" y="5" width="300" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="required" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="postcode"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="validate" value="postCode"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="9dj-qU-79q"/>
+                                            </constraints>
+                                        </view>
+                                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxw-0z-HQn" customClass="DMCheckItem">
+                                            <rect key="frame" x="0.0" y="230" width="375" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rZ-M6-Xkb" customClass="DMFormCheck">
+                                                    <rect key="frame" x="5" y="9" width="16" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="s_ic_check_off.png">
+                                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" image="s_ic_check_on.png"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="def"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设为默认地址" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKs-gm-5sG">
+                                                    <rect key="frame" x="29" y="10" width="113" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="70d-wo-gR2"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="rxw-0z-HQn" firstAttribute="leading" secondItem="Jsu-9f-W2d" secondAttribute="leading" id="4EY-cn-poM"/>
+                                        <constraint firstItem="wDq-Ki-vOj" firstAttribute="top" secondItem="MsW-as-7Ez" secondAttribute="bottom" constant="5" id="5CK-gU-yOy"/>
+                                        <constraint firstAttribute="trailing" secondItem="wDq-Ki-vOj" secondAttribute="trailing" id="6jX-IN-5yC"/>
+                                        <constraint firstItem="ipq-rJ-76u" firstAttribute="top" secondItem="6NV-of-5eL" secondAttribute="bottom" constant="5" id="DqA-eF-SOZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="rxw-0z-HQn" secondAttribute="trailing" id="EWr-3H-a4s"/>
+                                        <constraint firstAttribute="trailing" secondItem="s9O-ss-iRu" secondAttribute="trailing" id="O0Y-I1-J2Q"/>
+                                        <constraint firstAttribute="trailing" secondItem="ipq-rJ-76u" secondAttribute="trailing" id="OKx-co-Ygt"/>
+                                        <constraint firstItem="6NV-of-5eL" firstAttribute="top" secondItem="wDq-Ki-vOj" secondAttribute="bottom" constant="5" id="Ogv-hQ-Dpy"/>
+                                        <constraint firstItem="s9O-ss-iRu" firstAttribute="leading" secondItem="Jsu-9f-W2d" secondAttribute="leading" id="VUZ-R3-DYf"/>
+                                        <constraint firstItem="MsW-as-7Ez" firstAttribute="top" secondItem="Jsu-9f-W2d" secondAttribute="top" constant="5" id="Wdg-uO-FA4"/>
+                                        <constraint firstItem="s9O-ss-iRu" firstAttribute="top" secondItem="ipq-rJ-76u" secondAttribute="bottom" constant="5" id="ZRp-7M-czJ"/>
+                                        <constraint firstItem="6NV-of-5eL" firstAttribute="leading" secondItem="Jsu-9f-W2d" secondAttribute="leading" id="cLi-Fq-Wuo"/>
+                                        <constraint firstItem="wDq-Ki-vOj" firstAttribute="leading" secondItem="Jsu-9f-W2d" secondAttribute="leading" id="gSF-yQ-vDV"/>
+                                        <constraint firstAttribute="trailing" secondItem="MsW-as-7Ez" secondAttribute="trailing" id="khM-ET-GUU"/>
+                                        <constraint firstItem="ipq-rJ-76u" firstAttribute="leading" secondItem="Jsu-9f-W2d" secondAttribute="leading" id="oiv-9I-FqT"/>
+                                        <constraint firstAttribute="bottom" secondItem="rxw-0z-HQn" secondAttribute="bottom" id="r8r-Lv-ybL"/>
+                                        <constraint firstItem="MsW-as-7Ez" firstAttribute="leading" secondItem="Jsu-9f-W2d" secondAttribute="leading" id="s4E-Dk-Bfu"/>
+                                        <constraint firstAttribute="trailing" secondItem="6NV-of-5eL" secondAttribute="trailing" id="sHb-lK-WI1"/>
+                                        <constraint firstItem="rxw-0z-HQn" firstAttribute="top" secondItem="s9O-ss-iRu" secondAttribute="bottom" constant="5" id="yXE-7V-tfr"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setValueOnInit" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="addressDetail"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPk-GE-opT" customClass="CommonButton">
+                                    <rect key="frame" x="10" y="275" width="355" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="7U5-bb-Ja6"/>
+                                    </constraints>
+                                    <state key="normal" title="保存">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="api" value="address/save"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="server">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Jsu-9f-W2d" secondAttribute="trailing" id="8JQ-j6-otc"/>
+                                <constraint firstItem="KPk-GE-opT" firstAttribute="top" secondItem="Jsu-9f-W2d" secondAttribute="bottom" constant="5" id="9D5-ET-7XZ"/>
+                                <constraint firstAttribute="bottom" secondItem="KPk-GE-opT" secondAttribute="bottom" constant="10" id="Mt4-w4-OUX"/>
+                                <constraint firstItem="Jsu-9f-W2d" firstAttribute="leading" secondItem="Mqb-XB-lRv" secondAttribute="leading" id="Qx2-N1-vX6"/>
+                                <constraint firstItem="Jsu-9f-W2d" firstAttribute="top" secondItem="Mqb-XB-lRv" secondAttribute="top" id="Rcw-nR-VnJ"/>
+                                <constraint firstItem="KPk-GE-opT" firstAttribute="leading" secondItem="Mqb-XB-lRv" secondAttribute="leading" constant="10" id="kUA-bh-Z4O"/>
+                                <constraint firstAttribute="trailing" secondItem="KPk-GE-opT" secondAttribute="trailing" constant="10" id="s03-dm-L6j"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="addressEdit"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Mqb-XB-lRv" secondAttribute="bottom" id="0F0-Lf-o8k"/>
+                        <constraint firstItem="Mqb-XB-lRv" firstAttribute="centerX" secondItem="A9p-Hl-1uE" secondAttribute="centerX" id="3OE-hs-4db"/>
+                        <constraint firstItem="Mqb-XB-lRv" firstAttribute="leading" secondItem="A9p-Hl-1uE" secondAttribute="leading" id="7nQ-Lb-7FG"/>
+                        <constraint firstItem="Mqb-XB-lRv" firstAttribute="top" secondItem="A9p-Hl-1uE" secondAttribute="top" id="aEf-ae-sXd"/>
+                        <constraint firstAttribute="trailing" secondItem="Mqb-XB-lRv" secondAttribute="trailing" id="z9b-bg-MMg"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="A9p-Hl-1uE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L3r-Us-DNf"/>
+                <constraint firstAttribute="trailing" secondItem="A9p-Hl-1uE" secondAttribute="trailing" id="Szx-hJ-Oey"/>
+                <constraint firstItem="A9p-Hl-1uE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="elE-7g-9NH"/>
+                <constraint firstAttribute="bottom" secondItem="A9p-Hl-1uE" secondAttribute="bottom" id="lWn-ha-258"/>
+            </constraints>
+            <point key="canvasLocation" x="212" y="218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow.png" width="7" height="12"/>
+        <image name="s_ic_check_off.png" width="16" height="16"/>
+        <image name="s_ic_check_on.png" width="16" height="16"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

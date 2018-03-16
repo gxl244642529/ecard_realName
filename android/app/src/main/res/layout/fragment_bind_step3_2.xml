@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.damai.widget.FormView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_bg_color"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+              android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:background="@android:color/white"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_card_id"
+                 android:textColor="@color/_title_text_color"
+                android:textSize="18sp" />
+
+            <com.damai.widget.FormEditText
+                android:id="@+id/cardId"
+                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入异形卡卡号"
+                 android:textColor="@color/_title_text_color"
+                android:imeOptions="actionNext"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/default_page_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/white"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_remark"
+                 android:textColor="@color/_title_text_color"
+                android:textSize="18sp" />
+
+            <com.damai.widget.FormEditText
+                android:id="@id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ems="10"
+                lib:required="false"
+                android:hint="@string/input_remark"
+                android:imeOptions="actionDone"
+                 android:textColor="@color/_title_text_color"
+                android:lines="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.damai.widget.SubmitButton
+        android:id="@id/btn_bind_ecard"
+        style="@style/common_button"
+        android:layout_marginTop="10dip"
+        android:text="绑定"
+        lib:api="ecard/bind"
+        lib:server="1" >
+
+        <requestFocus />
+    </com.damai.widget.SubmitButton>
+
+    
+
+</com.damai.widget.FormView>

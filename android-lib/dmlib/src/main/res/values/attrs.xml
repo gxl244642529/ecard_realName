@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="_PullToRefresh">
+        <attr name="ptrLoading" format="reference" />
+        <attr name="ptrError" format="reference" />
+        <attr name="ptrNoResult" format="reference" />
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+        <attr name="loading" format="reference" />
+        <attr name="error" format="reference" />
+        <attr name="no_result" format="reference" />
+        <attr name="list_type" format="reference" />
+        <attr name="header_view" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <!-- 广告 -->
+    <declare-styleable name="_adv">
+        <attr name="module" format="string" />
+        <attr name="delay" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!-- radio -->
+    <declare-styleable name="_radio">
+        <attr name="values" format="string" />
+        <attr name="radio_hint" format="string" />
+    </declare-styleable>
+
+    <!-- 选择 -->
+    <declare-styleable name="_select">
+        <attr name="options" format="string" />
+    </declare-styleable>
+
+    <!-- 省市区选择框 -->
+    <declare-styleable name="_address_picker">
+        <attr name="provinceId" format="integer" />
+        <attr name="cityId" format="integer" />
+        <attr name="areaId" format="integer" />
+        <attr name="fixProvinceId" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="_image_picker">
+        <attr name="image_picker_hint" format="string" />
+        <attr name="image_picker_quality" format="integer" />
+        <attr name="image_picker_width" format="integer" />
+        <attr name="image_picker_height" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="fraction" />
+        <attr name="layout_heightPercent" format="fraction" />
+        <attr name="layout_marginPercent" format="fraction" />
+        <attr name="layout_marginLeftPercent" format="fraction" />
+        <attr name="layout_marginTopPercent" format="fraction" />
+        <attr name="layout_marginRightPercent" format="fraction" />
+        <attr name="layout_marginBottomPercent" format="fraction" />
+        <attr name="layout_marginStartPercent" format="fraction" />
+        <attr name="layout_marginEndPercent" format="fraction" />
+    </declare-styleable>
+
+    <!-- 指示器 -->
+    <declare-styleable name="_indicator">
+        <attr name="indicator_view" format="reference" /> <!-- 表示里面的视图是什么,当选中setSelect -->
+        <attr name="indicator_padding" format="reference" />
+        <attr name="indicator_color" format="reference" /> <!-- 表示tab指示器的高亮颜色 -->
+        <attr name="indicator_size" format="reference" /> <!-- 大小 -->
+    </declare-styleable>
+    <declare-styleable name="_top_menu">
+        <attr name="menu_types" format="reference" /> <!-- int-array/ref -->
+    </declare-styleable>
+
+    <!-- PupupView属性 -->
+    <declare-styleable name="_title_bar">
+        <attr name="right_view" format="reference" />
+        <attr name="title_text" format="reference|string" />
+        <attr name="left_view" format="reference" />
+    </declare-styleable>
+
+    <!-- StateListView/ListView/MyListView/FixListView/AdvView -->
+    <declare-styleable name="_group_view">
+        <attr name="item_layout" format="reference" /> <!-- layout -->
+        <attr name="group_count" format="integer" /> <!-- tab数量 -->
+    </declare-styleable>
+    <declare-styleable name="_state_list">
+        <attr name="state_loading" format="reference" />
+        <attr name="state_error" format="reference" />
+        <attr name="state_no_result" format="reference" />
+        <attr name="cols" format="integer" />
+        <attr name="state_header_view" format="reference" />
+        <attr name="item_view" format="reference" />
+        <!-- 是否是横向的 -->
+        <attr name="is_horizontal" format="boolean" />
+        <attr name="choice_mode">
+            <enum name="none" value="0"></enum>
+            <enum name="single" value="1"></enum>
+            <enum name="multi" value="2"></enum>
+            <enum name="modal" value="3"></enum>
+        </attr>
+    </declare-styleable>
+    <!-- api视图设置 -->
+    <declare-styleable name="api">
+
+        <!-- 是否自动调用接口 -->
+        <attr name="auto" format="boolean" />
+        <!-- 是否支持分页 -->
+        <attr name="paged" format="boolean" />
+        <!-- 实体类 -->
+        <attr name="entity" format="string" />
+        <!-- api名称 -->
+        <attr name="api" format="string" />
+        <!-- 加密方式 -->
+        <attr name="crypt">
+            <enum name="none" value="0"></enum>
+            <enum name="upload" value="1"></enum>
+            <enum name="download" value="2"></enum>
+            <enum name="both" value="3"></enum>
+        </attr>
+
+        <!-- 类型 -->
+        <attr name="api_type">
+            <enum name="object" value="0"></enum>
+            <enum name="array" value="1"></enum>
+            <enum name="page" value="2"></enum>
+        </attr>
+
+        <!-- 是否开始就设置数据 -->
+        <attr name="init_set_data" format="boolean" />
+        <!-- 等待消息 -->
+        <attr name="waiting_message" format="string|reference" />
+        <!-- 是否支持刷新 -->
+        <attr name="refreshable" format="boolean" />
+        <!-- 名称，如表单元素名称等 -->
+        <attr name="name" format="string" />
+        <!-- 是否必须 -->
+        <attr name="required" format="boolean" />
+        <!-- 规则 -->
+        <attr name="rule" format="string" />
+        <!-- 需要提交的字段,以逗号隔开 -->
+        <attr name="submit_fields" format="string" />
+        <!-- cachePolicy    (noCache/timeLimit/offline/useCacheFirst/permanent -->
+        <attr name="cachePolicy">
+            <enum name="noCache" value="0"></enum>
+            <enum name="timeLimit" value="1"></enum>
+            <enum name="permanent" value="2"></enum>
+            <enum name="useCacheFirst" value="3"></enum>
+            <enum name="offline" value="4"></enum>
+        </attr>
+        <!-- 服务器端下标,使用哪个服务器 -->
+        <attr name="server" format="integer" />
+        <!-- 点击以后打开哪个activity -->
+        <attr name="target" format="string" />
+        <!-- 从listView传过来的数据，主键名称(id) -->
+        <attr name="dataKey" format="string" />
+        <!-- 调用详情api的时候，所需id的名称,如果没有，则与上面的dataKey一致 -->
+        <attr name="idKey" format="string" />
+        <!-- 是否保存表单数据 -->
+        <attr name="save" format="boolean" />
+        <!-- 过期时间，秒 -->
+        <attr name="expireTimeSec" format="integer" />
+    </declare-styleable>
+
+    <!-- tabview属性 -->
+    <declare-styleable name="_tab_host">
+        <attr name="tab_height" format="reference" />
+        <attr name="tab_views" format="reference" /> <!-- array -->
+        <attr name="tab_subs" format="reference" />
+        <!-- 直接使用字符串表示fragmetns，中间用逗号隔开 -->
+        <attr name="tab_fragments" format="string" />
+    </declare-styleable>
+
+</resources>

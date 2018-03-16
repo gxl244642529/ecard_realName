@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/new_rectangle_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓        名："
+                    android:textColor="@color/text_default_color"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@id/id_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="姓名"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/new_divider_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_rectangle_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号："
+                    android:textColor="@color/text_default_color"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@id/id_idcard_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请输入证件号码"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/new_divider_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_rectangle_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手  机  号："
+                    android:textColor="@color/text_default_color"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@id/id_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请输入手机号码"
+                        android:padding="10dp"
+                        android:inputType="phone"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/new_divider_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_rectangle_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="e  通卡号："
+                    android:textColor="@color/text_default_color"
+                    android:textSize="17sp" />
+
+                <com.citywithincity.ecard.widget.ECardSelectView
+                    android:id="@id/_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_round_rect"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/cardId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:enabled="false"
+                        android:hint="请输入要保障的e通卡号"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/_title_text_color"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:id="@id/_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/text_color_gray"
+                            android:visibility="invisible" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/btn_exam_more_bg"
+                            android:clickable="false"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/ic_select_ecard" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/new_divider_color" />
+                </com.citywithincity.ecard.widget.ECardSelectView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/travel_page_color" />
+
+            <com.citywithincity.ecard.ui.activity.exam.ExamUploadImageView
+                android:id="@id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/new_common_btn_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="拍照"
+                    android:textColor="@android:color/white" /> -->
+
+                    <ImageView
+                        android:contentDescription="@null"
+                        android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:clickable="false"
+                    	android:layout_margin="3dp"
+                    	android:background="@drawable/ic_take_photo" />
+
+                <FrameLayout
+                    android:id="@id/_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" >
+
+                    <!--
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/new_common_btn_bg"
+                    android:textColor="@android:color/white"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="拍照" />
+
+                    </RelativeLayout>
+                    -->
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:padding="3dp"
+                    android:text="请确保您的身份证号及e通卡号准确无误，并按样图标准拍照上传。拍照时请确保所有号码清晰可见，以免影响您日后索赔。"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="14sp" />
+
+                <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="将您的身份证正面和e通卡的正面放在一起进行拍照"
+                    android:drawableLeft="@drawable/ic_text_left_dot"
+                    android:drawablePadding="5dp"
+                    android:padding="3dp"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="若照片不清晰将影响您的保障条件"
+                    android:drawableLeft="@drawable/ic_text_left_dot"
+                    android:drawablePadding="5dp"
+                    android:padding="3dp"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所拍照的证信息与填写的信息必须保持一致"
+                    android:drawableLeft="@drawable/ic_text_left_dot"
+                    android:drawablePadding="5dp"
+                    android:padding="3dp"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="14sp" />
+                -->
+
+            </com.citywithincity.ecard.ui.activity.exam.ExamUploadImageView>
+
+            <Button
+                android:id="@id/id_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/new_common_btn_bg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="购买"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

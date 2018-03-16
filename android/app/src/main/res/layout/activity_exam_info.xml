@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:id="@id/_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/_title_bar" android:id="@id/_title_bar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/_title_bar" >
+
+            <com.damai.widget.FormView
+                android:id="@id/_form_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                lib:init_set_data="true" >
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/activity_exam_info_1" />
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/activity_exam_info_2" />
+
+                <com.damai.widget.SubmitButton
+                    android:id="@+id/submit"
+                    style="@style/_main_button"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:text="提交申请"
+                    lib:api="exam/submitInfo"
+                    lib:server="1" />
+            </com.damai.widget.FormView>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

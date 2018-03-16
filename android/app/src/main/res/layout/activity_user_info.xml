@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_page_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/_title_bar" />
+
+    <RelativeLayout
+        android:id="@id/user_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/_white_item_selector"
+        android:clickable="true"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_personal_1"
+            android:drawablePadding="10dip"
+            android:text="个人头像"
+            android:textColor="@color/_title_text_color"
+            android:textSize="16sp" />
+
+        <com.alan.roundimageview.RoundedImageView
+            android:id="@id/head_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_women"
+            app:oval="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/new_divider_color" />
+
+    <RelativeLayout
+        android:id="@id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/_white_item_selector"
+        android:clickable="true"
+        android:padding="15dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_personal_2"
+            android:drawablePadding="10dip"
+            android:text="收货地址"
+            android:textColor="@color/_title_text_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/new_divider_color" />
+
+    <RelativeLayout
+        android:id="@id/update_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/_white_item_selector"
+        android:clickable="true"
+        android:padding="15dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_personal_3"
+            android:drawablePadding="10dip"
+            android:text="修改密码"
+            android:textColor="@color/_title_text_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow" />
+    </RelativeLayout>
+
+    
+
+
+    <Button
+        android:id="@id/logout"
+        style="@style/_main_button"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_margin="10dip"
+        android:text="退出账号" />
+
+</LinearLayout>

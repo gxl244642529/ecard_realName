@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechargeRecordController">
+            <connections>
+                <outlet property="tabView" destination="VgL-hr-WJQ" id="8fc-tL-Jbq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdV-cu-Z1g" customClass="DMAdvView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="ZMR-Zu-ryy" customClass="DMFixConstraint"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="module" value="5"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfP-cB-7DC" customClass="CommonTabHeadView">
+                    <rect key="frame" x="0.0" y="80" width="375" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="XN3-eo-WdP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titles" value="未完成,已退款,已完成"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="selectable" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="targetTabTag">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view clipsSubviews="YES" tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgL-hr-WJQ" customClass="DMStateTabView">
+                    <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="t"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tabCount">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="api" value="recharge/list"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="server">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoExecute" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="useCache" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="cellName" value="RechargeCell"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rowHeight">
+                            <integer key="value" value="94"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="mySafeList"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="entityName" value="RechargeVo"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="targetTabTag">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="noResultView" value="RechargeNoResultView"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="controllerName" value="RechargeDetailController"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="bundleName" value="rechargebundle.bundle"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="refreshable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VgL-hr-WJQ" secondAttribute="bottom" id="Cqq-6n-Ltw"/>
+                <constraint firstAttribute="trailing" secondItem="VgL-hr-WJQ" secondAttribute="trailing" id="I8R-Jr-28R"/>
+                <constraint firstItem="rdV-cu-Z1g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Kdc-5D-mDd"/>
+                <constraint firstItem="vfP-cB-7DC" firstAttribute="top" secondItem="rdV-cu-Z1g" secondAttribute="bottom" id="bUP-z3-iw5"/>
+                <constraint firstItem="VgL-hr-WJQ" firstAttribute="top" secondItem="vfP-cB-7DC" secondAttribute="bottom" id="dxe-Ci-RMt"/>
+                <constraint firstAttribute="trailing" secondItem="rdV-cu-Z1g" secondAttribute="trailing" id="fyk-cG-RFr"/>
+                <constraint firstItem="rdV-cu-Z1g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lyb-T0-H4h"/>
+                <constraint firstItem="vfP-cB-7DC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ogr-KU-oks"/>
+                <constraint firstAttribute="trailing" secondItem="vfP-cB-7DC" secondAttribute="trailing" id="vwE-H6-0Rf"/>
+                <constraint firstItem="VgL-hr-WJQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xfD-eB-b6Y"/>
+            </constraints>
+            <point key="canvasLocation" x="282.5" y="296.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

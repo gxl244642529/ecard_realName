@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- validate -->
+    <string name="validate_error_integer">%1$s必须是整数</string>
+    <string name="validate_error_required">请输入%1$s</string>
+    <string name="validate_error_tel">%1$s请输入合法的电话号码</string>
+</resources>

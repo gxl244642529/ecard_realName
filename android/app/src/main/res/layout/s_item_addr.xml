@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小许"
+            android:textColor="@color/s_addr_list_name_color" />
+
+        <TextView
+            android:id="@id/id_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="18075872588"
+            android:textColor="@color/s_addr_list_name_color" />
+
+        <TextView
+            android:id="@id/address_def"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:paddingRight="15dp"
+            android:text="[默认地址]"
+            android:textColor="@color/s_num_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="望海路"
+        android:textColor="@color/s_mine_menu_text_color"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:clickable="true"
+            android:drawableTop="@drawable/s_addr_edit"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="编辑"
+            android:textColor="@color/s_mine_menu_text_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/s_addr_list_btn_devider_color" />
+
+        <Button
+            android:id="@id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:clickable="true"
+            android:drawableTop="@drawable/s_addr_delete"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="删除"
+            android:textColor="@color/s_mine_menu_text_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

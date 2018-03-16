@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/_title_bar" />
+
+    <com.damai.widget.StateListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:padding="10dip"
+        lib:api="recharge/pointList"
+        lib:auto="true"
+        lib:paged="true"
+        lib:entity="com.citywithincity.ecard.recharge.models.vos.RechargePointVo"
+        lib:item_view="@layout/item_recharge_point"
+        lib:server="1" >
+    </com.damai.widget.StateListView>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@id/_title_left"
+            android:layout_width="@dimen/title_left_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_button_bg"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:paddingLeft="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_title_left" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/title_text"
+            android:textColor="@color/_title_text_color" />
+
+        <LinearLayout
+            android:id="@id/_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:padding="5dip"
+                android:text="扫一扫"
+                android:textColor="@color/_title_text_color" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/my_ecard_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="10dip"
+        android:text="    友情提醒：卡片余额仅供参考，如需确定卡片余额，请持卡片到就近的服务网点进行查询。" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_seperator2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical" >
+
+        <com.citywithincity.widget.StateListView
+            android:id="@id/_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:padding="10dip" >
+        </com.citywithincity.widget.StateListView>
+
+        <RelativeLayout
+            android:id="@id/_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@id/id_bind"
+                style="@style/common_button"
+                android:layout_centerInParent="true"
+                android:text="绑定e通卡" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechargeCashierController">
+            <connections>
+                <outlet property="tableView" destination="MPY-mg-kP4" id="YVQ-DI-x4b"/>
+                <outlet property="txtFee" destination="LSs-r6-DXY" id="DSZ-qH-1ny"/>
+                <outlet property="view" destination="aeF-Xv-6dD" id="YEZ-YA-Lrk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="aeF-Xv-6dD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfk-Ei-m04" customClass="HLine">
+                    <color key="backgroundColor" red="0.84269593249999997" green="0.84269593249999997" blue="0.84269593249999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lIb-yr-Oz0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zR1-CF-haM">
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还需支付:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg2-2o-H3J">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwi-HV-s1d">
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.98681807518005371" green="0.17071354389190674" blue="0.16079103946685791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqG-El-mO5">
+                            <color key="backgroundColor" red="0.93391884530000002" green="0.30240008699999998" blue="0.31496193630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="ff8-xx-y5w"/>
+                            </constraints>
+                            <state key="normal" title="付款">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onPay:" destination="-1" eventType="touchUpInside" id="iPR-Lm-nMU"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSs-r6-DXY">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.98681807518005371" green="0.17071354389190674" blue="0.16079103946685791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="wg2-2o-H3J" firstAttribute="centerY" secondItem="zR1-CF-haM" secondAttribute="centerY" id="3II-wK-I4a"/>
+                        <constraint firstAttribute="bottom" secondItem="HqG-El-mO5" secondAttribute="bottom" id="Lyl-sT-of1"/>
+                        <constraint firstAttribute="centerY" secondItem="HqG-El-mO5" secondAttribute="centerY" id="QqY-mZ-l2d"/>
+                        <constraint firstAttribute="trailing" secondItem="HqG-El-mO5" secondAttribute="trailing" id="R0y-RJ-gpf"/>
+                        <constraint firstAttribute="height" constant="45" id="Sdd-NH-YOR"/>
+                        <constraint firstItem="HqG-El-mO5" firstAttribute="leading" secondItem="LSs-r6-DXY" secondAttribute="trailing" constant="3" id="jzb-2t-gcp"/>
+                        <constraint firstItem="LSs-r6-DXY" firstAttribute="leading" secondItem="bwi-HV-s1d" secondAttribute="trailing" id="mRA-ZL-RwN"/>
+                        <constraint firstItem="bwi-HV-s1d" firstAttribute="centerY" secondItem="zR1-CF-haM" secondAttribute="centerY" id="nOb-GW-SEg"/>
+                        <constraint firstItem="HqG-El-mO5" firstAttribute="top" secondItem="zR1-CF-haM" secondAttribute="top" id="qgO-35-ext"/>
+                        <constraint firstItem="LSs-r6-DXY" firstAttribute="centerY" secondItem="zR1-CF-haM" secondAttribute="centerY" id="quZ-MT-tXh"/>
+                        <constraint firstItem="bwi-HV-s1d" firstAttribute="leading" secondItem="wg2-2o-H3J" secondAttribute="trailing" constant="3" id="xQK-PP-YkP"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MPY-mg-kP4" customClass="DMPayTableView">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="support" value="wxpay,cmb"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="businessId" value="recharge"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="cellName" value="CashierCell"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zR1-CF-haM" firstAttribute="top" secondItem="rfk-Ei-m04" secondAttribute="bottom" id="32m-oV-LLi"/>
+                <constraint firstAttribute="trailing" secondItem="MPY-mg-kP4" secondAttribute="trailing" id="Hqn-TL-73R"/>
+                <constraint firstItem="MPY-mg-kP4" firstAttribute="leading" secondItem="aeF-Xv-6dD" secondAttribute="leading" id="I7N-pg-jkI"/>
+                <constraint firstAttribute="bottom" secondItem="zR1-CF-haM" secondAttribute="bottom" id="Ltd-Bp-V7c"/>
+                <constraint firstAttribute="trailing" secondItem="rfk-Ei-m04" secondAttribute="trailing" id="Mwd-pM-3pF"/>
+                <constraint firstAttribute="trailing" secondItem="zR1-CF-haM" secondAttribute="trailing" id="cZi-Qd-cat"/>
+                <constraint firstItem="MPY-mg-kP4" firstAttribute="top" secondItem="aeF-Xv-6dD" secondAttribute="top" id="fzU-bi-sAg"/>
+                <constraint firstItem="rfk-Ei-m04" firstAttribute="leading" secondItem="aeF-Xv-6dD" secondAttribute="leading" id="jZO-67-K53"/>
+                <constraint firstItem="zR1-CF-haM" firstAttribute="leading" secondItem="aeF-Xv-6dD" secondAttribute="leading" id="pbS-if-Sdd"/>
+                <constraint firstItem="rfk-Ei-m04" firstAttribute="top" secondItem="MPY-mg-kP4" secondAttribute="bottom" id="qCD-Vm-qcu"/>
+            </constraints>
+            <point key="canvasLocation" x="212" y="155"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

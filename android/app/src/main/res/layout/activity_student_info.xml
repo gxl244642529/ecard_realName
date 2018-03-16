@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/travel_page_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.citywithincity.widget.AdvView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@id/adv_view"
+                android:layout_width="match_parent"
+                android:layout_height="130dip"
+                app:item_layout="@layout/base_loading_image_view" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@id/_adv_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e1e1e1" />
+            </com.citywithincity.widget.AdvView>
+
+            <include layout="@layout/layout_student_subscribe_info" />
+
+            <Button
+                android:id="@id/_id_ok"
+                style="@style/common_button"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="提交申请" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

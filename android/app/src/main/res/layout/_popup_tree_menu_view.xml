@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_popup_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="1px" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:background="@color/_tree_right_list_bg" >
+
+        <com.citywithincity.widget.MyListView
+            android:id="@id/_list_view_left"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/_tree_menu_left_bg"
+            android:cacheColorHint="@null"
+            android:divider="@color/_top_menu_divider"
+            android:dividerHeight="1px" >
+        </com.citywithincity.widget.MyListView>
+
+        <ListView
+            android:id="@id/_list_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/_tree_right_list_bg"
+            android:cacheColorHint="@null"
+            android:divider="@color/_top_menu_divider"
+            android:dividerHeight="1px" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

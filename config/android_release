@@ -1,0 +1,67 @@
+  etongka {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "etongka",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989",
+                            TSP:"false|218.5.80.17|2077"]
+ }
+
+
+
+ meizu {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }
+
+
+ m360 {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "m360",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }
+ qq {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "qq",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }
+ etongka {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "etongka",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }
+ xiaomi {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }
+ baidu {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }
+ wandoujia {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }
+ weixin {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "weixin",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }
+
+ huawei {
+     manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei",
+                             PHP_SERVER : "http://218.5.80.17:8092",
+                             JAVA_SERVER:"http://218.5.80.17:28095" ,
+                             PICC: "http://www.xm95518.com:8989", TSP:"false|218.5.80.17|2077"]
+ }

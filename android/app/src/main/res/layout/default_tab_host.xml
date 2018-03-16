@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.citywithincity.widget.TabHostView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_tab_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_page_color" >
+
+    <FrameLayout
+        android:id="@id/_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_container" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/s_tab_host_divide_view_bg_color" />
+
+        <LinearLayout
+            android:id="@id/_id_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="46dip"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="1dp"
+                    android:drawableTop="@drawable/s_menu_card_list"
+                    android:gravity="center_horizontal"
+                    android:text="@string/card_store"
+                    android:textColor="@color/top_menu_text_selector"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/s_tab_host_divide_view_bg_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="46dip"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="1dp"
+                    android:drawableTop="@drawable/s_menu_diy"
+                    android:gravity="center_horizontal"
+                    android:text="@string/diy"
+                    android:textColor="@color/top_menu_text_selector"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/s_tab_host_divide_view_bg_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="46dip"
+                android:layout_weight="1"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="1dp"
+                    android:drawableTop="@drawable/s_menu_book"
+                    android:gravity="center_horizontal"
+                    android:text="@string/book"
+                    android:textColor="@color/top_menu_text_selector"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/s_tab_host_divide_view_bg_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="46dip"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="1dp"
+                    android:drawableTop="@drawable/s_menu_mine"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mine"
+                    android:textColor="@color/top_menu_text_selector"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.citywithincity.widget.TabHostView>

@@ -1,0 +1,7 @@
+atest {
+    manifestPlaceholders = [UMENG_CHANNEL_VALUE: "test",
+                            PHP_SERVER : "http://110.80.22.108:8887",
+                            JAVA_SERVER:"http://110.80.22.108:28080",
+                            PICC: "http://120.55.115.222:8989",
+                            TSP:"true|110.80.22.108|8089"]
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/_title_bar" />
+
+    <com.damai.widget.AdvView
+        android:id="@+id/adv_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        lib:module="5" />
+
+    <com.damai.widget.TabGroup
+        android:id="@id/_tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="未完成"
+            android:textColor="@color/top_menu_text_selector"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="已完成"
+            android:textColor="@color/top_menu_text_selector"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="已退款"
+            android:textColor="@color/top_menu_text_selector"
+            android:textSize="15sp" />
+    </com.damai.widget.TabGroup>
+
+    <com.damai.widget.TabIndicator
+        android:id="@id/_tab_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        lib:group_count="3" />
+
+    <com.damai.widget.TabListView
+        android:id="@id/_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        lib:api="recharge/list"
+        lib:auto="true"
+        lib:entity="com.citywithincity.ecard.recharge.models.vos.RechargeVo"
+        lib:group_count="3"
+        lib:item_view="@layout/item_recharge_order_list"
+        lib:server="1" />
+
+</LinearLayout>

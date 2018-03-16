@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.citywithincity.widget.TabPaneView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tab_host="http://schemas.android.com/apk/res-auto"
+    android:id="@id/_tab_pane_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tab_host:tab_subs="@array/my_collections_contents_list" >
+
+    <RelativeLayout
+        android:id="@id/_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@id/_title_left"
+            android:layout_width="@dimen/title_left_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_button_bg"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:paddingLeft="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_title_left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/_id_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/title_tab_left"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:text="办理学生卡"
+                    android:textColor="@color/title_tab_select_color"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/title_tab_right"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="学生卡年审"
+                    android:textColor="@color/title_tab_select_color"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/new_title_bottom" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/_title_bar"
+        android:flipInterval="30"
+        android:padding="7dip"
+        android:persistentDrawingCache="animation" >
+    </android.support.v4.view.ViewPager>
+
+</com.citywithincity.widget.TabPaneView>

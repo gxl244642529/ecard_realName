@@ -1,0 +1,12 @@
+微信分享調用
+ShareModule.wxShare({
+	title:'分享標題',
+	content:'分享描述',
+	url:'鏈接',
+	type:1,      //朋友圈
+
+},(ret)=>{
+	if(ret===0){
+		//分享成功
+	}
+})

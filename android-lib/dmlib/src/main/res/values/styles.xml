@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标准控件开始 -->
+    <!-- main button -->
+    <style name="_main_button">
+        <item name="android:background">@drawable/_main_button</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dip</item>
+        
+    </style>
+    <!-- select -->
+
+    <style name="_check_box" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/_check_box</item>
+    </style>
+
+    <!-- radio group  radio button -->
+    <style name="_radio_button">
+        <item name="android:button">@drawable/_radio_button</item>
+        <item name="android:textColor">@color/_radio_button_text</item>
+    </style>
+    <!-- radio on/off -->
+
+
+    <!-- backbutton返回按钮的样式 -->
+    <style name="_back">
+        <item name="android:layout_width">@dimen/_title_left_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/_title_button_bg</item>
+        <item name="android:src">@drawable/_title_left</item>
+    </style>
+    <!-- right arraw -->
+    <!-- date picker -->
+    <!-- image picker -->
+    
+    <!-- area picker -->
+    <!-- title tab -->
+    <!-- content tab -->
+    <style name="_tab_group_button">
+        <item name="android:textColor">@color/_tab_group_button</item>
+        <item name="android:textSize">@dimen/_tab_group_button</item>
+    </style>
+    <!-- form textfield -->
+    <!-- form textfield mutil lines -->
+    <!-- title right button -->
+
+
+    <!-- 自定义对话框 -->
+    <style name="dialog_custom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 标题栏文字 -->
+    <style name="_title_text">
+        <item name="android:textColor">@color/_title_text_color</item>
+        <item name="android:textSize">@dimen/_title_text_size</item>
+    </style>
+
+    <style name="_dialog_popup" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 底部弹出框 -->
+    <style name="_dialog_bottom_popup" parent="_dialog_popup">
+        <item name="android:windowAnimationStyle">@style/_animation_bottom_popup</item>
+    </style>
+
+    <style name="_dialog_center_popup" parent="_dialog_popup">
+        <item name="android:windowAnimationStyle">@style/_animation_center_popup</item>
+    </style>
+
+    <!-- 底部弹出的动画 -->
+    <style name="_animation_bottom_popup" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/_push_bottom_out</item>
+    </style>
+
+    <!-- 对话框弹出 -->
+    <style name="_animation_center_popup" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/_center_in</item>
+        <item name="android:windowExitAnimation">@anim/_center_out</item>
+    </style>
+
+    <!-- 顶部弹出菜单 -->
+    <style name="_animation_top_popup">
+        <item name="android:windowEnterAnimation">@anim/_popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/_pophidden_anim</item>
+    </style>
+
+    <!-- top menu -->
+    <style name="_top_menu_text">
+        <item name="android:textSize">@dimen/_top_menu_text_size</item>
+        <item name="android:color">@color/top_menu_text_selector</item>
+        <item name="android:drawablePadding">@dimen/_top_menu_drawable_padding</item>
+        <!-- <item name="android:drawableRight">@drawable/tree_menu_down_arraw</item> -->
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/travel_page_color" >
+    
+    <include layout="@layout/title_bar"
+        android:id="@id/_container" />
+    
+    <LinearLayout
+        android:id="@id/_container1"
+        android:layout_below="@id/_container"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:paddingLeft="15dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+    
+        <TextView
+            android:id="@id/text"
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="你还可以选择"
+    		android:textColor="@color/text_color_gray" />
+        
+        <TextView
+            android:id="@id/num"
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/text_color_gray" />
+        
+        <TextView
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="个被保险人"
+    		android:textColor="@color/text_color_gray" />
+        
+    </LinearLayout>
+    
+    <com.citywithincity.widget.StateListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@id/_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/_container1"
+        android:layout_above="@id/_id_ok"
+        android:divider="@null"
+        android:verticalSpacing="10dp"
+        ptr:error="@layout/order_network_error"
+        ptr:no_result="@layout/s_no_order"
+        ptr:ptrMode="both" >
+    </com.citywithincity.widget.StateListView>
+    
+    <Button
+                android:id="@id/_id_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/new_common_btn_bg"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+</RelativeLayout>

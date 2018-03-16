@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:background="@color/travel_page_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@id/_title_left"
+            android:layout_width="@dimen/title_left_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_button_bg"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:paddingLeft="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_title_left" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/s_title_text"
+            android:textColor="@color/_title_text_color" />
+
+        <LinearLayout
+            android:id="@id/_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="我的保单"
+                android:textColor="@color/new_btn_normal_bg_color" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/s_title_button_bg_color" />
+    </RelativeLayout>
+
+    
+    <com.damai.widget.AdvView
+        android:id="@id/_adv_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        lib:module="2"
+        android:background="#f2f2f2" >
+    </com.damai.widget.AdvView>
+    
+    <!--  <com.citywithincity.widget.AdvView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/adv_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dip"
+        app:item_layout="@layout/base_loading_image_view" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/_adv_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e1e1e1" />
+
+        <com.citywithincity.widget.ViewPagerIndicator
+            xmlns:indicator="http://schemas.android.com/apk/res-auto"
+            android:id="@id/_indicator_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            indicator:indicator_padding="@dimen/adv_indicator_padding"
+            indicator:indicator_view="@layout/adv_indicator_view" >
+        </com.citywithincity.widget.ViewPagerIndicator>
+    </com.citywithincity.widget.AdvView>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/new_divider_color" />
+
+    <!--
+    <GridView
+        android:id="@id/_grid_view"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:divider="@color/new_divider_color"
+            android:numColumns="3" >
+    </GridView>
+
+    <TextView 
+        android:layout_marginTop="7dp"
+       android:background="@android:color/white"
+       android:padding="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="推荐产品"
+       android:textColor="@color/menu_text_color"
+       android:textSize="17sp" />
+    -->
+
+    <com.citywithincity.widget.StateListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@id/_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/travel_page_color"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false" >
+    </com.citywithincity.widget.StateListView>
+
+</LinearLayout>

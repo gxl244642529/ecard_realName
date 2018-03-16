@@ -1,0 +1,1428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C4138541E33779E005C451E /* SafeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137F31E33779E005C451E /* SafeController.xib */; };
+		5C4138551E33779E005C451E /* SafeCashierController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137F41E33779E005C451E /* SafeCashierController.xib */; };
+		5C4138561E33779E005C451E /* CashierCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137F51E33779E005C451E /* CashierCell.xib */; };
+		5C4138571E33779E005C451E /* SafeBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137F81E33779E005C451E /* SafeBottomCell.xib */; };
+		5C4138581E33779E005C451E /* SafeBuyAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137F91E33779E005C451E /* SafeBuyAddressCell.xib */; };
+		5C4138591E33779E005C451E /* SafeBuyHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137FA1E33779E005C451E /* SafeBuyHeaderCell.xib */; };
+		5C41385A1E33779E005C451E /* SafeCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137FB1E33779E005C451E /* SafeCarCell.xib */; };
+		5C41385B1E33779E005C451E /* SafeInsuredListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137FC1E33779E005C451E /* SafeInsuredListCell.xib */; };
+		5C41385C1E33779E005C451E /* SafeOneInsuredCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137FD1E33779E005C451E /* SafeOneInsuredCell.xib */; };
+		5C41385D1E33779E005C451E /* SafeBuyAddressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4137FF1E33779E005C451E /* SafeBuyAddressView.xib */; };
+		5C41385E1E33779E005C451E /* SafeBuyCarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138001E33779E005C451E /* SafeBuyCarView.xib */; };
+		5C41385F1E33779E005C451E /* SafeBuyFamilly.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138011E33779E005C451E /* SafeBuyFamilly.xib */; };
+		5C4138601E33779E005C451E /* SafeFCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138021E33779E005C451E /* SafeFCell.xib */; };
+		5C4138611E33779E005C451E /* SafeInsuredCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138031E33779E005C451E /* SafeInsuredCell.xib */; };
+		5C4138621E33779E005C451E /* SafeInsuredSafeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138041E33779E005C451E /* SafeInsuredSafeController.xib */; };
+		5C4138631E33779E005C451E /* SafeInsuredWithRelationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138051E33779E005C451E /* SafeInsuredWithRelationCell.xib */; };
+		5C4138641E33779E005C451E /* SafeSelContactController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138061E33779E005C451E /* SafeSelContactController.xib */; };
+		5C4138651E33779E005C451E /* InsuredListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138071E33779E005C451E /* InsuredListView.xib */; };
+		5C4138661E33779E005C451E /* SafeBuyChildrenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138081E33779E005C451E /* SafeBuyChildrenController.xib */; };
+		5C4138671E33779E005C451E /* SafeBuyInsuredController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138091E33779E005C451E /* SafeBuyInsuredController.xib */; };
+		5C4138681E33779E005C451E /* SafeContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41380A1E33779E005C451E /* SafeContactCell.xib */; };
+		5C4138691E33779E005C451E /* SafeDetailInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41380B1E33779E005C451E /* SafeDetailInfoView.xib */; };
+		5C41386A1E33779E005C451E /* SafeInsuredDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41380C1E33779E005C451E /* SafeInsuredDetailController.xib */; };
+		5C41386B1E33779E005C451E /* SafeCahierItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41380D1E33779E005C451E /* SafeCahierItem.xib */; };
+		5C41386C1E33779E005C451E /* MyCardSafeDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41380F1E33779E005C451E /* MyCardSafeDetailController.xib */; };
+		5C41386D1E33779E005C451E /* MySafeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138101E33779E005C451E /* MySafeCell.xib */; };
+		5C41386E1E33779E005C451E /* MySafeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138111E33779E005C451E /* MySafeController.xib */; };
+		5C41386F1E33779E005C451E /* MySafeDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138121E33779E005C451E /* MySafeDetailController.xib */; };
+		5C4138701E33779E005C451E /* MySafeInsuredCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138131E33779E005C451E /* MySafeInsuredCell.xib */; };
+		5C4138711E33779E005C451E /* MySafeOrderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138141E33779E005C451E /* MySafeOrderController.xib */; };
+		5C4138721E33779E005C451E /* SafeCardBuyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138161E33779E005C451E /* SafeCardBuyController.xib */; };
+		5C4138731E33779E005C451E /* SafeCardClaimController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138171E33779E005C451E /* SafeCardClaimController.xib */; };
+		5C4138741E33779E005C451E /* SafeCardDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138181E33779E005C451E /* SafeCardDetailController.xib */; };
+		5C4138751E33779E005C451E /* SafeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138191E33779E005C451E /* SafeHeaderView.xib */; };
+		5C4138761E33779E005C451E /* SafePayResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41381A1E33779E005C451E /* SafePayResultController.xib */; };
+		5C4138771E33779E005C451E /* SafeListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41381B1E33779E005C451E /* SafeListController.xib */; };
+		5C4138781E33779E005C451E /* bg_insurance_example@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41381D1E33779E005C451E /* bg_insurance_example@2x.png */; };
+		5C4138791E33779E005C451E /* f_detail_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C41381E1E33779E005C451E /* f_detail_bg@2x.jpg */; };
+		5C41387A1E33779E005C451E /* ic_add_insured@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41381F1E33779E005C451E /* ic_add_insured@2x.png */; };
+		5C41387B1E33779E005C451E /* ic_fetch_ticket_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138201E33779E005C451E /* ic_fetch_ticket_success@2x.png */; };
+		5C41387C1E33779E005C451E /* ic_insurance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138211E33779E005C451E /* ic_insurance@2x.png */; };
+		5C41387D1E33779E005C451E /* ic_insurance_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138221E33779E005C451E /* ic_insurance_checked@2x.png */; };
+		5C41387E1E33779E005C451E /* ic_insurance_claims_step1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138231E33779E005C451E /* ic_insurance_claims_step1@2x.png */; };
+		5C41387F1E33779E005C451E /* ic_insurance_claims_step1_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138241E33779E005C451E /* ic_insurance_claims_step1_1@2x.png */; };
+		5C4138801E33779E005C451E /* ic_insurance_claims_step2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138251E33779E005C451E /* ic_insurance_claims_step2@2x.png */; };
+		5C4138811E33779E005C451E /* ic_insurance_claims_step2_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138261E33779E005C451E /* ic_insurance_claims_step2_2@2x.png */; };
+		5C4138821E33779E005C451E /* ic_insurance_claims_step3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138271E33779E005C451E /* ic_insurance_claims_step3@2x.png */; };
+		5C4138831E33779E005C451E /* ic_insurance_claims_step3_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138281E33779E005C451E /* ic_insurance_claims_step3_3@2x.png */; };
+		5C4138841E33779E005C451E /* ic_insurance_expires@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138291E33779E005C451E /* ic_insurance_expires@2x.png */; };
+		5C4138851E33779E005C451E /* ic_insurance_flag_hot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41382A1E33779E005C451E /* ic_insurance_flag_hot@2x.png */; };
+		5C4138861E33779E005C451E /* ic_insurance_flag_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41382B1E33779E005C451E /* ic_insurance_flag_new@2x.png */; };
+		5C4138871E33779E005C451E /* ic_insurance_has_claim.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41382C1E33779E005C451E /* ic_insurance_has_claim.png */; };
+		5C4138881E33779E005C451E /* ic_insurance_in_security@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41382D1E33779E005C451E /* ic_insurance_in_security@2x.png */; };
+		5C4138891E33779E005C451E /* ic_insurance_insured_seleted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41382E1E33779E005C451E /* ic_insurance_insured_seleted@2x.png */; };
+		5C41388A1E33779E005C451E /* ic_insurance_insured_unselete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41382F1E33779E005C451E /* ic_insurance_insured_unselete@2x.png */; };
+		5C41388B1E33779E005C451E /* ic_insurance_no_order.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138301E33779E005C451E /* ic_insurance_no_order.png */; };
+		5C41388C1E33779E005C451E /* ic_insurance_plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138311E33779E005C451E /* ic_insurance_plus@2x.png */; };
+		5C41388D1E33779E005C451E /* ic_insurance_sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138321E33779E005C451E /* ic_insurance_sub@2x.png */; };
+		5C41388E1E33779E005C451E /* ic_insurance_uncheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138331E33779E005C451E /* ic_insurance_uncheck@2x.png */; };
+		5C41388F1E33779E005C451E /* ic_personal_insurance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138341E33779E005C451E /* ic_personal_insurance@2x.png */; };
+		5C4138901E33779E005C451E /* ic_safe_accident@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138351E33779E005C451E /* ic_safe_accident@2x.png */; };
+		5C4138911E33779E005C451E /* ic_safe_age@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138361E33779E005C451E /* ic_safe_age@2x.png */; };
+		5C4138921E33779E005C451E /* ic_safe_car@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138371E33779E005C451E /* ic_safe_car@2x.png */; };
+		5C4138931E33779E005C451E /* ic_safe_cashier@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138381E33779E005C451E /* ic_safe_cashier@2x.png */; };
+		5C4138941E33779E005C451E /* ic_safe_contact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138391E33779E005C451E /* ic_safe_contact@2x.png */; };
+		5C4138951E33779E005C451E /* ic_safe_ecard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41383A1E33779E005C451E /* ic_safe_ecard@2x.png */; };
+		5C4138961E33779E005C451E /* ic_safe_family@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41383B1E33779E005C451E /* ic_safe_family@2x.png */; };
+		5C4138971E33779E005C451E /* ic_safe_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41383C1E33779E005C451E /* ic_safe_line@2x.png */; };
+		5C4138981E33779E005C451E /* ic_safe_step1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41383D1E33779E005C451E /* ic_safe_step1@2x.png */; };
+		5C4138991E33779E005C451E /* ic_safe_step2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41383E1E33779E005C451E /* ic_safe_step2@2x.png */; };
+		5C41389A1E33779E005C451E /* ic_safe_step3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41383F1E33779E005C451E /* ic_safe_step3@2x.png */; };
+		5C41389B1E33779E005C451E /* ic_safe_step4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138401E33779E005C451E /* ic_safe_step4@2x.png */; };
+		5C41389C1E33779E005C451E /* ic_safe_step5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138411E33779E005C451E /* ic_safe_step5@2x.png */; };
+		5C41389D1E33779E005C451E /* ic_safeguard_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138421E33779E005C451E /* ic_safeguard_left@2x.png */; };
+		5C41389E1E33779E005C451E /* ic_take_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138431E33779E005C451E /* ic_take_photo@2x.png */; };
+		5C41389F1E33779E005C451E /* s_ic_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138441E33779E005C451E /* s_ic_btn@2x.png */; };
+		5C4138A01E33779E005C451E /* safe_ali_pay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138451E33779E005C451E /* safe_ali_pay@2x.png */; };
+		5C4138A11E33779E005C451E /* safe_card_show@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138461E33779E005C451E /* safe_card_show@2x.jpg */; };
+		5C4138A21E33779E005C451E /* safe_picc_icon_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138471E33779E005C451E /* safe_picc_icon_big@2x.png */; };
+		5C4138A31E33779E005C451E /* safe_tab_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138481E33779E005C451E /* safe_tab_left@2x.png */; };
+		5C4138A41E33779E005C451E /* safe_tab_left_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138491E33779E005C451E /* safe_tab_left_h@2x.png */; };
+		5C4138A51E33779E005C451E /* safe_tab_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41384A1E33779E005C451E /* safe_tab_right@2x.png */; };
+		5C4138A61E33779E005C451E /* safe_tab_right_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41384B1E33779E005C451E /* safe_tab_right_h@2x.png */; };
+		5C4138A71E33779E005C451E /* safe_weixin_pay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41384C1E33779E005C451E /* safe_weixin_pay@2x.png */; };
+		5C4138A81E33779E005C451E /* SafeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41384D1E33779E005C451E /* SafeCell.xib */; };
+		5C4138A91E33779E005C451E /* SafeInsuredShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41384F1E33779E005C451E /* SafeInsuredShowController.xib */; };
+		5C4138AA1E33779E005C451E /* SafeNoResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138501E33779E005C451E /* SafeNoResultView.xib */; };
+		5C4138AB1E33779E005C451E /* ic_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138511E33779E005C451E /* ic_arrow@2x.png */; };
+		5C4138AC1E33779E005C451E /* s_ic_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138521E33779E005C451E /* s_ic_on@2x.png */; };
+		5C4138AD1E33779E005C451E /* s_ic_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4138531E33779E005C451E /* s_ic_off@2x.png */; };
+		5C5D34301DAE6B3B00D91743 /* safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D342E1DAE6B3B00D91743 /* safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C5D35101DAE6CEA00D91743 /* SafeCardBuyController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34931DAE6CE900D91743 /* SafeCardBuyController.h */; };
+		5C5D35111DAE6CEA00D91743 /* SafeCardBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34941DAE6CE900D91743 /* SafeCardBuyController.m */; };
+		5C5D35121DAE6CEA00D91743 /* SafeCardClaimController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34951DAE6CE900D91743 /* SafeCardClaimController.h */; };
+		5C5D35131DAE6CEA00D91743 /* SafeCardClaimController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34961DAE6CE900D91743 /* SafeCardClaimController.m */; };
+		5C5D35141DAE6CEA00D91743 /* SafeCardDetailController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34971DAE6CE900D91743 /* SafeCardDetailController.h */; };
+		5C5D35151DAE6CEA00D91743 /* SafeCardDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34981DAE6CE900D91743 /* SafeCardDetailController.m */; };
+		5C5D35161DAE6CEA00D91743 /* BaseDetailInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D349A1DAE6CE900D91743 /* BaseDetailInfoView.h */; };
+		5C5D35171DAE6CEA00D91743 /* BaseDetailInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D349B1DAE6CE900D91743 /* BaseDetailInfoView.m */; };
+		5C5D35181DAE6CEA00D91743 /* SafeBuyAddressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D349D1DAE6CE900D91743 /* SafeBuyAddressView.h */; };
+		5C5D35191DAE6CEA00D91743 /* SafeBuyAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D349E1DAE6CE900D91743 /* SafeBuyAddressView.m */; };
+		5C5D351A1DAE6CEA00D91743 /* SafeBuyCarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D349F1DAE6CE900D91743 /* SafeBuyCarView.h */; };
+		5C5D351B1DAE6CEA00D91743 /* SafeBuyCarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34A01DAE6CE900D91743 /* SafeBuyCarView.m */; };
+		5C5D351C1DAE6CEA00D91743 /* SafeBuyFamilly.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34A11DAE6CE900D91743 /* SafeBuyFamilly.h */; };
+		5C5D351D1DAE6CEA00D91743 /* SafeBuyFamilly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34A21DAE6CE900D91743 /* SafeBuyFamilly.m */; };
+		5C5D351E1DAE6CEA00D91743 /* SafeInsuredCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34A31DAE6CE900D91743 /* SafeInsuredCell.h */; };
+		5C5D351F1DAE6CEA00D91743 /* SafeInsuredCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34A41DAE6CE900D91743 /* SafeInsuredCell.m */; };
+		5C5D35201DAE6CEA00D91743 /* SafeInsuredContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34A51DAE6CE900D91743 /* SafeInsuredContainer.h */; };
+		5C5D35211DAE6CEA00D91743 /* SafeInsuredContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34A61DAE6CE900D91743 /* SafeInsuredContainer.m */; };
+		5C5D35221DAE6CEA00D91743 /* SafeInsuredListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34A71DAE6CE900D91743 /* SafeInsuredListView.h */; };
+		5C5D35231DAE6CEA00D91743 /* SafeInsuredListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34A81DAE6CE900D91743 /* SafeInsuredListView.m */; };
+		5C5D35241DAE6CEA00D91743 /* SafeInsuredSafeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34A91DAE6CE900D91743 /* SafeInsuredSafeController.h */; };
+		5C5D35251DAE6CEA00D91743 /* SafeInsuredSafeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34AA1DAE6CE900D91743 /* SafeInsuredSafeController.m */; };
+		5C5D35261DAE6CEA00D91743 /* SafeInsuredWithRelationCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34AB1DAE6CE900D91743 /* SafeInsuredWithRelationCell.h */; };
+		5C5D35271DAE6CEA00D91743 /* SafeInsuredWithRelationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34AC1DAE6CE900D91743 /* SafeInsuredWithRelationCell.m */; };
+		5C5D35281DAE6CEA00D91743 /* SafeSelContactController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34AD1DAE6CE900D91743 /* SafeSelContactController.h */; };
+		5C5D35291DAE6CEA00D91743 /* SafeSelContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34AE1DAE6CE900D91743 /* SafeSelContactController.m */; };
+		5C5D352A1DAE6CEA00D91743 /* InsuredContactView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34AF1DAE6CE900D91743 /* InsuredContactView.h */; };
+		5C5D352B1DAE6CEA00D91743 /* InsuredContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34B01DAE6CE900D91743 /* InsuredContactView.m */; };
+		5C5D352C1DAE6CEA00D91743 /* InsuredListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34B11DAE6CE900D91743 /* InsuredListView.h */; };
+		5C5D352D1DAE6CEA00D91743 /* InsuredListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34B21DAE6CE900D91743 /* InsuredListView.m */; };
+		5C5D352E1DAE6CEA00D91743 /* InsuredSelectButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34B31DAE6CE900D91743 /* InsuredSelectButton.h */; };
+		5C5D352F1DAE6CEA00D91743 /* InsuredSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34B41DAE6CE900D91743 /* InsuredSelectButton.m */; };
+		5C5D35301DAE6CEA00D91743 /* SafeBottomCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34B51DAE6CE900D91743 /* SafeBottomCell.h */; };
+		5C5D35311DAE6CEA00D91743 /* SafeBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34B61DAE6CE900D91743 /* SafeBottomCell.m */; };
+		5C5D35321DAE6CEA00D91743 /* SafeBuyAddressCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34B71DAE6CE900D91743 /* SafeBuyAddressCell.h */; };
+		5C5D35331DAE6CEA00D91743 /* SafeBuyAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34B81DAE6CE900D91743 /* SafeBuyAddressCell.m */; };
+		5C5D35341DAE6CEA00D91743 /* SafeBuyChildrenController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34B91DAE6CE900D91743 /* SafeBuyChildrenController.h */; };
+		5C5D35351DAE6CEA00D91743 /* SafeBuyChildrenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34BA1DAE6CE900D91743 /* SafeBuyChildrenController.m */; };
+		5C5D35361DAE6CEA00D91743 /* SafeBuyHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34BB1DAE6CE900D91743 /* SafeBuyHeaderCell.h */; };
+		5C5D35371DAE6CEA00D91743 /* SafeBuyHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34BC1DAE6CE900D91743 /* SafeBuyHeaderCell.m */; };
+		5C5D35381DAE6CEA00D91743 /* SafeBuyInsuredController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34BD1DAE6CE900D91743 /* SafeBuyInsuredController.h */; };
+		5C5D35391DAE6CEA00D91743 /* SafeBuyInsuredController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34BE1DAE6CE900D91743 /* SafeBuyInsuredController.m */; };
+		5C5D353A1DAE6CEA00D91743 /* SafeCarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34BF1DAE6CE900D91743 /* SafeCarCell.h */; };
+		5C5D353B1DAE6CEA00D91743 /* SafeCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34C01DAE6CE900D91743 /* SafeCarCell.m */; };
+		5C5D353C1DAE6CEA00D91743 /* SafeContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34C11DAE6CE900D91743 /* SafeContact.h */; };
+		5C5D353D1DAE6CEA00D91743 /* SafeContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34C21DAE6CE900D91743 /* SafeContact.m */; };
+		5C5D353E1DAE6CEA00D91743 /* SafeContactCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34C31DAE6CE900D91743 /* SafeContactCell.h */; };
+		5C5D353F1DAE6CEA00D91743 /* SafeContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34C41DAE6CE900D91743 /* SafeContactCell.m */; };
+		5C5D35401DAE6CEA00D91743 /* SafeContactListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34C51DAE6CE900D91743 /* SafeContactListView.h */; };
+		5C5D35411DAE6CEA00D91743 /* SafeContactListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34C61DAE6CE900D91743 /* SafeContactListView.m */; };
+		5C5D35421DAE6CEA00D91743 /* SafeCounterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34C71DAE6CE900D91743 /* SafeCounterView.h */; };
+		5C5D35431DAE6CEA00D91743 /* SafeCounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34C81DAE6CE900D91743 /* SafeCounterView.m */; };
+		5C5D35441DAE6CEA00D91743 /* SafeDetailInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34C91DAE6CE900D91743 /* SafeDetailInfoView.h */; };
+		5C5D35451DAE6CEA00D91743 /* SafeDetailInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34CA1DAE6CE900D91743 /* SafeDetailInfoView.m */; };
+		5C5D35461DAE6CEA00D91743 /* SafeInsuredDetailController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34CB1DAE6CE900D91743 /* SafeInsuredDetailController.h */; };
+		5C5D35471DAE6CEA00D91743 /* SafeInsuredDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34CC1DAE6CE900D91743 /* SafeInsuredDetailController.m */; };
+		5C5D35481DAE6CEA00D91743 /* SafeInsuredListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34CD1DAE6CE900D91743 /* SafeInsuredListCell.h */; };
+		5C5D35491DAE6CEA00D91743 /* SafeInsuredListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34CE1DAE6CE900D91743 /* SafeInsuredListCell.m */; };
+		5C5D354A1DAE6CEA00D91743 /* SafeOneInsuredCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34CF1DAE6CE900D91743 /* SafeOneInsuredCell.h */; };
+		5C5D354B1DAE6CEA00D91743 /* SafeOneInsuredCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34D01DAE6CE900D91743 /* SafeOneInsuredCell.m */; };
+		5C5D354C1DAE6CEA00D91743 /* SafeRelationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34D11DAE6CE900D91743 /* SafeRelationView.h */; };
+		5C5D354D1DAE6CEA00D91743 /* SafeRelationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34D21DAE6CE900D91743 /* SafeRelationView.m */; };
+		5C5D354E1DAE6CEA00D91743 /* SafeInsuredShowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34D41DAE6CE900D91743 /* SafeInsuredShowController.h */; };
+		5C5D354F1DAE6CEA00D91743 /* SafeInsuredShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34D51DAE6CE900D91743 /* SafeInsuredShowController.m */; };
+		5C5D35501DAE6CEA00D91743 /* SafeShowDetailVo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34D61DAE6CE900D91743 /* SafeShowDetailVo.h */; };
+		5C5D35511DAE6CEA00D91743 /* SafeShowDetailVo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34D71DAE6CE900D91743 /* SafeShowDetailVo.m */; };
+		5C5D35521DAE6CEA00D91743 /* MyCardSafeDetailController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34D91DAE6CE900D91743 /* MyCardSafeDetailController.h */; };
+		5C5D35531DAE6CEA00D91743 /* MyCardSafeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34DA1DAE6CE900D91743 /* MyCardSafeDetailController.m */; };
+		5C5D35541DAE6CEA00D91743 /* MySafeCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34DB1DAE6CE900D91743 /* MySafeCell.h */; };
+		5C5D35551DAE6CEA00D91743 /* MySafeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34DC1DAE6CE900D91743 /* MySafeCell.m */; };
+		5C5D35561DAE6CEA00D91743 /* MySafeClaimInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34DD1DAE6CE900D91743 /* MySafeClaimInfo.h */; };
+		5C5D35571DAE6CEA00D91743 /* MySafeClaimInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34DE1DAE6CE900D91743 /* MySafeClaimInfo.m */; };
+		5C5D35581DAE6CEA00D91743 /* MySafeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34DF1DAE6CE900D91743 /* MySafeController.h */; };
+		5C5D35591DAE6CEA00D91743 /* MySafeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34E01DAE6CE900D91743 /* MySafeController.m */; };
+		5C5D355A1DAE6CEA00D91743 /* MySafeDetailController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34E11DAE6CE900D91743 /* MySafeDetailController.h */; };
+		5C5D355B1DAE6CEA00D91743 /* MySafeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34E21DAE6CE900D91743 /* MySafeDetailController.m */; };
+		5C5D355C1DAE6CEA00D91743 /* MySafeInsuredCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34E31DAE6CE900D91743 /* MySafeInsuredCell.h */; };
+		5C5D355D1DAE6CEA00D91743 /* MySafeInsuredCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34E41DAE6CE900D91743 /* MySafeInsuredCell.m */; };
+		5C5D355E1DAE6CEA00D91743 /* MySafeOrderController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34E51DAE6CE900D91743 /* MySafeOrderController.h */; };
+		5C5D355F1DAE6CEA00D91743 /* MySafeOrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34E61DAE6CE900D91743 /* MySafeOrderController.m */; };
+		5C5D35601DAE6CEA00D91743 /* MySafeVo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34E71DAE6CE900D91743 /* MySafeVo.h */; };
+		5C5D35611DAE6CEA00D91743 /* MySafeVo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34E81DAE6CE900D91743 /* MySafeVo.m */; };
+		5C5D35621DAE6CEA00D91743 /* SafeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34EA1DAE6CE900D91743 /* SafeModel.h */; };
+		5C5D35631DAE6CEA00D91743 /* SafeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34EB1DAE6CE900D91743 /* SafeModel.m */; };
+		5C5D35641DAE6CEA00D91743 /* SafeCahierItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34EC1DAE6CE900D91743 /* SafeCahierItem.h */; };
+		5C5D35651DAE6CEA00D91743 /* SafeCahierItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34ED1DAE6CE900D91743 /* SafeCahierItem.m */; };
+		5C5D35661DAE6CEA00D91743 /* SafeCashierController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34EE1DAE6CE900D91743 /* SafeCashierController.h */; };
+		5C5D35671DAE6CEA00D91743 /* SafeCashierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34EF1DAE6CE900D91743 /* SafeCashierController.m */; };
+		5C5D35681DAE6CEA00D91743 /* SafeCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34F01DAE6CE900D91743 /* SafeCell.h */; };
+		5C5D35691DAE6CEA00D91743 /* SafeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34F11DAE6CE900D91743 /* SafeCell.m */; };
+		5C5D356A1DAE6CEA00D91743 /* SafeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34F21DAE6CE900D91743 /* SafeController.h */; };
+		5C5D356B1DAE6CEA00D91743 /* SafeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34F31DAE6CE900D91743 /* SafeController.m */; };
+		5C5D356C1DAE6CEA00D91743 /* SafeDetailVo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34F41DAE6CE900D91743 /* SafeDetailVo.h */; };
+		5C5D356D1DAE6CEA00D91743 /* SafeDetailVo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34F51DAE6CE900D91743 /* SafeDetailVo.m */; };
+		5C5D356E1DAE6CEA00D91743 /* SafeHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34F61DAE6CE900D91743 /* SafeHeaderView.h */; };
+		5C5D356F1DAE6CEA00D91743 /* SafeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34F71DAE6CE900D91743 /* SafeHeaderView.m */; };
+		5C5D35701DAE6CEA00D91743 /* SafeListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34F81DAE6CE900D91743 /* SafeListController.h */; };
+		5C5D35711DAE6CEA00D91743 /* SafeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34F91DAE6CE900D91743 /* SafeListController.m */; };
+		5C5D35721DAE6CEA00D91743 /* SafePayAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34FA1DAE6CE900D91743 /* SafePayAction.h */; };
+		5C5D35731DAE6CEA00D91743 /* SafePayAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34FB1DAE6CE900D91743 /* SafePayAction.m */; };
+		5C5D35741DAE6CEA00D91743 /* SafePayHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34FC1DAE6CE900D91743 /* SafePayHandler.h */; };
+		5C5D35751DAE6CEA00D91743 /* SafePayHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34FD1DAE6CE900D91743 /* SafePayHandler.m */; };
+		5C5D35761DAE6CEA00D91743 /* SafePayResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D34FE1DAE6CE900D91743 /* SafePayResult.h */; };
+		5C5D35771DAE6CEA00D91743 /* SafePayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D34FF1DAE6CE900D91743 /* SafePayResult.m */; };
+		5C5D35781DAE6CEA00D91743 /* SafePayResultController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35001DAE6CEA00D91743 /* SafePayResultController.h */; };
+		5C5D35791DAE6CEA00D91743 /* SafePayResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35011DAE6CEA00D91743 /* SafePayResultController.m */; };
+		5C5D357A1DAE6CEA00D91743 /* SafeSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35021DAE6CEA00D91743 /* SafeSummary.h */; };
+		5C5D357B1DAE6CEA00D91743 /* SafeSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35031DAE6CEA00D91743 /* SafeSummary.m */; };
+		5C5D357C1DAE6CEA00D91743 /* SafeTypeVo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35041DAE6CEA00D91743 /* SafeTypeVo.h */; };
+		5C5D357D1DAE6CEA00D91743 /* SafeTypeVo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35051DAE6CEA00D91743 /* SafeTypeVo.m */; };
+		5C5D357E1DAE6CEA00D91743 /* SafeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35061DAE6CEA00D91743 /* SafeUtil.h */; };
+		5C5D357F1DAE6CEA00D91743 /* SafeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35071DAE6CEA00D91743 /* SafeUtil.m */; };
+		5C5D35801DAE6CEA00D91743 /* SafeVo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35081DAE6CEA00D91743 /* SafeVo.h */; };
+		5C5D35811DAE6CEA00D91743 /* SafeVo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35091DAE6CEA00D91743 /* SafeVo.m */; };
+		5C5D35821DAE6CEA00D91743 /* SafeWebViewUrlParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D350A1DAE6CEA00D91743 /* SafeWebViewUrlParser.h */; };
+		5C5D35831DAE6CEA00D91743 /* SafeWebViewUrlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D350B1DAE6CEA00D91743 /* SafeWebViewUrlParser.m */; };
+		5C5D35841DAE6CEA00D91743 /* TermLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D350C1DAE6CEA00D91743 /* TermLabel.h */; };
+		5C5D35851DAE6CEA00D91743 /* TermLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D350D1DAE6CEA00D91743 /* TermLabel.m */; };
+		5C5D35861DAE6CEA00D91743 /* UILineLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D350E1DAE6CEA00D91743 /* UILineLabel.h */; };
+		5C5D35871DAE6CEA00D91743 /* UILineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D350F1DAE6CEA00D91743 /* UILineLabel.m */; };
+		5C5D358C1DAE6D4300D91743 /* dmlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5D35891DAE6D4300D91743 /* dmlib.framework */; };
+		5C5D35921DAE6D6000D91743 /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35901DAE6D6000D91743 /* TTTAttributedLabel.h */; };
+		5C5D35931DAE6D6000D91743 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35911DAE6D6000D91743 /* TTTAttributedLabel.m */; };
+		5C5D35961DAE6D9600D91743 /* CashierCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35941DAE6D9600D91743 /* CashierCell.h */; };
+		5C5D35971DAE6D9600D91743 /* CashierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35951DAE6D9600D91743 /* CashierCell.m */; };
+		5C5D359E1DAE6E6200D91743 /* DMOrderConfirmController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D359C1DAE6E6200D91743 /* DMOrderConfirmController.h */; };
+		5C5D359F1DAE6E6200D91743 /* DMOrderConfirmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D359D1DAE6E6200D91743 /* DMOrderConfirmController.m */; };
+		5C5D35A21DAE6EA600D91743 /* UIButton+NetIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35A01DAE6EA600D91743 /* UIButton+NetIcon.h */; };
+		5C5D35A31DAE6EA600D91743 /* UIButton+NetIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35A11DAE6EA600D91743 /* UIButton+NetIcon.m */; };
+		5C5D35AA1DAE6F7300D91743 /* RealInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5D35A81DAE6F7300D91743 /* RealInfo.h */; };
+		5C5D35AB1DAE6F7300D91743 /* RealInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D35A91DAE6F7300D91743 /* RealInfo.m */; };
+		5CB3C76C1E3611B10067D84D /* ecardlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB3C76B1E3611B10067D84D /* ecardlib.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C4137ED1E337761005C451E /* safebundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = safebundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4137EF1E337761005C451E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4137F31E33779E005C451E /* SafeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeController.xib; sourceTree = "<group>"; };
+		5C4137F41E33779E005C451E /* SafeCashierController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeCashierController.xib; sourceTree = "<group>"; };
+		5C4137F51E33779E005C451E /* CashierCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CashierCell.xib; sourceTree = "<group>"; };
+		5C4137F81E33779E005C451E /* SafeBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeBottomCell.xib; sourceTree = "<group>"; };
+		5C4137F91E33779E005C451E /* SafeBuyAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeBuyAddressCell.xib; sourceTree = "<group>"; };
+		5C4137FA1E33779E005C451E /* SafeBuyHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeBuyHeaderCell.xib; sourceTree = "<group>"; };
+		5C4137FB1E33779E005C451E /* SafeCarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeCarCell.xib; sourceTree = "<group>"; };
+		5C4137FC1E33779E005C451E /* SafeInsuredListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeInsuredListCell.xib; sourceTree = "<group>"; };
+		5C4137FD1E33779E005C451E /* SafeOneInsuredCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeOneInsuredCell.xib; sourceTree = "<group>"; };
+		5C4137FF1E33779E005C451E /* SafeBuyAddressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeBuyAddressView.xib; sourceTree = "<group>"; };
+		5C4138001E33779E005C451E /* SafeBuyCarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeBuyCarView.xib; sourceTree = "<group>"; };
+		5C4138011E33779E005C451E /* SafeBuyFamilly.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeBuyFamilly.xib; sourceTree = "<group>"; };
+		5C4138021E33779E005C451E /* SafeFCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeFCell.xib; sourceTree = "<group>"; };
+		5C4138031E33779E005C451E /* SafeInsuredCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeInsuredCell.xib; sourceTree = "<group>"; };
+		5C4138041E33779E005C451E /* SafeInsuredSafeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeInsuredSafeController.xib; sourceTree = "<group>"; };
+		5C4138051E33779E005C451E /* SafeInsuredWithRelationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeInsuredWithRelationCell.xib; sourceTree = "<group>"; };
+		5C4138061E33779E005C451E /* SafeSelContactController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeSelContactController.xib; sourceTree = "<group>"; };
+		5C4138071E33779E005C451E /* InsuredListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsuredListView.xib; sourceTree = "<group>"; };
+		5C4138081E33779E005C451E /* SafeBuyChildrenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeBuyChildrenController.xib; sourceTree = "<group>"; };
+		5C4138091E33779E005C451E /* SafeBuyInsuredController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeBuyInsuredController.xib; sourceTree = "<group>"; };
+		5C41380A1E33779E005C451E /* SafeContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeContactCell.xib; sourceTree = "<group>"; };
+		5C41380B1E33779E005C451E /* SafeDetailInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeDetailInfoView.xib; sourceTree = "<group>"; };
+		5C41380C1E33779E005C451E /* SafeInsuredDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeInsuredDetailController.xib; sourceTree = "<group>"; };
+		5C41380D1E33779E005C451E /* SafeCahierItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeCahierItem.xib; sourceTree = "<group>"; };
+		5C41380F1E33779E005C451E /* MyCardSafeDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCardSafeDetailController.xib; sourceTree = "<group>"; };
+		5C4138101E33779E005C451E /* MySafeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySafeCell.xib; sourceTree = "<group>"; };
+		5C4138111E33779E005C451E /* MySafeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySafeController.xib; sourceTree = "<group>"; };
+		5C4138121E33779E005C451E /* MySafeDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySafeDetailController.xib; sourceTree = "<group>"; };
+		5C4138131E33779E005C451E /* MySafeInsuredCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySafeInsuredCell.xib; sourceTree = "<group>"; };
+		5C4138141E33779E005C451E /* MySafeOrderController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySafeOrderController.xib; sourceTree = "<group>"; };
+		5C4138161E33779E005C451E /* SafeCardBuyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeCardBuyController.xib; sourceTree = "<group>"; };
+		5C4138171E33779E005C451E /* SafeCardClaimController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeCardClaimController.xib; sourceTree = "<group>"; };
+		5C4138181E33779E005C451E /* SafeCardDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeCardDetailController.xib; sourceTree = "<group>"; };
+		5C4138191E33779E005C451E /* SafeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeHeaderView.xib; sourceTree = "<group>"; };
+		5C41381A1E33779E005C451E /* SafePayResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafePayResultController.xib; sourceTree = "<group>"; };
+		5C41381B1E33779E005C451E /* SafeListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeListController.xib; sourceTree = "<group>"; };
+		5C41381D1E33779E005C451E /* bg_insurance_example@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_insurance_example@2x.png"; sourceTree = "<group>"; };
+		5C41381E1E33779E005C451E /* f_detail_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "f_detail_bg@2x.jpg"; sourceTree = "<group>"; };
+		5C41381F1E33779E005C451E /* ic_add_insured@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_add_insured@2x.png"; sourceTree = "<group>"; };
+		5C4138201E33779E005C451E /* ic_fetch_ticket_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_fetch_ticket_success@2x.png"; sourceTree = "<group>"; };
+		5C4138211E33779E005C451E /* ic_insurance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance@2x.png"; sourceTree = "<group>"; };
+		5C4138221E33779E005C451E /* ic_insurance_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_checked@2x.png"; sourceTree = "<group>"; };
+		5C4138231E33779E005C451E /* ic_insurance_claims_step1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_claims_step1@2x.png"; sourceTree = "<group>"; };
+		5C4138241E33779E005C451E /* ic_insurance_claims_step1_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_claims_step1_1@2x.png"; sourceTree = "<group>"; };
+		5C4138251E33779E005C451E /* ic_insurance_claims_step2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_claims_step2@2x.png"; sourceTree = "<group>"; };
+		5C4138261E33779E005C451E /* ic_insurance_claims_step2_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_claims_step2_2@2x.png"; sourceTree = "<group>"; };
+		5C4138271E33779E005C451E /* ic_insurance_claims_step3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_claims_step3@2x.png"; sourceTree = "<group>"; };
+		5C4138281E33779E005C451E /* ic_insurance_claims_step3_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_claims_step3_3@2x.png"; sourceTree = "<group>"; };
+		5C4138291E33779E005C451E /* ic_insurance_expires@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_expires@2x.png"; sourceTree = "<group>"; };
+		5C41382A1E33779E005C451E /* ic_insurance_flag_hot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_flag_hot@2x.png"; sourceTree = "<group>"; };
+		5C41382B1E33779E005C451E /* ic_insurance_flag_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_flag_new@2x.png"; sourceTree = "<group>"; };
+		5C41382C1E33779E005C451E /* ic_insurance_has_claim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_insurance_has_claim.png; sourceTree = "<group>"; };
+		5C41382D1E33779E005C451E /* ic_insurance_in_security@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_in_security@2x.png"; sourceTree = "<group>"; };
+		5C41382E1E33779E005C451E /* ic_insurance_insured_seleted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_insured_seleted@2x.png"; sourceTree = "<group>"; };
+		5C41382F1E33779E005C451E /* ic_insurance_insured_unselete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_insured_unselete@2x.png"; sourceTree = "<group>"; };
+		5C4138301E33779E005C451E /* ic_insurance_no_order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_insurance_no_order.png; sourceTree = "<group>"; };
+		5C4138311E33779E005C451E /* ic_insurance_plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_plus@2x.png"; sourceTree = "<group>"; };
+		5C4138321E33779E005C451E /* ic_insurance_sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_sub@2x.png"; sourceTree = "<group>"; };
+		5C4138331E33779E005C451E /* ic_insurance_uncheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_insurance_uncheck@2x.png"; sourceTree = "<group>"; };
+		5C4138341E33779E005C451E /* ic_personal_insurance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_personal_insurance@2x.png"; sourceTree = "<group>"; };
+		5C4138351E33779E005C451E /* ic_safe_accident@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_accident@2x.png"; sourceTree = "<group>"; };
+		5C4138361E33779E005C451E /* ic_safe_age@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_age@2x.png"; sourceTree = "<group>"; };
+		5C4138371E33779E005C451E /* ic_safe_car@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_car@2x.png"; sourceTree = "<group>"; };
+		5C4138381E33779E005C451E /* ic_safe_cashier@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_cashier@2x.png"; sourceTree = "<group>"; };
+		5C4138391E33779E005C451E /* ic_safe_contact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_contact@2x.png"; sourceTree = "<group>"; };
+		5C41383A1E33779E005C451E /* ic_safe_ecard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_ecard@2x.png"; sourceTree = "<group>"; };
+		5C41383B1E33779E005C451E /* ic_safe_family@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_family@2x.png"; sourceTree = "<group>"; };
+		5C41383C1E33779E005C451E /* ic_safe_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_line@2x.png"; sourceTree = "<group>"; };
+		5C41383D1E33779E005C451E /* ic_safe_step1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_step1@2x.png"; sourceTree = "<group>"; };
+		5C41383E1E33779E005C451E /* ic_safe_step2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_step2@2x.png"; sourceTree = "<group>"; };
+		5C41383F1E33779E005C451E /* ic_safe_step3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_step3@2x.png"; sourceTree = "<group>"; };
+		5C4138401E33779E005C451E /* ic_safe_step4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_step4@2x.png"; sourceTree = "<group>"; };
+		5C4138411E33779E005C451E /* ic_safe_step5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safe_step5@2x.png"; sourceTree = "<group>"; };
+		5C4138421E33779E005C451E /* ic_safeguard_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_safeguard_left@2x.png"; sourceTree = "<group>"; };
+		5C4138431E33779E005C451E /* ic_take_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_take_photo@2x.png"; sourceTree = "<group>"; };
+		5C4138441E33779E005C451E /* s_ic_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "s_ic_btn@2x.png"; sourceTree = "<group>"; };
+		5C4138451E33779E005C451E /* safe_ali_pay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe_ali_pay@2x.png"; sourceTree = "<group>"; };
+		5C4138461E33779E005C451E /* safe_card_show@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "safe_card_show@2x.jpg"; sourceTree = "<group>"; };
+		5C4138471E33779E005C451E /* safe_picc_icon_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe_picc_icon_big@2x.png"; sourceTree = "<group>"; };
+		5C4138481E33779E005C451E /* safe_tab_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe_tab_left@2x.png"; sourceTree = "<group>"; };
+		5C4138491E33779E005C451E /* safe_tab_left_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe_tab_left_h@2x.png"; sourceTree = "<group>"; };
+		5C41384A1E33779E005C451E /* safe_tab_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe_tab_right@2x.png"; sourceTree = "<group>"; };
+		5C41384B1E33779E005C451E /* safe_tab_right_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe_tab_right_h@2x.png"; sourceTree = "<group>"; };
+		5C41384C1E33779E005C451E /* safe_weixin_pay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "safe_weixin_pay@2x.png"; sourceTree = "<group>"; };
+		5C41384D1E33779E005C451E /* SafeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeCell.xib; sourceTree = "<group>"; };
+		5C41384F1E33779E005C451E /* SafeInsuredShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeInsuredShowController.xib; sourceTree = "<group>"; };
+		5C4138501E33779E005C451E /* SafeNoResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafeNoResultView.xib; sourceTree = "<group>"; };
+		5C4138511E33779E005C451E /* ic_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_arrow@2x.png"; sourceTree = "<group>"; };
+		5C4138521E33779E005C451E /* s_ic_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "s_ic_on@2x.png"; sourceTree = "<group>"; };
+		5C4138531E33779E005C451E /* s_ic_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "s_ic_off@2x.png"; sourceTree = "<group>"; };
+		5C5D342B1DAE6B3B00D91743 /* safe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = safe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C5D342E1DAE6B3B00D91743 /* safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = safe.h; sourceTree = "<group>"; };
+		5C5D342F1DAE6B3B00D91743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C5D34931DAE6CE900D91743 /* SafeCardBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCardBuyController.h; sourceTree = "<group>"; };
+		5C5D34941DAE6CE900D91743 /* SafeCardBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeCardBuyController.m; sourceTree = "<group>"; };
+		5C5D34951DAE6CE900D91743 /* SafeCardClaimController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCardClaimController.h; sourceTree = "<group>"; };
+		5C5D34961DAE6CE900D91743 /* SafeCardClaimController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeCardClaimController.m; sourceTree = "<group>"; };
+		5C5D34971DAE6CE900D91743 /* SafeCardDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCardDetailController.h; sourceTree = "<group>"; };
+		5C5D34981DAE6CE900D91743 /* SafeCardDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeCardDetailController.m; sourceTree = "<group>"; };
+		5C5D349A1DAE6CE900D91743 /* BaseDetailInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDetailInfoView.h; sourceTree = "<group>"; };
+		5C5D349B1DAE6CE900D91743 /* BaseDetailInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDetailInfoView.m; sourceTree = "<group>"; };
+		5C5D349D1DAE6CE900D91743 /* SafeBuyAddressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeBuyAddressView.h; sourceTree = "<group>"; };
+		5C5D349E1DAE6CE900D91743 /* SafeBuyAddressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeBuyAddressView.m; sourceTree = "<group>"; };
+		5C5D349F1DAE6CE900D91743 /* SafeBuyCarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeBuyCarView.h; sourceTree = "<group>"; };
+		5C5D34A01DAE6CE900D91743 /* SafeBuyCarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeBuyCarView.m; sourceTree = "<group>"; };
+		5C5D34A11DAE6CE900D91743 /* SafeBuyFamilly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeBuyFamilly.h; sourceTree = "<group>"; };
+		5C5D34A21DAE6CE900D91743 /* SafeBuyFamilly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeBuyFamilly.m; sourceTree = "<group>"; };
+		5C5D34A31DAE6CE900D91743 /* SafeInsuredCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeInsuredCell.h; sourceTree = "<group>"; };
+		5C5D34A41DAE6CE900D91743 /* SafeInsuredCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeInsuredCell.m; sourceTree = "<group>"; };
+		5C5D34A51DAE6CE900D91743 /* SafeInsuredContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeInsuredContainer.h; sourceTree = "<group>"; };
+		5C5D34A61DAE6CE900D91743 /* SafeInsuredContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeInsuredContainer.m; sourceTree = "<group>"; };
+		5C5D34A71DAE6CE900D91743 /* SafeInsuredListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeInsuredListView.h; sourceTree = "<group>"; };
+		5C5D34A81DAE6CE900D91743 /* SafeInsuredListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeInsuredListView.m; sourceTree = "<group>"; };
+		5C5D34A91DAE6CE900D91743 /* SafeInsuredSafeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeInsuredSafeController.h; sourceTree = "<group>"; };
+		5C5D34AA1DAE6CE900D91743 /* SafeInsuredSafeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeInsuredSafeController.m; sourceTree = "<group>"; };
+		5C5D34AB1DAE6CE900D91743 /* SafeInsuredWithRelationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeInsuredWithRelationCell.h; sourceTree = "<group>"; };
+		5C5D34AC1DAE6CE900D91743 /* SafeInsuredWithRelationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeInsuredWithRelationCell.m; sourceTree = "<group>"; };
+		5C5D34AD1DAE6CE900D91743 /* SafeSelContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeSelContactController.h; sourceTree = "<group>"; };
+		5C5D34AE1DAE6CE900D91743 /* SafeSelContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeSelContactController.m; sourceTree = "<group>"; };
+		5C5D34AF1DAE6CE900D91743 /* InsuredContactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuredContactView.h; sourceTree = "<group>"; };
+		5C5D34B01DAE6CE900D91743 /* InsuredContactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsuredContactView.m; sourceTree = "<group>"; };
+		5C5D34B11DAE6CE900D91743 /* InsuredListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuredListView.h; sourceTree = "<group>"; };
+		5C5D34B21DAE6CE900D91743 /* InsuredListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsuredListView.m; sourceTree = "<group>"; };
+		5C5D34B31DAE6CE900D91743 /* InsuredSelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuredSelectButton.h; sourceTree = "<group>"; };
+		5C5D34B41DAE6CE900D91743 /* InsuredSelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsuredSelectButton.m; sourceTree = "<group>"; };
+		5C5D34B51DAE6CE900D91743 /* SafeBottomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeBottomCell.h; sourceTree = "<group>"; };
+		5C5D34B61DAE6CE900D91743 /* SafeBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeBottomCell.m; sourceTree = "<group>"; };
+		5C5D34B71DAE6CE900D91743 /* SafeBuyAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeBuyAddressCell.h; sourceTree = "<group>"; };
+		5C5D34B81DAE6CE900D91743 /* SafeBuyAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeBuyAddressCell.m; sourceTree = "<group>"; };
+		5C5D34B91DAE6CE900D91743 /* SafeBuyChildrenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeBuyChildrenController.h; sourceTree = "<group>"; };
+		5C5D34BA1DAE6CE900D91743 /* SafeBuyChildrenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeBuyChildrenController.m; sourceTree = "<group>"; };
+		5C5D34BB1DAE6CE900D91743 /* SafeBuyHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeBuyHeaderCell.h; sourceTree = "<group>"; };
+		5C5D34BC1DAE6CE900D91743 /* SafeBuyHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeBuyHeaderCell.m; sourceTree = "<group>"; };
+		5C5D34BD1DAE6CE900D91743 /* SafeBuyInsuredController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeBuyInsuredController.h; sourceTree = "<group>"; };
+		5C5D34BE1DAE6CE900D91743 /* SafeBuyInsuredController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeBuyInsuredController.m; sourceTree = "<group>"; };
+		5C5D34BF1DAE6CE900D91743 /* SafeCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCarCell.h; sourceTree = "<group>"; };
+		5C5D34C01DAE6CE900D91743 /* SafeCarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeCarCell.m; sourceTree = "<group>"; };
+		5C5D34C11DAE6CE900D91743 /* SafeContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeContact.h; sourceTree = "<group>"; };
+		5C5D34C21DAE6CE900D91743 /* SafeContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeContact.m; sourceTree = "<group>"; };
+		5C5D34C31DAE6CE900D91743 /* SafeContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeContactCell.h; sourceTree = "<group>"; };
+		5C5D34C41DAE6CE900D91743 /* SafeContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeContactCell.m; sourceTree = "<group>"; };
+		5C5D34C51DAE6CE900D91743 /* SafeContactListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeContactListView.h; sourceTree = "<group>"; };
+		5C5D34C61DAE6CE900D91743 /* SafeContactListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeContactListView.m; sourceTree = "<group>"; };
+		5C5D34C71DAE6CE900D91743 /* SafeCounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCounterView.h; sourceTree = "<group>"; };
+		5C5D34C81DAE6CE900D91743 /* SafeCounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeCounterView.m; sourceTree = "<group>"; };
+		5C5D34C91DAE6CE900D91743 /* SafeDetailInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeDetailInfoView.h; sourceTree = "<group>"; };
+		5C5D34CA1DAE6CE900D91743 /* SafeDetailInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeDetailInfoView.m; sourceTree = "<group>"; };
+		5C5D34CB1DAE6CE900D91743 /* SafeInsuredDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeInsuredDetailController.h; sourceTree = "<group>"; };
+		5C5D34CC1DAE6CE900D91743 /* SafeInsuredDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeInsuredDetailController.m; sourceTree = "<group>"; };
+		5C5D34CD1DAE6CE900D91743 /* SafeInsuredListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeInsuredListCell.h; sourceTree = "<group>"; };
+		5C5D34CE1DAE6CE900D91743 /* SafeInsuredListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeInsuredListCell.m; sourceTree = "<group>"; };
+		5C5D34CF1DAE6CE900D91743 /* SafeOneInsuredCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeOneInsuredCell.h; sourceTree = "<group>"; };
+		5C5D34D01DAE6CE900D91743 /* SafeOneInsuredCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeOneInsuredCell.m; sourceTree = "<group>"; };
+		5C5D34D11DAE6CE900D91743 /* SafeRelationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeRelationView.h; sourceTree = "<group>"; };
+		5C5D34D21DAE6CE900D91743 /* SafeRelationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeRelationView.m; sourceTree = "<group>"; };
+		5C5D34D41DAE6CE900D91743 /* SafeInsuredShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeInsuredShowController.h; sourceTree = "<group>"; };
+		5C5D34D51DAE6CE900D91743 /* SafeInsuredShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeInsuredShowController.m; sourceTree = "<group>"; };
+		5C5D34D61DAE6CE900D91743 /* SafeShowDetailVo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeShowDetailVo.h; sourceTree = "<group>"; };
+		5C5D34D71DAE6CE900D91743 /* SafeShowDetailVo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeShowDetailVo.m; sourceTree = "<group>"; };
+		5C5D34D91DAE6CE900D91743 /* MyCardSafeDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCardSafeDetailController.h; sourceTree = "<group>"; };
+		5C5D34DA1DAE6CE900D91743 /* MyCardSafeDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCardSafeDetailController.m; sourceTree = "<group>"; };
+		5C5D34DB1DAE6CE900D91743 /* MySafeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySafeCell.h; sourceTree = "<group>"; };
+		5C5D34DC1DAE6CE900D91743 /* MySafeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySafeCell.m; sourceTree = "<group>"; };
+		5C5D34DD1DAE6CE900D91743 /* MySafeClaimInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySafeClaimInfo.h; sourceTree = "<group>"; };
+		5C5D34DE1DAE6CE900D91743 /* MySafeClaimInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySafeClaimInfo.m; sourceTree = "<group>"; };
+		5C5D34DF1DAE6CE900D91743 /* MySafeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySafeController.h; sourceTree = "<group>"; };
+		5C5D34E01DAE6CE900D91743 /* MySafeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySafeController.m; sourceTree = "<group>"; };
+		5C5D34E11DAE6CE900D91743 /* MySafeDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySafeDetailController.h; sourceTree = "<group>"; };
+		5C5D34E21DAE6CE900D91743 /* MySafeDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySafeDetailController.m; sourceTree = "<group>"; };
+		5C5D34E31DAE6CE900D91743 /* MySafeInsuredCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySafeInsuredCell.h; sourceTree = "<group>"; };
+		5C5D34E41DAE6CE900D91743 /* MySafeInsuredCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySafeInsuredCell.m; sourceTree = "<group>"; };
+		5C5D34E51DAE6CE900D91743 /* MySafeOrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySafeOrderController.h; sourceTree = "<group>"; };
+		5C5D34E61DAE6CE900D91743 /* MySafeOrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySafeOrderController.m; sourceTree = "<group>"; };
+		5C5D34E71DAE6CE900D91743 /* MySafeVo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySafeVo.h; sourceTree = "<group>"; };
+		5C5D34E81DAE6CE900D91743 /* MySafeVo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySafeVo.m; sourceTree = "<group>"; };
+		5C5D34EA1DAE6CE900D91743 /* SafeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeModel.h; sourceTree = "<group>"; };
+		5C5D34EB1DAE6CE900D91743 /* SafeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeModel.m; sourceTree = "<group>"; };
+		5C5D34EC1DAE6CE900D91743 /* SafeCahierItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCahierItem.h; sourceTree = "<group>"; };
+		5C5D34ED1DAE6CE900D91743 /* SafeCahierItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeCahierItem.m; sourceTree = "<group>"; };
+		5C5D34EE1DAE6CE900D91743 /* SafeCashierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCashierController.h; sourceTree = "<group>"; };
+		5C5D34EF1DAE6CE900D91743 /* SafeCashierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeCashierController.m; sourceTree = "<group>"; };
+		5C5D34F01DAE6CE900D91743 /* SafeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeCell.h; sourceTree = "<group>"; };
+		5C5D34F11DAE6CE900D91743 /* SafeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeCell.m; sourceTree = "<group>"; };
+		5C5D34F21DAE6CE900D91743 /* SafeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeController.h; sourceTree = "<group>"; };
+		5C5D34F31DAE6CE900D91743 /* SafeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeController.m; sourceTree = "<group>"; };
+		5C5D34F41DAE6CE900D91743 /* SafeDetailVo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeDetailVo.h; sourceTree = "<group>"; };
+		5C5D34F51DAE6CE900D91743 /* SafeDetailVo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeDetailVo.m; sourceTree = "<group>"; };
+		5C5D34F61DAE6CE900D91743 /* SafeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeHeaderView.h; sourceTree = "<group>"; };
+		5C5D34F71DAE6CE900D91743 /* SafeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeHeaderView.m; sourceTree = "<group>"; };
+		5C5D34F81DAE6CE900D91743 /* SafeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeListController.h; sourceTree = "<group>"; };
+		5C5D34F91DAE6CE900D91743 /* SafeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeListController.m; sourceTree = "<group>"; };
+		5C5D34FA1DAE6CE900D91743 /* SafePayAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafePayAction.h; sourceTree = "<group>"; };
+		5C5D34FB1DAE6CE900D91743 /* SafePayAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafePayAction.m; sourceTree = "<group>"; };
+		5C5D34FC1DAE6CE900D91743 /* SafePayHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafePayHandler.h; sourceTree = "<group>"; };
+		5C5D34FD1DAE6CE900D91743 /* SafePayHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafePayHandler.m; sourceTree = "<group>"; };
+		5C5D34FE1DAE6CE900D91743 /* SafePayResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafePayResult.h; sourceTree = "<group>"; };
+		5C5D34FF1DAE6CE900D91743 /* SafePayResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafePayResult.m; sourceTree = "<group>"; };
+		5C5D35001DAE6CEA00D91743 /* SafePayResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafePayResultController.h; sourceTree = "<group>"; };
+		5C5D35011DAE6CEA00D91743 /* SafePayResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafePayResultController.m; sourceTree = "<group>"; };
+		5C5D35021DAE6CEA00D91743 /* SafeSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeSummary.h; sourceTree = "<group>"; };
+		5C5D35031DAE6CEA00D91743 /* SafeSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeSummary.m; sourceTree = "<group>"; };
+		5C5D35041DAE6CEA00D91743 /* SafeTypeVo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeTypeVo.h; sourceTree = "<group>"; };
+		5C5D35051DAE6CEA00D91743 /* SafeTypeVo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeTypeVo.m; sourceTree = "<group>"; };
+		5C5D35061DAE6CEA00D91743 /* SafeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeUtil.h; sourceTree = "<group>"; };
+		5C5D35071DAE6CEA00D91743 /* SafeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeUtil.m; sourceTree = "<group>"; };
+		5C5D35081DAE6CEA00D91743 /* SafeVo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeVo.h; sourceTree = "<group>"; };
+		5C5D35091DAE6CEA00D91743 /* SafeVo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeVo.m; sourceTree = "<group>"; };
+		5C5D350A1DAE6CEA00D91743 /* SafeWebViewUrlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeWebViewUrlParser.h; sourceTree = "<group>"; };
+		5C5D350B1DAE6CEA00D91743 /* SafeWebViewUrlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeWebViewUrlParser.m; sourceTree = "<group>"; };
+		5C5D350C1DAE6CEA00D91743 /* TermLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermLabel.h; sourceTree = "<group>"; };
+		5C5D350D1DAE6CEA00D91743 /* TermLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermLabel.m; sourceTree = "<group>"; };
+		5C5D350E1DAE6CEA00D91743 /* UILineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILineLabel.h; sourceTree = "<group>"; };
+		5C5D350F1DAE6CEA00D91743 /* UILineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILineLabel.m; sourceTree = "<group>"; };
+		5C5D35891DAE6D4300D91743 /* dmlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = dmlib.framework; path = "../../../../Users/renxueliang/Library/Developer/Xcode/DerivedData/project-fviemeeymbobbvapxzwnfndukvur/Build/Products/Debug-iphoneos/dmlib.framework"; sourceTree = "<group>"; };
+		5C5D358A1DAE6D4300D91743 /* ecardlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ecardlib.framework; path = "../../../../Users/renxueliang/Library/Developer/Xcode/DerivedData/project-fviemeeymbobbvapxzwnfndukvur/Build/Products/Debug-iphoneos/ecardlib.framework"; sourceTree = "<group>"; };
+		5C5D358B1DAE6D4300D91743 /* myecard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myecard.framework; path = "../../../../Users/renxueliang/Library/Developer/Xcode/DerivedData/project-fviemeeymbobbvapxzwnfndukvur/Build/Products/Debug-iphoneos/myecard.framework"; sourceTree = "<group>"; };
+		5C5D35901DAE6D6000D91743 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		5C5D35911DAE6D6000D91743 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		5C5D35941DAE6D9600D91743 /* CashierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashierCell.h; sourceTree = "<group>"; };
+		5C5D35951DAE6D9600D91743 /* CashierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashierCell.m; sourceTree = "<group>"; };
+		5C5D359C1DAE6E6200D91743 /* DMOrderConfirmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMOrderConfirmController.h; sourceTree = "<group>"; };
+		5C5D359D1DAE6E6200D91743 /* DMOrderConfirmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMOrderConfirmController.m; sourceTree = "<group>"; };
+		5C5D35A01DAE6EA600D91743 /* UIButton+NetIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NetIcon.h"; sourceTree = "<group>"; };
+		5C5D35A11DAE6EA600D91743 /* UIButton+NetIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NetIcon.m"; sourceTree = "<group>"; };
+		5C5D35A81DAE6F7300D91743 /* RealInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealInfo.h; sourceTree = "<group>"; };
+		5C5D35A91DAE6F7300D91743 /* RealInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealInfo.m; sourceTree = "<group>"; };
+		5CB3C76B1E3611B10067D84D /* ecardlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ecardlib.framework; path = "../DerivedData/project/Build/Products/Debug-iphoneos/ecardlib.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C4137EA1E337761005C451E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C5D34271DAE6B3B00D91743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB3C76C1E3611B10067D84D /* ecardlib.framework in Frameworks */,
+				5C5D358C1DAE6D4300D91743 /* dmlib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C4137EE1E337761005C451E /* safebundle */ = {
+			isa = PBXGroup;
+			children = (
+				5C4137F31E33779E005C451E /* SafeController.xib */,
+				5C4137F41E33779E005C451E /* SafeCashierController.xib */,
+				5C4137F51E33779E005C451E /* CashierCell.xib */,
+				5C4137F61E33779E005C451E /* insuredList */,
+				5C41380D1E33779E005C451E /* SafeCahierItem.xib */,
+				5C41380E1E33779E005C451E /* mine */,
+				5C4138151E33779E005C451E /* card */,
+				5C4138191E33779E005C451E /* SafeHeaderView.xib */,
+				5C41381A1E33779E005C451E /* SafePayResultController.xib */,
+				5C41381B1E33779E005C451E /* SafeListController.xib */,
+				5C41381C1E33779E005C451E /* res */,
+				5C41384D1E33779E005C451E /* SafeCell.xib */,
+				5C41384E1E33779E005C451E /* justShow */,
+				5C4138501E33779E005C451E /* SafeNoResultView.xib */,
+				5C4138511E33779E005C451E /* ic_arrow@2x.png */,
+				5C4138521E33779E005C451E /* s_ic_on@2x.png */,
+				5C4138531E33779E005C451E /* s_ic_off@2x.png */,
+				5C4137EF1E337761005C451E /* Info.plist */,
+			);
+			path = safebundle;
+			sourceTree = "<group>";
+		};
+		5C4137F61E33779E005C451E /* insuredList */ = {
+			isa = PBXGroup;
+			children = (
+				5C4137F71E33779E005C451E /* cells */,
+				5C4137FE1E33779E005C451E /* fammily */,
+				5C4138071E33779E005C451E /* InsuredListView.xib */,
+				5C4138081E33779E005C451E /* SafeBuyChildrenController.xib */,
+				5C4138091E33779E005C451E /* SafeBuyInsuredController.xib */,
+				5C41380A1E33779E005C451E /* SafeContactCell.xib */,
+				5C41380B1E33779E005C451E /* SafeDetailInfoView.xib */,
+				5C41380C1E33779E005C451E /* SafeInsuredDetailController.xib */,
+			);
+			path = insuredList;
+			sourceTree = "<group>";
+		};
+		5C4137F71E33779E005C451E /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				5C4137F81E33779E005C451E /* SafeBottomCell.xib */,
+				5C4137F91E33779E005C451E /* SafeBuyAddressCell.xib */,
+				5C4137FA1E33779E005C451E /* SafeBuyHeaderCell.xib */,
+				5C4137FB1E33779E005C451E /* SafeCarCell.xib */,
+				5C4137FC1E33779E005C451E /* SafeInsuredListCell.xib */,
+				5C4137FD1E33779E005C451E /* SafeOneInsuredCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		5C4137FE1E33779E005C451E /* fammily */ = {
+			isa = PBXGroup;
+			children = (
+				5C4137FF1E33779E005C451E /* SafeBuyAddressView.xib */,
+				5C4138001E33779E005C451E /* SafeBuyCarView.xib */,
+				5C4138011E33779E005C451E /* SafeBuyFamilly.xib */,
+				5C4138021E33779E005C451E /* SafeFCell.xib */,
+				5C4138031E33779E005C451E /* SafeInsuredCell.xib */,
+				5C4138041E33779E005C451E /* SafeInsuredSafeController.xib */,
+				5C4138051E33779E005C451E /* SafeInsuredWithRelationCell.xib */,
+				5C4138061E33779E005C451E /* SafeSelContactController.xib */,
+			);
+			path = fammily;
+			sourceTree = "<group>";
+		};
+		5C41380E1E33779E005C451E /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				5C41380F1E33779E005C451E /* MyCardSafeDetailController.xib */,
+				5C4138101E33779E005C451E /* MySafeCell.xib */,
+				5C4138111E33779E005C451E /* MySafeController.xib */,
+				5C4138121E33779E005C451E /* MySafeDetailController.xib */,
+				5C4138131E33779E005C451E /* MySafeInsuredCell.xib */,
+				5C4138141E33779E005C451E /* MySafeOrderController.xib */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		5C4138151E33779E005C451E /* card */ = {
+			isa = PBXGroup;
+			children = (
+				5C4138161E33779E005C451E /* SafeCardBuyController.xib */,
+				5C4138171E33779E005C451E /* SafeCardClaimController.xib */,
+				5C4138181E33779E005C451E /* SafeCardDetailController.xib */,
+			);
+			path = card;
+			sourceTree = "<group>";
+		};
+		5C41381C1E33779E005C451E /* res */ = {
+			isa = PBXGroup;
+			children = (
+				5C41381D1E33779E005C451E /* bg_insurance_example@2x.png */,
+				5C41381E1E33779E005C451E /* f_detail_bg@2x.jpg */,
+				5C41381F1E33779E005C451E /* ic_add_insured@2x.png */,
+				5C4138201E33779E005C451E /* ic_fetch_ticket_success@2x.png */,
+				5C4138211E33779E005C451E /* ic_insurance@2x.png */,
+				5C4138221E33779E005C451E /* ic_insurance_checked@2x.png */,
+				5C4138231E33779E005C451E /* ic_insurance_claims_step1@2x.png */,
+				5C4138241E33779E005C451E /* ic_insurance_claims_step1_1@2x.png */,
+				5C4138251E33779E005C451E /* ic_insurance_claims_step2@2x.png */,
+				5C4138261E33779E005C451E /* ic_insurance_claims_step2_2@2x.png */,
+				5C4138271E33779E005C451E /* ic_insurance_claims_step3@2x.png */,
+				5C4138281E33779E005C451E /* ic_insurance_claims_step3_3@2x.png */,
+				5C4138291E33779E005C451E /* ic_insurance_expires@2x.png */,
+				5C41382A1E33779E005C451E /* ic_insurance_flag_hot@2x.png */,
+				5C41382B1E33779E005C451E /* ic_insurance_flag_new@2x.png */,
+				5C41382C1E33779E005C451E /* ic_insurance_has_claim.png */,
+				5C41382D1E33779E005C451E /* ic_insurance_in_security@2x.png */,
+				5C41382E1E33779E005C451E /* ic_insurance_insured_seleted@2x.png */,
+				5C41382F1E33779E005C451E /* ic_insurance_insured_unselete@2x.png */,
+				5C4138301E33779E005C451E /* ic_insurance_no_order.png */,
+				5C4138311E33779E005C451E /* ic_insurance_plus@2x.png */,
+				5C4138321E33779E005C451E /* ic_insurance_sub@2x.png */,
+				5C4138331E33779E005C451E /* ic_insurance_uncheck@2x.png */,
+				5C4138341E33779E005C451E /* ic_personal_insurance@2x.png */,
+				5C4138351E33779E005C451E /* ic_safe_accident@2x.png */,
+				5C4138361E33779E005C451E /* ic_safe_age@2x.png */,
+				5C4138371E33779E005C451E /* ic_safe_car@2x.png */,
+				5C4138381E33779E005C451E /* ic_safe_cashier@2x.png */,
+				5C4138391E33779E005C451E /* ic_safe_contact@2x.png */,
+				5C41383A1E33779E005C451E /* ic_safe_ecard@2x.png */,
+				5C41383B1E33779E005C451E /* ic_safe_family@2x.png */,
+				5C41383C1E33779E005C451E /* ic_safe_line@2x.png */,
+				5C41383D1E33779E005C451E /* ic_safe_step1@2x.png */,
+				5C41383E1E33779E005C451E /* ic_safe_step2@2x.png */,
+				5C41383F1E33779E005C451E /* ic_safe_step3@2x.png */,
+				5C4138401E33779E005C451E /* ic_safe_step4@2x.png */,
+				5C4138411E33779E005C451E /* ic_safe_step5@2x.png */,
+				5C4138421E33779E005C451E /* ic_safeguard_left@2x.png */,
+				5C4138431E33779E005C451E /* ic_take_photo@2x.png */,
+				5C4138441E33779E005C451E /* s_ic_btn@2x.png */,
+				5C4138451E33779E005C451E /* safe_ali_pay@2x.png */,
+				5C4138461E33779E005C451E /* safe_card_show@2x.jpg */,
+				5C4138471E33779E005C451E /* safe_picc_icon_big@2x.png */,
+				5C4138481E33779E005C451E /* safe_tab_left@2x.png */,
+				5C4138491E33779E005C451E /* safe_tab_left_h@2x.png */,
+				5C41384A1E33779E005C451E /* safe_tab_right@2x.png */,
+				5C41384B1E33779E005C451E /* safe_tab_right_h@2x.png */,
+				5C41384C1E33779E005C451E /* safe_weixin_pay@2x.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		5C41384E1E33779E005C451E /* justShow */ = {
+			isa = PBXGroup;
+			children = (
+				5C41384F1E33779E005C451E /* SafeInsuredShowController.xib */,
+			);
+			path = justShow;
+			sourceTree = "<group>";
+		};
+		5C5D34211DAE6B3B00D91743 = {
+			isa = PBXGroup;
+			children = (
+				5C5D342D1DAE6B3B00D91743 /* safe */,
+				5C4137EE1E337761005C451E /* safebundle */,
+				5C5D342C1DAE6B3B00D91743 /* Products */,
+				5C5D35881DAE6D4200D91743 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C5D342C1DAE6B3B00D91743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D342B1DAE6B3B00D91743 /* safe.framework */,
+				5C4137ED1E337761005C451E /* safebundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C5D342D1DAE6B3B00D91743 /* safe */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D358F1DAE6D5A00D91743 /* views */,
+				5C5D34921DAE6CE900D91743 /* card */,
+				5C5D34991DAE6CE900D91743 /* insuredList */,
+				5C5D34D31DAE6CE900D91743 /* justShow */,
+				5C5D34D81DAE6CE900D91743 /* mine */,
+				5C5D34E91DAE6CE900D91743 /* models */,
+				5C5D34EC1DAE6CE900D91743 /* SafeCahierItem.h */,
+				5C5D34ED1DAE6CE900D91743 /* SafeCahierItem.m */,
+				5C5D34EE1DAE6CE900D91743 /* SafeCashierController.h */,
+				5C5D34EF1DAE6CE900D91743 /* SafeCashierController.m */,
+				5C5D34F01DAE6CE900D91743 /* SafeCell.h */,
+				5C5D34F11DAE6CE900D91743 /* SafeCell.m */,
+				5C5D34F21DAE6CE900D91743 /* SafeController.h */,
+				5C5D34F31DAE6CE900D91743 /* SafeController.m */,
+				5C5D34F41DAE6CE900D91743 /* SafeDetailVo.h */,
+				5C5D34F51DAE6CE900D91743 /* SafeDetailVo.m */,
+				5C5D34F61DAE6CE900D91743 /* SafeHeaderView.h */,
+				5C5D34F71DAE6CE900D91743 /* SafeHeaderView.m */,
+				5C5D34F81DAE6CE900D91743 /* SafeListController.h */,
+				5C5D34F91DAE6CE900D91743 /* SafeListController.m */,
+				5C5D34FA1DAE6CE900D91743 /* SafePayAction.h */,
+				5C5D34FB1DAE6CE900D91743 /* SafePayAction.m */,
+				5C5D34FC1DAE6CE900D91743 /* SafePayHandler.h */,
+				5C5D34FD1DAE6CE900D91743 /* SafePayHandler.m */,
+				5C5D34FE1DAE6CE900D91743 /* SafePayResult.h */,
+				5C5D34FF1DAE6CE900D91743 /* SafePayResult.m */,
+				5C5D35001DAE6CEA00D91743 /* SafePayResultController.h */,
+				5C5D35011DAE6CEA00D91743 /* SafePayResultController.m */,
+				5C5D35021DAE6CEA00D91743 /* SafeSummary.h */,
+				5C5D35031DAE6CEA00D91743 /* SafeSummary.m */,
+				5C5D35041DAE6CEA00D91743 /* SafeTypeVo.h */,
+				5C5D35051DAE6CEA00D91743 /* SafeTypeVo.m */,
+				5C5D35061DAE6CEA00D91743 /* SafeUtil.h */,
+				5C5D35071DAE6CEA00D91743 /* SafeUtil.m */,
+				5C5D35081DAE6CEA00D91743 /* SafeVo.h */,
+				5C5D35091DAE6CEA00D91743 /* SafeVo.m */,
+				5C5D350A1DAE6CEA00D91743 /* SafeWebViewUrlParser.h */,
+				5C5D350B1DAE6CEA00D91743 /* SafeWebViewUrlParser.m */,
+				5C5D350C1DAE6CEA00D91743 /* TermLabel.h */,
+				5C5D350D1DAE6CEA00D91743 /* TermLabel.m */,
+				5C5D350E1DAE6CEA00D91743 /* UILineLabel.h */,
+				5C5D350F1DAE6CEA00D91743 /* UILineLabel.m */,
+				5C5D342E1DAE6B3B00D91743 /* safe.h */,
+				5C5D342F1DAE6B3B00D91743 /* Info.plist */,
+			);
+			path = safe;
+			sourceTree = "<group>";
+		};
+		5C5D34921DAE6CE900D91743 /* card */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D34931DAE6CE900D91743 /* SafeCardBuyController.h */,
+				5C5D34941DAE6CE900D91743 /* SafeCardBuyController.m */,
+				5C5D34951DAE6CE900D91743 /* SafeCardClaimController.h */,
+				5C5D34961DAE6CE900D91743 /* SafeCardClaimController.m */,
+				5C5D34971DAE6CE900D91743 /* SafeCardDetailController.h */,
+				5C5D34981DAE6CE900D91743 /* SafeCardDetailController.m */,
+			);
+			path = card;
+			sourceTree = "<group>";
+		};
+		5C5D34991DAE6CE900D91743 /* insuredList */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D349A1DAE6CE900D91743 /* BaseDetailInfoView.h */,
+				5C5D349B1DAE6CE900D91743 /* BaseDetailInfoView.m */,
+				5C5D349C1DAE6CE900D91743 /* fammily */,
+				5C5D34AF1DAE6CE900D91743 /* InsuredContactView.h */,
+				5C5D34B01DAE6CE900D91743 /* InsuredContactView.m */,
+				5C5D34B11DAE6CE900D91743 /* InsuredListView.h */,
+				5C5D34B21DAE6CE900D91743 /* InsuredListView.m */,
+				5C5D34B31DAE6CE900D91743 /* InsuredSelectButton.h */,
+				5C5D34B41DAE6CE900D91743 /* InsuredSelectButton.m */,
+				5C5D34B51DAE6CE900D91743 /* SafeBottomCell.h */,
+				5C5D34B61DAE6CE900D91743 /* SafeBottomCell.m */,
+				5C5D34B71DAE6CE900D91743 /* SafeBuyAddressCell.h */,
+				5C5D34B81DAE6CE900D91743 /* SafeBuyAddressCell.m */,
+				5C5D34B91DAE6CE900D91743 /* SafeBuyChildrenController.h */,
+				5C5D34BA1DAE6CE900D91743 /* SafeBuyChildrenController.m */,
+				5C5D34BB1DAE6CE900D91743 /* SafeBuyHeaderCell.h */,
+				5C5D34BC1DAE6CE900D91743 /* SafeBuyHeaderCell.m */,
+				5C5D34BD1DAE6CE900D91743 /* SafeBuyInsuredController.h */,
+				5C5D34BE1DAE6CE900D91743 /* SafeBuyInsuredController.m */,
+				5C5D34BF1DAE6CE900D91743 /* SafeCarCell.h */,
+				5C5D34C01DAE6CE900D91743 /* SafeCarCell.m */,
+				5C5D34C11DAE6CE900D91743 /* SafeContact.h */,
+				5C5D34C21DAE6CE900D91743 /* SafeContact.m */,
+				5C5D34C31DAE6CE900D91743 /* SafeContactCell.h */,
+				5C5D34C41DAE6CE900D91743 /* SafeContactCell.m */,
+				5C5D34C51DAE6CE900D91743 /* SafeContactListView.h */,
+				5C5D34C61DAE6CE900D91743 /* SafeContactListView.m */,
+				5C5D34C71DAE6CE900D91743 /* SafeCounterView.h */,
+				5C5D34C81DAE6CE900D91743 /* SafeCounterView.m */,
+				5C5D34C91DAE6CE900D91743 /* SafeDetailInfoView.h */,
+				5C5D34CA1DAE6CE900D91743 /* SafeDetailInfoView.m */,
+				5C5D34CB1DAE6CE900D91743 /* SafeInsuredDetailController.h */,
+				5C5D34CC1DAE6CE900D91743 /* SafeInsuredDetailController.m */,
+				5C5D34CD1DAE6CE900D91743 /* SafeInsuredListCell.h */,
+				5C5D34CE1DAE6CE900D91743 /* SafeInsuredListCell.m */,
+				5C5D34CF1DAE6CE900D91743 /* SafeOneInsuredCell.h */,
+				5C5D34D01DAE6CE900D91743 /* SafeOneInsuredCell.m */,
+				5C5D34D11DAE6CE900D91743 /* SafeRelationView.h */,
+				5C5D34D21DAE6CE900D91743 /* SafeRelationView.m */,
+			);
+			path = insuredList;
+			sourceTree = "<group>";
+		};
+		5C5D349C1DAE6CE900D91743 /* fammily */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D349D1DAE6CE900D91743 /* SafeBuyAddressView.h */,
+				5C5D349E1DAE6CE900D91743 /* SafeBuyAddressView.m */,
+				5C5D349F1DAE6CE900D91743 /* SafeBuyCarView.h */,
+				5C5D34A01DAE6CE900D91743 /* SafeBuyCarView.m */,
+				5C5D34A11DAE6CE900D91743 /* SafeBuyFamilly.h */,
+				5C5D34A21DAE6CE900D91743 /* SafeBuyFamilly.m */,
+				5C5D34A31DAE6CE900D91743 /* SafeInsuredCell.h */,
+				5C5D34A41DAE6CE900D91743 /* SafeInsuredCell.m */,
+				5C5D34A51DAE6CE900D91743 /* SafeInsuredContainer.h */,
+				5C5D34A61DAE6CE900D91743 /* SafeInsuredContainer.m */,
+				5C5D34A71DAE6CE900D91743 /* SafeInsuredListView.h */,
+				5C5D34A81DAE6CE900D91743 /* SafeInsuredListView.m */,
+				5C5D34A91DAE6CE900D91743 /* SafeInsuredSafeController.h */,
+				5C5D34AA1DAE6CE900D91743 /* SafeInsuredSafeController.m */,
+				5C5D34AB1DAE6CE900D91743 /* SafeInsuredWithRelationCell.h */,
+				5C5D34AC1DAE6CE900D91743 /* SafeInsuredWithRelationCell.m */,
+				5C5D34AD1DAE6CE900D91743 /* SafeSelContactController.h */,
+				5C5D34AE1DAE6CE900D91743 /* SafeSelContactController.m */,
+			);
+			path = fammily;
+			sourceTree = "<group>";
+		};
+		5C5D34D31DAE6CE900D91743 /* justShow */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D34D41DAE6CE900D91743 /* SafeInsuredShowController.h */,
+				5C5D34D51DAE6CE900D91743 /* SafeInsuredShowController.m */,
+				5C5D34D61DAE6CE900D91743 /* SafeShowDetailVo.h */,
+				5C5D34D71DAE6CE900D91743 /* SafeShowDetailVo.m */,
+			);
+			path = justShow;
+			sourceTree = "<group>";
+		};
+		5C5D34D81DAE6CE900D91743 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D34D91DAE6CE900D91743 /* MyCardSafeDetailController.h */,
+				5C5D34DA1DAE6CE900D91743 /* MyCardSafeDetailController.m */,
+				5C5D34DB1DAE6CE900D91743 /* MySafeCell.h */,
+				5C5D34DC1DAE6CE900D91743 /* MySafeCell.m */,
+				5C5D34DD1DAE6CE900D91743 /* MySafeClaimInfo.h */,
+				5C5D34DE1DAE6CE900D91743 /* MySafeClaimInfo.m */,
+				5C5D34DF1DAE6CE900D91743 /* MySafeController.h */,
+				5C5D34E01DAE6CE900D91743 /* MySafeController.m */,
+				5C5D34E11DAE6CE900D91743 /* MySafeDetailController.h */,
+				5C5D34E21DAE6CE900D91743 /* MySafeDetailController.m */,
+				5C5D34E31DAE6CE900D91743 /* MySafeInsuredCell.h */,
+				5C5D34E41DAE6CE900D91743 /* MySafeInsuredCell.m */,
+				5C5D34E51DAE6CE900D91743 /* MySafeOrderController.h */,
+				5C5D34E61DAE6CE900D91743 /* MySafeOrderController.m */,
+				5C5D34E71DAE6CE900D91743 /* MySafeVo.h */,
+				5C5D34E81DAE6CE900D91743 /* MySafeVo.m */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		5C5D34E91DAE6CE900D91743 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D34EA1DAE6CE900D91743 /* SafeModel.h */,
+				5C5D34EB1DAE6CE900D91743 /* SafeModel.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		5C5D35881DAE6D4200D91743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CB3C76B1E3611B10067D84D /* ecardlib.framework */,
+				5C5D35891DAE6D4300D91743 /* dmlib.framework */,
+				5C5D358A1DAE6D4300D91743 /* ecardlib.framework */,
+				5C5D358B1DAE6D4300D91743 /* myecard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C5D358F1DAE6D5A00D91743 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5C5D35A81DAE6F7300D91743 /* RealInfo.h */,
+				5C5D35A91DAE6F7300D91743 /* RealInfo.m */,
+				5C5D35A01DAE6EA600D91743 /* UIButton+NetIcon.h */,
+				5C5D35A11DAE6EA600D91743 /* UIButton+NetIcon.m */,
+				5C5D359C1DAE6E6200D91743 /* DMOrderConfirmController.h */,
+				5C5D359D1DAE6E6200D91743 /* DMOrderConfirmController.m */,
+				5C5D35941DAE6D9600D91743 /* CashierCell.h */,
+				5C5D35951DAE6D9600D91743 /* CashierCell.m */,
+				5C5D35901DAE6D6000D91743 /* TTTAttributedLabel.h */,
+				5C5D35911DAE6D6000D91743 /* TTTAttributedLabel.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5C5D34281DAE6B3B00D91743 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5D354C1DAE6CEA00D91743 /* SafeRelationView.h in Headers */,
+				5C5D35221DAE6CEA00D91743 /* SafeInsuredListView.h in Headers */,
+				5C5D35241DAE6CEA00D91743 /* SafeInsuredSafeController.h in Headers */,
+				5C5D35621DAE6CEA00D91743 /* SafeModel.h in Headers */,
+				5C5D35AA1DAE6F7300D91743 /* RealInfo.h in Headers */,
+				5C5D35921DAE6D6000D91743 /* TTTAttributedLabel.h in Headers */,
+				5C5D351A1DAE6CEA00D91743 /* SafeBuyCarView.h in Headers */,
+				5C5D35181DAE6CEA00D91743 /* SafeBuyAddressView.h in Headers */,
+				5C5D35141DAE6CEA00D91743 /* SafeCardDetailController.h in Headers */,
+				5C5D35701DAE6CEA00D91743 /* SafeListController.h in Headers */,
+				5C5D357C1DAE6CEA00D91743 /* SafeTypeVo.h in Headers */,
+				5C5D35341DAE6CEA00D91743 /* SafeBuyChildrenController.h in Headers */,
+				5C5D35461DAE6CEA00D91743 /* SafeInsuredDetailController.h in Headers */,
+				5C5D35761DAE6CEA00D91743 /* SafePayResult.h in Headers */,
+				5C5D35781DAE6CEA00D91743 /* SafePayResultController.h in Headers */,
+				5C5D355C1DAE6CEA00D91743 /* MySafeInsuredCell.h in Headers */,
+				5C5D351E1DAE6CEA00D91743 /* SafeInsuredCell.h in Headers */,
+				5C5D35401DAE6CEA00D91743 /* SafeContactListView.h in Headers */,
+				5C5D35861DAE6CEA00D91743 /* UILineLabel.h in Headers */,
+				5C5D35301DAE6CEA00D91743 /* SafeBottomCell.h in Headers */,
+				5C5D35721DAE6CEA00D91743 /* SafePayAction.h in Headers */,
+				5C5D35561DAE6CEA00D91743 /* MySafeClaimInfo.h in Headers */,
+				5C5D35481DAE6CEA00D91743 /* SafeInsuredListCell.h in Headers */,
+				5C5D35681DAE6CEA00D91743 /* SafeCell.h in Headers */,
+				5C5D35581DAE6CEA00D91743 /* MySafeController.h in Headers */,
+				5C5D35961DAE6D9600D91743 /* CashierCell.h in Headers */,
+				5C5D35361DAE6CEA00D91743 /* SafeBuyHeaderCell.h in Headers */,
+				5C5D35821DAE6CEA00D91743 /* SafeWebViewUrlParser.h in Headers */,
+				5C5D35321DAE6CEA00D91743 /* SafeBuyAddressCell.h in Headers */,
+				5C5D352A1DAE6CEA00D91743 /* InsuredContactView.h in Headers */,
+				5C5D35601DAE6CEA00D91743 /* MySafeVo.h in Headers */,
+				5C5D35A21DAE6EA600D91743 /* UIButton+NetIcon.h in Headers */,
+				5C5D35261DAE6CEA00D91743 /* SafeInsuredWithRelationCell.h in Headers */,
+				5C5D356A1DAE6CEA00D91743 /* SafeController.h in Headers */,
+				5C5D35501DAE6CEA00D91743 /* SafeShowDetailVo.h in Headers */,
+				5C5D352C1DAE6CEA00D91743 /* InsuredListView.h in Headers */,
+				5C5D356E1DAE6CEA00D91743 /* SafeHeaderView.h in Headers */,
+				5C5D355A1DAE6CEA00D91743 /* MySafeDetailController.h in Headers */,
+				5C5D35841DAE6CEA00D91743 /* TermLabel.h in Headers */,
+				5C5D351C1DAE6CEA00D91743 /* SafeBuyFamilly.h in Headers */,
+				5C5D354E1DAE6CEA00D91743 /* SafeInsuredShowController.h in Headers */,
+				5C5D35121DAE6CEA00D91743 /* SafeCardClaimController.h in Headers */,
+				5C5D357A1DAE6CEA00D91743 /* SafeSummary.h in Headers */,
+				5C5D35421DAE6CEA00D91743 /* SafeCounterView.h in Headers */,
+				5C5D35641DAE6CEA00D91743 /* SafeCahierItem.h in Headers */,
+				5C5D354A1DAE6CEA00D91743 /* SafeOneInsuredCell.h in Headers */,
+				5C5D355E1DAE6CEA00D91743 /* MySafeOrderController.h in Headers */,
+				5C5D35281DAE6CEA00D91743 /* SafeSelContactController.h in Headers */,
+				5C5D353A1DAE6CEA00D91743 /* SafeCarCell.h in Headers */,
+				5C5D359E1DAE6E6200D91743 /* DMOrderConfirmController.h in Headers */,
+				5C5D35201DAE6CEA00D91743 /* SafeInsuredContainer.h in Headers */,
+				5C5D35161DAE6CEA00D91743 /* BaseDetailInfoView.h in Headers */,
+				5C5D35801DAE6CEA00D91743 /* SafeVo.h in Headers */,
+				5C5D357E1DAE6CEA00D91743 /* SafeUtil.h in Headers */,
+				5C5D35101DAE6CEA00D91743 /* SafeCardBuyController.h in Headers */,
+				5C5D35741DAE6CEA00D91743 /* SafePayHandler.h in Headers */,
+				5C5D35381DAE6CEA00D91743 /* SafeBuyInsuredController.h in Headers */,
+				5C5D34301DAE6B3B00D91743 /* safe.h in Headers */,
+				5C5D353C1DAE6CEA00D91743 /* SafeContact.h in Headers */,
+				5C5D35541DAE6CEA00D91743 /* MySafeCell.h in Headers */,
+				5C5D352E1DAE6CEA00D91743 /* InsuredSelectButton.h in Headers */,
+				5C5D356C1DAE6CEA00D91743 /* SafeDetailVo.h in Headers */,
+				5C5D353E1DAE6CEA00D91743 /* SafeContactCell.h in Headers */,
+				5C5D35441DAE6CEA00D91743 /* SafeDetailInfoView.h in Headers */,
+				5C5D35661DAE6CEA00D91743 /* SafeCashierController.h in Headers */,
+				5C5D35521DAE6CEA00D91743 /* MyCardSafeDetailController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C4137EC1E337761005C451E /* safebundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4137F01E337761005C451E /* Build configuration list for PBXNativeTarget "safebundle" */;
+			buildPhases = (
+				5C4137E91E337761005C451E /* Sources */,
+				5C4137EA1E337761005C451E /* Frameworks */,
+				5C4137EB1E337761005C451E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = safebundle;
+			productName = safebundle;
+			productReference = 5C4137ED1E337761005C451E /* safebundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5C5D342A1DAE6B3B00D91743 /* safe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C5D34331DAE6B3B00D91743 /* Build configuration list for PBXNativeTarget "safe" */;
+			buildPhases = (
+				5C5D34261DAE6B3B00D91743 /* Sources */,
+				5C5D34271DAE6B3B00D91743 /* Frameworks */,
+				5C5D34281DAE6B3B00D91743 /* Headers */,
+				5C5D34291DAE6B3B00D91743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = safe;
+			productName = safe;
+			productReference = 5C5D342B1DAE6B3B00D91743 /* safe.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C5D34221DAE6B3B00D91743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "任雪亮";
+				TargetAttributes = {
+					5C4137EC1E337761005C451E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 23T2HFANR5;
+						ProvisioningStyle = Automatic;
+					};
+					5C5D342A1DAE6B3B00D91743 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 23T2HFANR5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5C5D34251DAE6B3B00D91743 /* Build configuration list for PBXProject "safe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C5D34211DAE6B3B00D91743;
+			productRefGroup = 5C5D342C1DAE6B3B00D91743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C5D342A1DAE6B3B00D91743 /* safe */,
+				5C4137EC1E337761005C451E /* safebundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C4137EB1E337761005C451E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C41387E1E33779E005C451E /* ic_insurance_claims_step1@2x.png in Resources */,
+				5C4138971E33779E005C451E /* ic_safe_line@2x.png in Resources */,
+				5C4138661E33779E005C451E /* SafeBuyChildrenController.xib in Resources */,
+				5C4138981E33779E005C451E /* ic_safe_step1@2x.png in Resources */,
+				5C4138A41E33779E005C451E /* safe_tab_left_h@2x.png in Resources */,
+				5C4138831E33779E005C451E /* ic_insurance_claims_step3_3@2x.png in Resources */,
+				5C4138A61E33779E005C451E /* safe_tab_right_h@2x.png in Resources */,
+				5C41387F1E33779E005C451E /* ic_insurance_claims_step1_1@2x.png in Resources */,
+				5C41385F1E33779E005C451E /* SafeBuyFamilly.xib in Resources */,
+				5C4138921E33779E005C451E /* ic_safe_car@2x.png in Resources */,
+				5C4138AB1E33779E005C451E /* ic_arrow@2x.png in Resources */,
+				5C41385A1E33779E005C451E /* SafeCarCell.xib in Resources */,
+				5C4138781E33779E005C451E /* bg_insurance_example@2x.png in Resources */,
+				5C4138641E33779E005C451E /* SafeSelContactController.xib in Resources */,
+				5C4138901E33779E005C451E /* ic_safe_accident@2x.png in Resources */,
+				5C4138911E33779E005C451E /* ic_safe_age@2x.png in Resources */,
+				5C4138AD1E33779E005C451E /* s_ic_off@2x.png in Resources */,
+				5C4138A81E33779E005C451E /* SafeCell.xib in Resources */,
+				5C41389F1E33779E005C451E /* s_ic_btn@2x.png in Resources */,
+				5C4138951E33779E005C451E /* ic_safe_ecard@2x.png in Resources */,
+				5C4138551E33779E005C451E /* SafeCashierController.xib in Resources */,
+				5C4138841E33779E005C451E /* ic_insurance_expires@2x.png in Resources */,
+				5C41386B1E33779E005C451E /* SafeCahierItem.xib in Resources */,
+				5C4138631E33779E005C451E /* SafeInsuredWithRelationCell.xib in Resources */,
+				5C4138651E33779E005C451E /* InsuredListView.xib in Resources */,
+				5C4138961E33779E005C451E /* ic_safe_family@2x.png in Resources */,
+				5C4138561E33779E005C451E /* CashierCell.xib in Resources */,
+				5C4138581E33779E005C451E /* SafeBuyAddressCell.xib in Resources */,
+				5C41387B1E33779E005C451E /* ic_fetch_ticket_success@2x.png in Resources */,
+				5C4138751E33779E005C451E /* SafeHeaderView.xib in Resources */,
+				5C4138A51E33779E005C451E /* safe_tab_right@2x.png in Resources */,
+				5C41386D1E33779E005C451E /* MySafeCell.xib in Resources */,
+				5C4138541E33779E005C451E /* SafeController.xib in Resources */,
+				5C41389B1E33779E005C451E /* ic_safe_step4@2x.png in Resources */,
+				5C4138A91E33779E005C451E /* SafeInsuredShowController.xib in Resources */,
+				5C4138691E33779E005C451E /* SafeDetailInfoView.xib in Resources */,
+				5C4138811E33779E005C451E /* ic_insurance_claims_step2_2@2x.png in Resources */,
+				5C4138621E33779E005C451E /* SafeInsuredSafeController.xib in Resources */,
+				5C4138821E33779E005C451E /* ic_insurance_claims_step3@2x.png in Resources */,
+				5C41388F1E33779E005C451E /* ic_personal_insurance@2x.png in Resources */,
+				5C41385D1E33779E005C451E /* SafeBuyAddressView.xib in Resources */,
+				5C4138731E33779E005C451E /* SafeCardClaimController.xib in Resources */,
+				5C41386C1E33779E005C451E /* MyCardSafeDetailController.xib in Resources */,
+				5C41389A1E33779E005C451E /* ic_safe_step3@2x.png in Resources */,
+				5C4138791E33779E005C451E /* f_detail_bg@2x.jpg in Resources */,
+				5C4138891E33779E005C451E /* ic_insurance_insured_seleted@2x.png in Resources */,
+				5C41385C1E33779E005C451E /* SafeOneInsuredCell.xib in Resources */,
+				5C4138881E33779E005C451E /* ic_insurance_in_security@2x.png in Resources */,
+				5C41388A1E33779E005C451E /* ic_insurance_insured_unselete@2x.png in Resources */,
+				5C41387A1E33779E005C451E /* ic_add_insured@2x.png in Resources */,
+				5C4138991E33779E005C451E /* ic_safe_step2@2x.png in Resources */,
+				5C4138761E33779E005C451E /* SafePayResultController.xib in Resources */,
+				5C41388C1E33779E005C451E /* ic_insurance_plus@2x.png in Resources */,
+				5C41385E1E33779E005C451E /* SafeBuyCarView.xib in Resources */,
+				5C41389E1E33779E005C451E /* ic_take_photo@2x.png in Resources */,
+				5C41386A1E33779E005C451E /* SafeInsuredDetailController.xib in Resources */,
+				5C4138771E33779E005C451E /* SafeListController.xib in Resources */,
+				5C41387D1E33779E005C451E /* ic_insurance_checked@2x.png in Resources */,
+				5C4138711E33779E005C451E /* MySafeOrderController.xib in Resources */,
+				5C41385B1E33779E005C451E /* SafeInsuredListCell.xib in Resources */,
+				5C4138871E33779E005C451E /* ic_insurance_has_claim.png in Resources */,
+				5C4138721E33779E005C451E /* SafeCardBuyController.xib in Resources */,
+				5C4138601E33779E005C451E /* SafeFCell.xib in Resources */,
+				5C4138A11E33779E005C451E /* safe_card_show@2x.jpg in Resources */,
+				5C4138941E33779E005C451E /* ic_safe_contact@2x.png in Resources */,
+				5C4138611E33779E005C451E /* SafeInsuredCell.xib in Resources */,
+				5C4138A71E33779E005C451E /* safe_weixin_pay@2x.png in Resources */,
+				5C4138AC1E33779E005C451E /* s_ic_on@2x.png in Resources */,
+				5C4138851E33779E005C451E /* ic_insurance_flag_hot@2x.png in Resources */,
+				5C4138741E33779E005C451E /* SafeCardDetailController.xib in Resources */,
+				5C41386E1E33779E005C451E /* MySafeController.xib in Resources */,
+				5C4138A01E33779E005C451E /* safe_ali_pay@2x.png in Resources */,
+				5C41387C1E33779E005C451E /* ic_insurance@2x.png in Resources */,
+				5C4138A31E33779E005C451E /* safe_tab_left@2x.png in Resources */,
+				5C4138AA1E33779E005C451E /* SafeNoResultView.xib in Resources */,
+				5C41388E1E33779E005C451E /* ic_insurance_uncheck@2x.png in Resources */,
+				5C41386F1E33779E005C451E /* MySafeDetailController.xib in Resources */,
+				5C4138591E33779E005C451E /* SafeBuyHeaderCell.xib in Resources */,
+				5C4138801E33779E005C451E /* ic_insurance_claims_step2@2x.png in Resources */,
+				5C4138671E33779E005C451E /* SafeBuyInsuredController.xib in Resources */,
+				5C4138A21E33779E005C451E /* safe_picc_icon_big@2x.png in Resources */,
+				5C4138861E33779E005C451E /* ic_insurance_flag_new@2x.png in Resources */,
+				5C41389C1E33779E005C451E /* ic_safe_step5@2x.png in Resources */,
+				5C4138701E33779E005C451E /* MySafeInsuredCell.xib in Resources */,
+				5C4138931E33779E005C451E /* ic_safe_cashier@2x.png in Resources */,
+				5C4138681E33779E005C451E /* SafeContactCell.xib in Resources */,
+				5C41389D1E33779E005C451E /* ic_safeguard_left@2x.png in Resources */,
+				5C41388B1E33779E005C451E /* ic_insurance_no_order.png in Resources */,
+				5C41388D1E33779E005C451E /* ic_insurance_sub@2x.png in Resources */,
+				5C4138571E33779E005C451E /* SafeBottomCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C5D34291DAE6B3B00D91743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C4137E91E337761005C451E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C5D34261DAE6B3B00D91743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5D35591DAE6CEA00D91743 /* MySafeController.m in Sources */,
+				5C5D35831DAE6CEA00D91743 /* SafeWebViewUrlParser.m in Sources */,
+				5C5D35251DAE6CEA00D91743 /* SafeInsuredSafeController.m in Sources */,
+				5C5D35171DAE6CEA00D91743 /* BaseDetailInfoView.m in Sources */,
+				5C5D35371DAE6CEA00D91743 /* SafeBuyHeaderCell.m in Sources */,
+				5C5D35671DAE6CEA00D91743 /* SafeCashierController.m in Sources */,
+				5C5D35411DAE6CEA00D91743 /* SafeContactListView.m in Sources */,
+				5C5D35211DAE6CEA00D91743 /* SafeInsuredContainer.m in Sources */,
+				5C5D35391DAE6CEA00D91743 /* SafeBuyInsuredController.m in Sources */,
+				5C5D35931DAE6D6000D91743 /* TTTAttributedLabel.m in Sources */,
+				5C5D35611DAE6CEA00D91743 /* MySafeVo.m in Sources */,
+				5C5D354D1DAE6CEA00D91743 /* SafeRelationView.m in Sources */,
+				5C5D356B1DAE6CEA00D91743 /* SafeController.m in Sources */,
+				5C5D35271DAE6CEA00D91743 /* SafeInsuredWithRelationCell.m in Sources */,
+				5C5D355B1DAE6CEA00D91743 /* MySafeDetailController.m in Sources */,
+				5C5D35791DAE6CEA00D91743 /* SafePayResultController.m in Sources */,
+				5C5D35331DAE6CEA00D91743 /* SafeBuyAddressCell.m in Sources */,
+				5C5D357B1DAE6CEA00D91743 /* SafeSummary.m in Sources */,
+				5C5D35811DAE6CEA00D91743 /* SafeVo.m in Sources */,
+				5C5D353B1DAE6CEA00D91743 /* SafeCarCell.m in Sources */,
+				5C5D355D1DAE6CEA00D91743 /* MySafeInsuredCell.m in Sources */,
+				5C5D357F1DAE6CEA00D91743 /* SafeUtil.m in Sources */,
+				5C5D351D1DAE6CEA00D91743 /* SafeBuyFamilly.m in Sources */,
+				5C5D35531DAE6CEA00D91743 /* MyCardSafeDetailController.m in Sources */,
+				5C5D35451DAE6CEA00D91743 /* SafeDetailInfoView.m in Sources */,
+				5C5D35691DAE6CEA00D91743 /* SafeCell.m in Sources */,
+				5C5D35111DAE6CEA00D91743 /* SafeCardBuyController.m in Sources */,
+				5C5D35511DAE6CEA00D91743 /* SafeShowDetailVo.m in Sources */,
+				5C5D35771DAE6CEA00D91743 /* SafePayResult.m in Sources */,
+				5C5D357D1DAE6CEA00D91743 /* SafeTypeVo.m in Sources */,
+				5C5D35551DAE6CEA00D91743 /* MySafeCell.m in Sources */,
+				5C5D35971DAE6D9600D91743 /* CashierCell.m in Sources */,
+				5C5D352F1DAE6CEA00D91743 /* InsuredSelectButton.m in Sources */,
+				5C5D35651DAE6CEA00D91743 /* SafeCahierItem.m in Sources */,
+				5C5D35A31DAE6EA600D91743 /* UIButton+NetIcon.m in Sources */,
+				5C5D35431DAE6CEA00D91743 /* SafeCounterView.m in Sources */,
+				5C5D35151DAE6CEA00D91743 /* SafeCardDetailController.m in Sources */,
+				5C5D359F1DAE6E6200D91743 /* DMOrderConfirmController.m in Sources */,
+				5C5D35AB1DAE6F7300D91743 /* RealInfo.m in Sources */,
+				5C5D35751DAE6CEA00D91743 /* SafePayHandler.m in Sources */,
+				5C5D35571DAE6CEA00D91743 /* MySafeClaimInfo.m in Sources */,
+				5C5D35311DAE6CEA00D91743 /* SafeBottomCell.m in Sources */,
+				5C5D356D1DAE6CEA00D91743 /* SafeDetailVo.m in Sources */,
+				5C5D356F1DAE6CEA00D91743 /* SafeHeaderView.m in Sources */,
+				5C5D35471DAE6CEA00D91743 /* SafeInsuredDetailController.m in Sources */,
+				5C5D351B1DAE6CEA00D91743 /* SafeBuyCarView.m in Sources */,
+				5C5D35731DAE6CEA00D91743 /* SafePayAction.m in Sources */,
+				5C5D354B1DAE6CEA00D91743 /* SafeOneInsuredCell.m in Sources */,
+				5C5D354F1DAE6CEA00D91743 /* SafeInsuredShowController.m in Sources */,
+				5C5D352D1DAE6CEA00D91743 /* InsuredListView.m in Sources */,
+				5C5D35491DAE6CEA00D91743 /* SafeInsuredListCell.m in Sources */,
+				5C5D35871DAE6CEA00D91743 /* UILineLabel.m in Sources */,
+				5C5D353F1DAE6CEA00D91743 /* SafeContactCell.m in Sources */,
+				5C5D353D1DAE6CEA00D91743 /* SafeContact.m in Sources */,
+				5C5D35231DAE6CEA00D91743 /* SafeInsuredListView.m in Sources */,
+				5C5D35711DAE6CEA00D91743 /* SafeListController.m in Sources */,
+				5C5D351F1DAE6CEA00D91743 /* SafeInsuredCell.m in Sources */,
+				5C5D352B1DAE6CEA00D91743 /* InsuredContactView.m in Sources */,
+				5C5D35191DAE6CEA00D91743 /* SafeBuyAddressView.m in Sources */,
+				5C5D35131DAE6CEA00D91743 /* SafeCardClaimController.m in Sources */,
+				5C5D35631DAE6CEA00D91743 /* SafeModel.m in Sources */,
+				5C5D35291DAE6CEA00D91743 /* SafeSelContactController.m in Sources */,
+				5C5D35851DAE6CEA00D91743 /* TermLabel.m in Sources */,
+				5C5D35351DAE6CEA00D91743 /* SafeBuyChildrenController.m in Sources */,
+				5C5D355F1DAE6CEA00D91743 /* MySafeOrderController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5C4137F11E337761005C451E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 23T2HFANR5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = safebundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citywithincity.safebundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.2;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5C4137F21E337761005C451E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 23T2HFANR5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = safebundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citywithincity.safebundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.2;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5C5D34311DAE6B3B00D91743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C5D34321DAE6B3B00D91743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C5D34341DAE6B3B00D91743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23T2HFANR5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = safe/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citywithincity.safe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5C5D34351DAE6B3B00D91743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 23T2HFANR5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = safe/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citywithincity.safe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C4137F01E337761005C451E /* Build configuration list for PBXNativeTarget "safebundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4137F11E337761005C451E /* Debug */,
+				5C4137F21E337761005C451E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C5D34251DAE6B3B00D91743 /* Build configuration list for PBXProject "safe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5D34311DAE6B3B00D91743 /* Debug */,
+				5C5D34321DAE6B3B00D91743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C5D34331DAE6B3B00D91743 /* Build configuration list for PBXNativeTarget "safe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5D34341DAE6B3B00D91743 /* Debug */,
+				5C5D34351DAE6B3B00D91743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C5D34221DAE6B3B00D91743 /* Project object */;
+}

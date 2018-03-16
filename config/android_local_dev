@@ -1,0 +1,7 @@
+alocal {
+    manifestPlaceholders = [UMENG_CHANNEL_VALUE: "local",
+                            PHP_SERVER : "http://192.168.1.241",
+                            JAVA_SERVER:"http://${server}",
+                            PICC: "http://120.55.115.222:8989",
+                            TSP:"true|110.80.22.108|8089"]
+}

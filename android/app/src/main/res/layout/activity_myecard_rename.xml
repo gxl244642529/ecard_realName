@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.damai.widget.FormView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_page"
+    
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+
+    <include layout="@layout/_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/_white_item_selector"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#333"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="新备注: "
+            android:textSize="18sp" />
+
+        <com.damai.widget.FormEditText
+            android:id="@+id/remark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入e通卡备注"
+            android:imeOptions="actionDone"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.damai.widget.SubmitButton
+        android:id="@+id/rename"
+        style="@style/_main_button"
+        android:layout_margin="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        lib:api="ecard/update"
+        lib:server="1"
+        android:text="修改备注" />
+
+</com.damai.widget.FormView>

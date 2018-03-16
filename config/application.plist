@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	@{content}
+	<key>back</key>
+	<string>ecardlibbundle.bundle/ic_back</string>
+	<key>amapkey</key>
+	<string>4efd91100423a6799ac63e80311e2554</string>
+	<key>userClass</key>
+	<string>ECardUserInfo</string>
+	<key>colors</key>
+	<dict>
+		<key>recharge</key>
+		<string>47b000</string>
+		<key>consume</key>
+		<string>ff5c4b</string>
+		<key>tint</key>
+		<string>ff0000</string>
+		<key>itemHighlight</key>
+		<string>cccccc</string>
+	</dict>
+</dict>
+</plist>

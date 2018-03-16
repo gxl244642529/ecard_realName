@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_page"
+    android:orientation="vertical" >
+
+    <com.citywithincity.ecard.discard.widget.SelectSchoolView
+        android:id="@+id/schoolName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/_white_item_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学        校:"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@id/_select_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:clickable="false"
+                android:enabled="false"
+                android:hint="请选择学校"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/_ic_arrow" />
+        </RelativeLayout>
+    </com.citywithincity.ecard.discard.widget.SelectSchoolView>
+<!--  
+    <LinearLayout
+        android:id="@+id/discardTypeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/_white_item_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/discardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生证号:"
+            android:textSize="17sp" />
+
+        <com.damai.widget.FormEditText
+            android:id="@+id/navCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="请输入学生证号"
+            android:textSize="14sp" />
+    </LinearLayout>
+-->
+    <com.citywithincity.ecard.widget.ImagePickerView
+        lib:image_picker_hint="请按上方文字内容提交完整图片"
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dip"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证:"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@id/_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/diy_pages" >
+        </ImageView>
+    </com.citywithincity.ecard.widget.ImagePickerView>
+
+    <com.citywithincity.ecard.widget.ImagePickerView
+        lib:image_picker_hint="请按上方文字内容提交完整图片"
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dip"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/secPicNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="户口本:"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@id/_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/diy_pages" >
+        </ImageView>
+    </com.citywithincity.ecard.widget.ImagePickerView>
+
+</LinearLayout>

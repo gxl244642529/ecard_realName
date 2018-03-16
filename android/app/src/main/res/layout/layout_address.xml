@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.damai.widget.DefAddressView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_address_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- android:background="@drawable/s_item_click_bg" -->
+
+    <LinearLayout
+        android:id="@id/_id_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/_white_item_selector"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小许"
+                android:textColor="@color/_title_text_color" />
+
+            <TextView
+                android:id="@id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="30dp"
+                android:text="18075872588"
+                android:textColor="@color/_title_text_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/s_ic_order_addr"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="望海路"
+            android:textColor="@color/_title_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:text="(若收货不便时请选择其他地址)"
+            android:textColor="#ccc"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/_id_no_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/_white_item_selector"
+        android:padding="40dp"
+        android:text="请选择收货地址"
+        android:textColor="@color/_title_text_color" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/_loading_layout" />
+
+</com.damai.widget.DefAddressView>

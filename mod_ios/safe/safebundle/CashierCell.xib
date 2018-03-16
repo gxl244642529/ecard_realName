@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="KOa-bB-I9Z" customClass="CashierCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KOa-bB-I9Z" id="gBt-kg-lVX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a25-Q0-SQk">
+                        <rect key="frame" x="18" y="11" width="16" height="22"/>
+                        <state key="normal" image="s_ic_on.png">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="s_ic_off.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw3-UD-pBT">
+                        <rect key="frame" x="244" y="13" width="41" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="LBT-57-7aA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="k7Z-DQ-f9w">
+                        <rect key="frame" x="295" y="16" width="7" height="12"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="safe_ali_pay.png" translatesAutoresizingMaskIntoConstraints="NO" id="2b8-Sw-A76">
+                        <rect key="frame" x="212" y="10" width="29" height="24"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k7Z-DQ-f9w" firstAttribute="centerY" secondItem="gBt-kg-lVX" secondAttribute="centerY" id="5mx-7I-XkG"/>
+                    <constraint firstItem="Qw3-UD-pBT" firstAttribute="centerY" secondItem="gBt-kg-lVX" secondAttribute="centerY" id="BYy-Ct-2it"/>
+                    <constraint firstItem="k7Z-DQ-f9w" firstAttribute="leading" secondItem="Qw3-UD-pBT" secondAttribute="trailing" constant="10" id="Fha-zN-Uzu"/>
+                    <constraint firstItem="Qw3-UD-pBT" firstAttribute="leading" secondItem="2b8-Sw-A76" secondAttribute="trailing" constant="3" id="Nxv-vE-ovW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="k7Z-DQ-f9w" secondAttribute="trailing" constant="10" id="YfP-QJ-3qZ"/>
+                    <constraint firstItem="2b8-Sw-A76" firstAttribute="centerY" secondItem="gBt-kg-lVX" secondAttribute="centerY" id="blP-aH-L2X"/>
+                    <constraint firstItem="a25-Q0-SQk" firstAttribute="leading" secondItem="gBt-kg-lVX" secondAttribute="leadingMargin" constant="10" id="gGi-dU-Zzw"/>
+                    <constraint firstItem="a25-Q0-SQk" firstAttribute="centerY" secondItem="gBt-kg-lVX" secondAttribute="centerY" id="gZr-Nm-7B6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSelect" destination="a25-Q0-SQk" id="CaJ-Ir-UQ0"/>
+                <outlet property="icon" destination="2b8-Sw-A76" id="FeC-GH-ECe"/>
+                <outlet property="title" destination="Qw3-UD-pBT" id="bK3-wL-yIU"/>
+            </connections>
+            <point key="canvasLocation" x="366" y="225"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_arrow.png" width="7" height="12"/>
+        <image name="s_ic_off.png" width="16" height="16"/>
+        <image name="s_ic_on.png" width="16" height="16"/>
+        <image name="safe_ali_pay.png" width="29" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

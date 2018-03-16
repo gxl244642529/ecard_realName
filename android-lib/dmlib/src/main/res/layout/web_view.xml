@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_title_height"
+        android:background="@color/_title_color" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ccc" >
+
+            
+            <ImageButton
+                android:id="@id/_title_left"
+                android:src="@drawable/_title_left"
+                android:layout_width="40dip"
+                android:layout_height="@dimen/_title_height"
+                android:background="@drawable/_white_item_selector" >
+            </ImageButton>
+
+            <Button
+                android:id="@id/_id_cancel"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="1px"
+                android:layout_toRightOf="@id/_title_left"
+                android:background="@drawable/_white_item_selector"
+                android:text="X"
+                android:textColor="#666" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textAppearance="@style/_title_text" />
+
+        <LinearLayout
+            android:id="@id/_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/_title_shadow_color" />
+
+        <TextView
+            android:id="@id/_id_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dip"
+            android:layout_centerVertical="true"
+            android:text="刷新" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@id/_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@id/_load_state_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/_dialog_wait" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

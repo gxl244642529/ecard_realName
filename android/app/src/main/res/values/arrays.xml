@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 保险 -->
+    <integer-array name="insurance_list_view">
+        <item>@layout/recharge_list_list_view</item>  
+        <item>@layout/recharge_list_list_view</item>  
+        <item>@layout/recharge_list_list_view</item>
+        <item>@layout/recharge_list_list_view</item>  
+        <item>@layout/recharge_list_list_view</item>  
+        <item>@layout/recharge_list_list_view</item>
+    </integer-array>
+    
+    <integer-array name="insurance_status_list_view">
+        <item>@layout/insurance_state_list_list_view</item>  
+        <item>@layout/insurance_state_list_list_view</item>  
+    </integer-array>
+    
+    <!-- 学生卡业务 -->
+    <integer-array name="student_business">
+        <item>@layout/view_subscribe</item>  
+        <item>@layout/view_exam</item>  
+    </integer-array>
+    
+    <!-- 中影 webview -->
+    <integer-array name="store_detail_webviews">
+        <item>@layout/store_detial_webview</item>  
+        <item>@layout/store_detial_webview</item>  
+        <item>@layout/store_detial_webview</item>  
+    </integer-array>
+    
+    <!-- 充值 -->
+    <integer-array name="recharge_list_view">
+        <item>@layout/recharge_list_list_view</item>  
+        <item>@layout/recharge_list_list_view</item>  
+        <item>@layout/recharge_list_list_view</item>
+    </integer-array>
+    
+     <integer-array name="state_list_list_views">
+        <item>@layout/state_list_list_view</item>  
+        <item>@layout/state_list_list_view</item>  
+    </integer-array>
+    
+     <integer-array name="state_list_grid_views">
+        <item>@layout/state_list_local_grid_view</item>  
+        <item>@layout/state_list_grid_view</item>  
+    </integer-array>
+    
+     <integer-array name="route_plan_list_view">
+        <item>@layout/state_list_list_view</item>  
+        <item>@layout/state_list_list_view</item>  
+        <item>@layout/state_list_list_view</item>
+    </integer-array>
+    
+      <integer-array name="top_menu_types">
+        <item>@integer/_menu_single</item>  
+        <item>@integer/_menu_single</item>  
+    </integer-array>
+     
+     <integer-array name="top_menu_tree_types">
+        <item>@integer/_menu_tree</item>  
+        <item>@integer/_menu_single</item>  
+    </integer-array>
+     
+    
+     
+    <integer-array name="my_collections_contents_list">
+        <item>@layout/state_list_grid_view</item>  
+        <item>@layout/state_list_grid_view</item>  
+    </integer-array>
+    
+     <integer-array name="book_content">
+        <item >@layout/book_student_card</item>
+        <item >@layout/book_senior_card</item>
+    </integer-array>
+    <!--  -->
+    <integer-array name="my_diy_list_contents">
+        <item>@layout/diy_onlocal_grid_view</item>  
+        <item>@layout/diy_online_grid_view</item>  
+    </integer-array>
+    
+    <integer-array name="card_detail_contents">
+        <item>@layout/card_detail_pages_front_view </item>  
+        <item>@layout/card_detail_pages_bg_view</item>  
+    </integer-array>
+</resources>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@id/_title_left"
+            android:layout_width="@dimen/title_left_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_button_bg"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:paddingLeft="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_title_left" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/s_title_text"
+            android:textColor="@color/title_text_color" />
+
+        <LinearLayout
+            android:id="@id/_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:paddingRight="15dip"
+                android:text="其他渠道"
+                android:textColor="@color/new_btn_normal_bg_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/s_title_button_bg_color" />
+    </RelativeLayout>
+
+    <com.citywithincity.widget.AdvView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/adv_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_below="@id/_title_bar"
+        app:item_layout="@layout/base_loading_image_view" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/_adv_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e1e1e1" />
+    </com.citywithincity.widget.AdvView>
+
+    <RelativeLayout
+        android:id="@id/_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/adv_view"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <com.citywithincity.ecard.widget.MyAutoCompleteTextView
+            android:id="@id/exam_card_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/tools"
+            android:background="@null"
+            android:clickable="true"
+            android:enabled="true"
+            android:textSize="20sp"
+            android:hint="请输入要充值的e通卡号"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="@color/title_text_color" />
+
+        <!-- <RelativeLayout
+            android:id="@id/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/text_color_gray"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@id/id_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_exam_more_bg"
+                android:clickable="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_select_ecard" />
+        </RelativeLayout> -->
+        
+        <ImageButton
+                android:id="@id/id_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_exam_more_bg"
+                android:clickable="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_select_ecard" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/new_divider_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/radio_group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/_container"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <Button
+            android:id="@id/radio_precharge_20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/recharge_budeng_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textSize="20sp"
+            android:text="20元"
+            android:textColor="@color/recharge_budeng_btn_text_color" />
+
+        <Button
+            android:id="@id/radio_precharge_50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/recharge_budeng_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textSize="20sp"
+            android:text="50元"
+            android:textColor="@color/recharge_budeng_btn_text_color" />
+
+        <Button
+            android:id="@id/radio_precharge_100"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/recharge_budeng_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textSize="20sp"
+            android:text="100元"
+            android:textColor="@color/recharge_budeng_btn_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/radio_group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <Button
+            android:id="@id/radio_precharge_200"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/recharge_budeng_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textSize="20sp"
+            android:text="200元"
+            android:textColor="@color/recharge_budeng_btn_text_color" />
+
+        <Button
+            android:id="@id/radio_precharge_150"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/recharge_budeng_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textSize="20sp"
+            android:text="150元"
+            android:textColor="@color/recharge_budeng_btn_text_color"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@id/radio_precharge_500"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/recharge_budeng_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textSize="20sp"
+            android:text="500"
+            android:textColor="@color/recharge_budeng_btn_text_color"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_container"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/radio_group1"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:src="@drawable/budeng" />
+
+    <LinearLayout
+        android:id="@id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/travel_page_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/id_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#e6e6e6"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_recharge_horn"
+                android:drawablePadding="8dp"
+                android:text="为什么我向我的卡转了款，钱不能直接到卡上？"
+                android:textColor="@color/text_color_gray"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_right_main_btn_color"
+                android:text="查看"
+                android:textColor="@color/new_btn_normal_bg_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1px"
+            android:background="@color/new_divider_color"
+            android:orientation="horizontal" >
+            
+            <RelativeLayout
+                android:id="@id/id_btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_item_selector"
+                android:layout_marginRight="1px"
+                android:layout_weight="1" >
+                
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="卟噔网点"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:drawableLeft="@drawable/ic_recharge_budeng_spot"
+                android:textColor="@color/text_default_color" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@id/id_btn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_item_selector"
+                android:layout_weight="1" >
+                
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:text="我的充值记录"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:drawableLeft="@drawable/ic_recharge_budeng_record"
+                android:textColor="@color/text_default_color" />
+                
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    
+    <include
+        android:id="@id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/view_recharge_budeng_introduce_alert"
+        android:visibility="gone" />
+
+</RelativeLayout>

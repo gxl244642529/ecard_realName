@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用于用户打钩确认是否选择 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+</selector>

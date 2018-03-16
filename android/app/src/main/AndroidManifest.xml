@@ -1,0 +1,845 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.citywithincity.ecard"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- 权限定义 -->
+    <!-- 推送相关 Start -->
+    <permission
+        android:name="com.citywithincity.ecard.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.citywithincity.ecard.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 推送相关 End -->
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- bugly -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <!--    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- 分享所需权限 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <!-- 微信 -->
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+
+    <!-- nfc -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <!-- 二维码所需权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+
+
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".ReactEnterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.citywithincity.activities.PinganWebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"  android:screenOrientation="portrait"/>
+        <activity android:name="com.damai.auto.DMWebActivity"  android:screenOrientation="portrait"/>
+
+        <activity android:name="com.citywithincity.ecard.bus.BusActivity"  android:screenOrientation="portrait"/>
+        <activity android:name="com.citywithincity.ecard.licai.LicaiActivity"  android:screenOrientation="portrait"/>
+        <!-- ================================基本activity================================-->
+
+        <!-- 登录,由action启动 -->
+        <activity
+            android:name="com.citywithincity.ecard.access.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.citywithincity.ecard.action.LOGIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <provider
+            android:authorities="com.citywithincity.ecard.fileprovider"
+            android:name="com.citywithincity.ecard.ImagePickerProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+
+        <!-- ================================原型永丰================================-->
+        <activity android:name=".yuanxin.YuanxinActivity" android:screenOrientation="portrait" ></activity>
+        <!-- ================================公共模块================================-->
+
+        <activity
+            android:name="com.citywithincity.ecard.activities.AddressActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.citywithincity.ecard.action.SELECT_ADDRESS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 选择收货地址 -->
+        <activity
+            android:name="com.citywithincity.ecard.activities.AddressEditActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        <activity
+            android:name="com.citywithincity.ecard.myecard.activities.MyECardActivity"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="com.citywithincity.ecard.action.SELECT_ECARD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <activity
+            android:name="com.citywithincity.ecard.user.activities.UserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.recharge.activities.RechargePointActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        <activity android:name=".activities.AdvActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.citywithincity.ecard.user.activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.user.activities.PersonalCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.user.activities.QuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.user.activities.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.access.ForgetPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.user.activities.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.access.RegisterDirectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.access.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.HeadAdvActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.PushTextActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.PushWebActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SDiyActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.citywithincity.ecard.pay.PayCashierActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.RetrievePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.recharge.activities.RechargeECardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.recharge.activities.RechargeOtherActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.recharge.activities.RechargeOrderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.recharge.activities.RechargePaySuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.recharge.activities.RechargeOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.user.BindPhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.pay.umapay.UMAPayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+
+        <activity android:name="com.citywithincity.ecard.pingan.PinganActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.citywithincity.ecard.pingan.FundActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.citywithincity.ecard.user.ChangePhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog_custom"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.wxapi.WXEntryActivity"
+            android:launchMode="singleInstance"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog_custom"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsurancePersonalInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceMyPolicyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceMyPolicyDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceSettleClaimActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceProductListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceCashierActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsurancePaySuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceInClaimActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceValidateSubmitInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.InsuranceActionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceOthersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceTravelDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceLocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceDomesticInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceContactListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceTravelInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceOthersCashierActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceLifeDetialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceAutoInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceOthersPaySuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceOffLineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsurancePolicyAutoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsurancePolicyDomesticActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsurancePolicyTravelActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.pay.cmbpay.CMBPayWebActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.insurance.activities.others.InsuranceNoticeClaimActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- discard -->
+        <activity
+            android:name=".discard.activities.DiscardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".discard.activities.DiscardInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".discard.activities.DiscardBuyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".discard.activities.ExamInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.pay.ECardCashierActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.citywithincity.ecard.action.PAYCASHIER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SCashierActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SPayResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.imageeditor.ImageEditorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SAllMyOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SCardDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SCardPagesDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SCartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SDiyDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SDiyEditorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SOrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SMyCollectionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.MyCollectionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SFirmOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SMyDiyOnLineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SMyDiyDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SMyDiyBackPageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.selling.activities.SOrderListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.RenameECardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.GoodCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.MyScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.BusinessMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.MemberInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.NfcResultActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.BusinessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.GoodCardInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.GoodCardQueryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.GoodCardReturnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.HelperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.QuestionItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.paylib.EAccountPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.ShopsActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.citywithincity.ecard.myecard.activities.MyECardDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.myecard.activities.RenameECardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.myecard.activities.BindECardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.NewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.BindECardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.BusinessDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.MyECardScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.CouponDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.LostCardDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.activity.PickCardDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.citywithincity.ecard.ui.fragment.MyMessageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ================================招行================================-->
+        <activity
+            android:name="cmb.pb.ui.PBKeyboardActivity"
+            android:theme="@style/CmbDialogStyleBottom" >
+        </activity>
+        <service
+            android:name="cmb.pb.cmbsafe.CmbService"
+            android:exported="false" >
+        </service>
+
+
+
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->  <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+        <!-- ================================Jpush开始================================-->
+
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.citywithincity.ecard" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.citywithincity.ecard" />
+            </intent-filter>
+
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.citywithincity.ecard" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.citywithincity.ecard.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.citywithincity.ecard" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="etongka"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="0fa49a7e347d301cbf2aaae9" />
+        <!-- 值来自开发者平台取得的AppKey-->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="531812cc56240b9d0b00dcb8" />
+        <meta-data
+            android:name="RECHARGE_CHANNEL"
+            android:value="etongka" />
+        <!--
+             <meta-data
+                 android:name="PHP_URL"
+                 android:value="http://110.80.22.108:8887" />
+             <meta-data
+                 android:name="JAVA_URL"
+                 android:value="http://110.80.22.108:28080" />
+           -->
+
+        <meta-data
+            android:name="PHP_URL"
+            android:value="${PHP_SERVER}" />
+        <meta-data
+            android:name="JAVA_URL"
+            android:value="${JAVA_SERVER}" />
+
+        <meta-data
+            android:name="PICC"
+            android:value="${PICC}" />
+
+        <meta-data
+            android:name="TSP"
+            android:value="${TSP}" />
+
+        <meta-data
+            android:name="UserClass"
+            android:value="com.citywithincity.ecard.models.vos.ECardUserInfo" />
+        <meta-data
+            android:name="WXID"
+            android:value="wx43fbb2036fc139c5" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5219f05773d5f32fdc16de59df23df84" />
+        <service android:name="com.amap.api.location.APSService"></service>
+
+    </application>
+
+</manifest>

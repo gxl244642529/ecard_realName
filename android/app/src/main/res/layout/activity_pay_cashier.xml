@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_page_color"
+    tools:context=".SCashierActivity" >
+
+    <include
+        android:id="@id/title"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_container"
+        android:layout_below="@id/title"
+        android:layout_margin="7dp"
+        android:background="@drawable/s_cashier_bg"
+        android:orientation="vertical"
+        android:paddingLeft="7dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="付款方式"
+            android:textColor="@color/s_cashier_text_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/s_cart_item_divider_color" />
+
+        <ListView
+            android:id="@id/_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+        <RadioButton
+            android:id="@id/s_ali_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/s_cart_btn_check"
+            android:drawableLeft="@drawable/ali_pay"
+            android:drawablePadding="7dp"
+            android:padding="25dp"
+            android:text="支付宝"
+            android:textColor="@color/s_cashier_text_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/s_cart_item_divider_color" />
+
+        <RadioButton
+            android:id="@id/s_weixin_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/s_cart_btn_check"
+            android:checked="false"
+            android:drawableLeft="@drawable/weixin_pay"
+            android:drawablePadding="7dp"
+            android:padding="25dp"
+            android:text="微信支付"
+            android:textColor="@color/s_cashier_text_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/s_cart_item_divider_color" />
+
+        <RadioButton
+            android:id="@id/s_ecard_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/s_cart_btn_check"
+            android:checked="false"
+            android:drawableLeft="@drawable/ecard_pay"
+            android:drawablePadding="7dp"
+            android:padding="25dp"
+            android:text="e通卡账户支付"
+            android:textColor="@color/s_cashier_text_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/s_cart_item_divider_color"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@id/s_union_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/s_cart_btn_check"
+            android:checked="false"
+            android:drawableLeft="@drawable/union_pay"
+            android:drawablePadding="7dp"
+            android:padding="25dp"
+            android:text="银联卡支付"
+            android:textColor="@color/s_cashier_text_color" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/white"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@id/_id_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/s_btn_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:text="支付"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/s_pay_btn"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/s_pay_btn"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还须支付："
+                android:textColor="@color/s_addr_list_name_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="@color/s_btn_pressed_color" />
+
+            <TextView
+                android:id="@id/total_pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/s_btn_pressed_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

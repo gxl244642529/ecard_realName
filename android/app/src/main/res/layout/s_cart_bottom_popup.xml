@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_popup_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22444444"
+    android:clickable="true"
+    android:screenOrientation="portrait" >
+
+    <LinearLayout
+        android:id="@id/_popup_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ios_menu_bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="8dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button"
+            android:clickable="false"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="预充值：" />
+
+            <RadioGroup
+                android:id="@id/radio_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="7dp" >
+
+                <RadioButton
+                    android:id="@id/radio_no_precharge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/s_precharge_btn_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="不充值"
+                    android:textColor="@color/s_precharge_text_check" />
+
+                <RadioButton
+                    android:id="@id/radio_precharge_10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/s_precharge_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="10"
+                    android:textColor="@color/s_precharge_text_check" />
+
+                <RadioButton
+                    android:id="@id/radio_precharge_20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/s_precharge_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="20"
+                    android:textColor="@color/s_precharge_text_check" />
+
+                <RadioButton
+                    android:id="@id/radio_precharge_30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/s_precharge_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="30"
+                    android:textColor="@color/s_precharge_text_check" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@id/radio_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:visibility="gone" >
+
+                <RadioButton
+                    android:id="@id/radio_precharge_50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/s_precharge_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="50"
+                    android:textColor="@color/s_precharge_text_check" />
+
+                <RadioButton
+                    android:id="@id/radio_precharge_100"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/s_precharge_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="100"
+                    android:textColor="@color/s_precharge_text_check" />
+
+                <RadioButton
+                    android:id="@id/radio_precharge_150"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/s_precharge_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="150"
+                    android:textColor="@color/s_precharge_text_check" />
+
+                <RadioButton
+                    android:id="@id/radio_precharge_200"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/s_precharge_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="200"
+                    android:textColor="@color/s_precharge_text_check" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/s_delete_text_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="数量：" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.citywithincity.widget.AddAndSubEditText
+                    android:id="@id/num_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="12dp" >
+
+                    <RelativeLayout
+                        android:id="@id/sub"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/s_good_num_sub_bg"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/s_ic_sub"
+                            android:clickable="false" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="30dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/s_cart_unselect_ring_color" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/s_cart_unselect_ring_color" />
+
+                        <EditText
+                            android:id="@id/num"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#343434"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/add"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/s_good_num_add_bg"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/s_ic_add"
+                            android:clickable="false" />
+                    </RelativeLayout>
+                </com.citywithincity.widget.AddAndSubEditText>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="库存：" />
+
+                    <TextView
+                        android:id="@id/stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@id/button"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/s_btn_bg"
+                android:text="确定"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@id/btn_pay"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/s_btn_bg"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@id/_id_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="24dip"
+                android:background="@drawable/popup_button_bg_cancel_selector"
+                android:text="取消"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

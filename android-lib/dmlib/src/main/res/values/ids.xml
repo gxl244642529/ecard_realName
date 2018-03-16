@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+      <item name="_pull_to_refresh_image" type="id"></item>
+    <item name="_pull_to_refresh_progress" type="id"></item>
+    <item name="_pull_to_refresh_text" type="id"></item>
+    <item name="_pull_to_refresh_sub_text" type="id"></item>
+     <item name="_fl_inner" type="id"></item>
+
+    <item name="progress_text" type="id"></item>
+
+
+
+
+    <item name="progress" type="id"/>
+    <item name="max_progress" type="id"/>
+    <item name="_root" type="id"/>
+    <item name="_wrapped_list_view" type="id"/>
+    <item name="_wrapped_grid_view" type="id"/>
+    <item name="_wrapped_scroll_view" type="id"/>
+    <item name="_wrapped_web_view" type="id"/>
+
+    <!-- 实名信息 -->
+    <item name="jie" type="id"/>
+    <item name="def" type="id"></item>
+    <item name="postcode" type="id"/>
+    <item name="address" type="id"/>
+    <item name="name" type="id"/>
+    <item name="phone" type="id"/>
+
+    <!-- 控件 -->
+
+    <item name="pull_to_refresh_header_arrow" type="id"/>
+    <item name="pull_to_refresh_header_progressbar" type="id"/>
+    <item name="pull_to_refresh_header_time" type="id"/>
+    <item name="pull_to_refresh_header_hint_textview" type="id"/>
+    <item name="pull_to_refresh_last_update_time_text" type="id"/>
+    <item name="pull_to_refresh_header_content" type="id"/>
+    <item name="pull_to_refresh_header_text" type="id"/>
+    <item name="pull_to_load_footer_progressbar" type="id"/>
+    <item name="pull_to_load_footer_hint_textview" type="id"/>
+    <item name="pull_to_load_footer" type="id"/>
+    <item name="pull_to_load_footer_content" type="id"/>
+    <item name="_address_container" type="id"/>
+    <item name="_form_view" type="id"/>
+    <item name="_pay_icon" type="id"/>
+    <item name="_pay_title" type="id"/>
+
+    <!-- 自定义对话框 -->
+    <item name="cus_dialog_title" type="id"/>
+    <item name="cus_dialog_buttons_ok_cancel" type="id"/>
+    <item name="cus_dialog_buttons_ok" type="id"/>
+    <item name="cus_dialog_content" type="id"/>
+    <item name="cus_dialog_message" type="id"/>
+    <item name="editor_color_selector" type="id"/>
+    <item name="cus_cdc_content" type="id"/>
+
+    <!-- 常用 -->
+    <item name="_id_address" type="id"/>
+    <item name="_id_no_address" type="id"/>
+    <!-- 常用 -->
+    <item name="_id_cancel" type="id"/>
+    <!-- 自定义对话框标题 -->
+    <item name="_id_ok" type="id"/>
+    <!-- 用于选择的textView或者edittext -->
+    <item name="_select_hint" type="id"/>
+    <!-- 自定义对话框标题 -->
+
+
+    <!-- tab指示器 -->
+    <item name="_tab_indicator" type="id"/>
+    <!-- ViewPager指示器 -->
+    <item name="_view_pager_indicator" type="id"/>
+
+    <!-- 常用动作id -->
+    <item name="_id_refresh" type="id"/>
+    <item name="_id_arrow" type="id"></item>
+    <item name="_id_share" type="id"/>
+    <item name="_tab_container" type="id"/>
+    <item name="_adv_view" type="id"/>
+
+    <!-- 选择 -->
+    <item name="_select" type="id"/>
+    <item name="_select_from_album" type="id"/>
+    <item name="_select_from_capture" type="id"/>
+    <!-- 进度条、网络错误、进度、没有结果 -->
+    <item name="_load_state_loading" type="id"/>
+    <item name="_load_state_error" type="id"/>
+    <item name="_load_state_no_result" type="id"/>
+    <item name="_progress_text" type="id"/>
+    <item name="_area_picker" type="id"/>
+    <!-- 视图属性 -->
+    <item name="_container" type="id"/>
+    <item name="_bottom_bar" type="id"/>
+    <item name="_top_bar" type="id"/>
+    <!-- 标题栏 -->
+    <item name="_title_left" type="id"/>
+    <item name="_title_right" type="id"/>
+    <item name="_title_text" type="id"/>
+    <item name="_title_bar" type="id"/>
+    <!-- 弹出菜单 -->
+    <item name="_popup_bg" type="id"></item>
+    <item name="_popup_menu" type="id"></item>
+    <item name="_list_view_left" type="id"/>
+    <!-- 常用控件id -->
+    <item name="_seek_bar" type="id"></item>
+    <item name="_loading_image_view" type="id"/>
+    <item name="_sub_text_view" type="id"/>
+    <item name="_text_view" type="id"/>
+    <item name="_scroll_view" type="id"/>
+    <item name="_radio_group" type="id"/>
+    <item name="_check_box" type="id"/>
+    <item name="_list_view" type="id"/>
+    <item name="_edit_text" type="id"/>
+    <item name="_grid_view" type="id"/>
+    <item name="_thumb_image_view" type="id"/>
+    <item name="_image_view" type="id"/>
+    <item name="_progress_bar" type="id"/>
+    <item name="_view_pager" type="id"/>
+    <item name="_adv_view_pager" type="id"/>
+    <item name="_web_view" type="id"/>
+    <item name="_action_sheet" type="id"/>
+    <item name="_gard" type="id"/>
+
+    <!-- tabpane tabhost -->
+    <item name="_id_tabs" type="id"/>
+
+    <!-- 导引图 -->
+    <item name="_tab_host" type="id"/>
+    <item name="_top_menu" type="id"/>
+    <item name="_indicator_view" type="id"/>
+
+    <!-- tabpane -->
+    <item name="_tab_group" type="id"/>
+    <item name="_tab_pane_content" type="id"/>
+    <item name="_tab_pane_view" type="id"/>
+    <item name="_tab_pane_header" type="id"/>
+    <item name="_tab_pane_pager" type="id"/>
+
+    <!-- 前一个、后一个 -->
+    <item name="_next" type="id"/>
+    <item name="_prev" type="id"/>
+
+    <!-- private -->
+    <item name="_action_sheet_cancel" type="id"/>
+
+</resources>

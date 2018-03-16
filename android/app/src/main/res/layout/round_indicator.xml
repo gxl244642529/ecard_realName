@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_indicator_size"
+    android:layout_height="@dimen/_indicator_size"
+    android:layout_marginRight="@dimen/_indicator_padding"
+    android:background="@drawable/round_indicator"
+    android:orientation="vertical" >
+    
+
+</View>

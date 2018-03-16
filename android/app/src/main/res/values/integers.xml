@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="slide_animation_duration">300</integer>
+    <integer name="fade_animation_duration">300</integer>
+    <integer name="polymeric_slide_left_out_duration">400</integer>
+    <!-- state_list -->
+    <integer name="_list_view">1</integer>
+    <integer name="_grid_view">2</integer>
+
+    <!-- menu_type 用于top menu -->
+    <integer name="_menu_single">1</integer>
+    <integer name="_menu_tree">2</integer>
+
+</resources>

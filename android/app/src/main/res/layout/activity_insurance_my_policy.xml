@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/travel_page_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <!--
+    <com.citywithincity.widget.AdvView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/adv_view"
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        app:item_layout="@layout/base_loading_image_view" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/_adv_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e1e1e1" />
+    </com.citywithincity.widget.AdvView>
+    -->
+
+    <com.citywithincity.widget.TabPaneView
+        xmlns:tab_host="http://schemas.android.com/apk/res-auto"
+        android:id="@id/_tab_pane_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tab_host:tab_subs="@array/insurance_status_list_view" >
+
+        <!-- tab_host:content_layout="@layout/simple_list_view" > -->
+
+        <RelativeLayout
+            android:id="@id/_container1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@id/_id_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/title_tab_left"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@id/_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:singleLine="true"
+                        android:text="当前保单"
+                        android:textColor="@color/title_tab_select_color"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/title_tab_right"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@id/_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="历史保单"
+                        android:textColor="@color/title_tab_select_color"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--
+         <include
+        android:id="@id/adv_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        android:layout_below="@id/_container1"
+        layout="@layout/adv_viwe_layout" />
+        -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/_container1"
+            android:background="@android:color/white"
+            android:flipInterval="30"
+            android:padding="7dip"
+            android:persistentDrawingCache="animation" >
+        </android.support.v4.view.ViewPager>
+    </com.citywithincity.widget.TabPaneView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_page_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/s_title_bar" />
+
+    <ProgressBar
+        android:id="@id/_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshWebView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@id/_web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ptr:ptrMode="both" />
+
+</LinearLayout>

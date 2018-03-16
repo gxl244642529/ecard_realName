@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_popup_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ecard_menu_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dip" >
+
+        <RelativeLayout
+            android:id="@id/ecard_unbind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/s_item_click_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/ic_ecard_menu_unlock"
+                android:gravity="center"
+                android:text="解绑"
+                android:textColor="@color/_title_text_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/_title_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/ecard_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/s_item_click_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/ic_ecard_menu_edit"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="@color/_title_text_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/_title_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/ecard_member"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/s_item_click_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/ic_ecard_menu_member"
+                android:gravity="center"
+                android:text="会员卡"
+                android:textColor="@color/_title_text_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/_title_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/ecard_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/s_item_click_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/ic_ecard_menu_scan"
+                android:gravity="center"
+                android:text="扫一扫"
+                android:textColor="@color/_title_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- <TextView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="1、报失成功后，您的e通卡将无法再次使用；" />
+    
+    <TextView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="2、赔付卡片将以快递到付寄出，同城标准为7元/次；" />
+    
+    <TextView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="3、保险公司有权根据您的报失记录调整承保条件；" />
+    
+    <TextView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="4、保险公司保留对恶意骗保等违法行为的追责权利。" />
+    
+    <TextView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text=" 确认报失吗？" /> -->
+    
+    <TextView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/text_default_color"
+    	android:text="1、报失成功后您的e通卡将无法再次使用\n2、保险公司有权根据您的报失记录调整承保条件，同时保留对恶意骗保等违法行为的追责权利。" />
+    
+    <TextView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:textColor="@color/text_default_color"
+    	android:text="确认报失吗？" />
+    
+</LinearLayout>

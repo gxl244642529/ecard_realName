@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SCardFavCell">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="127"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view autoresizesSubviews="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJZ-dt-cMI" customClass="ItemView">
+                    <rect key="frame" x="0.0" y="0.0" width="153" height="127"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_money.png" translatesAutoresizingMaskIntoConstraints="NO" id="2nE-Ov-2i8">
+                            <rect key="frame" x="7" y="103" width="14" height="14"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="psz-Le-340">
+                            <rect key="frame" x="6" y="5" width="141" height="87"/>
+                            <color key="backgroundColor" red="0.85373902320861816" green="0.83569526672363281" blue="0.80695855617523193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="psz-Le-340" secondAttribute="height" multiplier="47:29" id="YMM-1u-rda"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-7I-qfc">
+                            <rect key="frame" x="23" y="100" width="17.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_post.png" translatesAutoresizingMaskIntoConstraints="NO" id="RLV-C2-VNH">
+                            <rect key="frame" x="81.5" y="103" width="14" height="14"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="厦门包邮" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZt-fL-kEj">
+                            <rect key="frame" x="97.5" y="103" width="49.5" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCq-Aw-7eU">
+                            <rect key="frame" x="122" y="5" width="25" height="25"/>
+                            <state key="normal" image="s_ic_del.png">
+                                <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="2nE-Ov-2i8" secondAttribute="bottom" constant="10" id="1Fa-pe-lV5"/>
+                        <constraint firstAttribute="bottom" secondItem="RLV-C2-VNH" secondAttribute="bottom" constant="10" id="BWQ-i9-FRA"/>
+                        <constraint firstAttribute="trailing" secondItem="qZt-fL-kEj" secondAttribute="trailing" constant="6" id="EWF-4Z-Qa2"/>
+                        <constraint firstAttribute="bottom" secondItem="qZt-fL-kEj" secondAttribute="bottom" constant="10" id="QKi-iN-L7p"/>
+                        <constraint firstAttribute="bottom" secondItem="Voy-7I-qfc" secondAttribute="bottom" constant="10" id="TpG-sv-GrQ"/>
+                        <constraint firstItem="qZt-fL-kEj" firstAttribute="leading" secondItem="RLV-C2-VNH" secondAttribute="trailing" constant="2" id="W5d-4v-G1y"/>
+                        <constraint firstAttribute="trailing" secondItem="psz-Le-340" secondAttribute="trailing" constant="6" id="aco-G6-tZR"/>
+                        <constraint firstAttribute="trailing" secondItem="GCq-Aw-7eU" secondAttribute="trailing" constant="6" id="ctY-BF-pfo"/>
+                        <constraint firstItem="psz-Le-340" firstAttribute="top" secondItem="JJZ-dt-cMI" secondAttribute="top" constant="5" id="gJt-g5-Nx3"/>
+                        <constraint firstItem="GCq-Aw-7eU" firstAttribute="top" secondItem="JJZ-dt-cMI" secondAttribute="top" constant="5" id="isW-lt-Czy"/>
+                        <constraint firstItem="psz-Le-340" firstAttribute="leading" secondItem="JJZ-dt-cMI" secondAttribute="leading" constant="6" id="mNn-NE-7sw"/>
+                        <constraint firstItem="2nE-Ov-2i8" firstAttribute="leading" secondItem="JJZ-dt-cMI" secondAttribute="leading" constant="7" id="sWK-Lq-TfD"/>
+                        <constraint firstItem="Voy-7I-qfc" firstAttribute="leading" secondItem="2nE-Ov-2i8" secondAttribute="trailing" constant="2" id="wDh-IC-gSb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JJZ-dt-cMI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E0V-ex-Xkg"/>
+                <constraint firstAttribute="bottom" secondItem="JJZ-dt-cMI" secondAttribute="bottom" id="FdY-VC-urO"/>
+                <constraint firstItem="JJZ-dt-cMI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kw5-Wb-fMd"/>
+                <constraint firstAttribute="trailing" secondItem="JJZ-dt-cMI" secondAttribute="trailing" id="UDe-cG-L3C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="close" destination="GCq-Aw-7eU" id="xLU-Sf-8dM"/>
+                <outlet property="image" destination="psz-Le-340" id="CAU-wA-YC5"/>
+                <outlet property="price" destination="Voy-7I-qfc" id="yY4-6f-umy"/>
+            </connections>
+            <point key="canvasLocation" x="90.5" y="-189.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="s_ic_del.png" width="25" height="25"/>
+        <image name="s_ic_money.png" width="14" height="14"/>
+        <image name="s_ic_post.png" width="14" height="14"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

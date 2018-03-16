@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackController">
+            <connections>
+                <outlet property="btnSubmit" destination="M65-u3-Q9R" id="ahP-Wx-Nqm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oM7-Ks-XUF" customClass="DMFormView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请留下您的宝贵意见" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwL-ct-I2k">
+                            <rect key="frame" x="5" y="5" width="119.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请留下您的联系方式" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l15-af-Cho">
+                            <rect key="frame" x="5" y="141" width="119.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dir-sO-OWo" customClass="DMFormTextView">
+                            <rect key="frame" x="5" y="26" width="365" height="110"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="T55-k7-fUZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="content"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="required" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fieldName" value="content"/>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMN-la-iqT">
+                            <rect key="frame" x="0.0" y="162" width="375" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的手机或邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJe-Xw-LeZ">
+                                    <rect key="frame" x="5" y="5" width="365" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="HJe-Xw-LeZ" secondAttribute="trailing" constant="5" id="0xd-zU-kGe"/>
+                                <constraint firstItem="HJe-Xw-LeZ" firstAttribute="leading" secondItem="nMN-la-iqT" secondAttribute="leading" constant="5" id="6k6-h0-Yex"/>
+                                <constraint firstItem="HJe-Xw-LeZ" firstAttribute="top" secondItem="nMN-la-iqT" secondAttribute="top" constant="5" id="YCP-Hh-yDy"/>
+                                <constraint firstAttribute="bottom" secondItem="HJe-Xw-LeZ" secondAttribute="bottom" constant="5" id="nWc-JC-g9T"/>
+                                <constraint firstAttribute="height" constant="50" id="sro-Up-Cq7"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M65-u3-Q9R" customClass="CommonButton">
+                            <rect key="frame" x="20" y="222" width="335" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="DU3-j3-X3o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <size key="titleShadowOffset" width="0.0" height="1"/>
+                            <state key="normal" title="提交">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted" title="提交"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="server">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="waitingMessage" value="正在提交..."/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="api" value="feedback/add"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onSubmit:" destination="-1" eventType="touchUpInside" id="wog-1m-HGy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="l15-af-Cho" firstAttribute="leading" secondItem="oM7-Ks-XUF" secondAttribute="leading" constant="5" id="0Mx-OJ-pqP"/>
+                        <constraint firstItem="Dir-sO-OWo" firstAttribute="top" secondItem="bwL-ct-I2k" secondAttribute="bottom" constant="5" id="4GT-aA-cqh"/>
+                        <constraint firstItem="bwL-ct-I2k" firstAttribute="top" secondItem="oM7-Ks-XUF" secondAttribute="top" constant="5" id="5Rh-xo-XSb"/>
+                        <constraint firstItem="nMN-la-iqT" firstAttribute="leading" secondItem="oM7-Ks-XUF" secondAttribute="leading" id="9nf-e4-O6z"/>
+                        <constraint firstAttribute="trailing" secondItem="nMN-la-iqT" secondAttribute="trailing" id="JBI-YC-PWJ"/>
+                        <constraint firstAttribute="bottom" secondItem="M65-u3-Q9R" secondAttribute="bottom" constant="10" id="MbG-Nz-MRY"/>
+                        <constraint firstItem="M65-u3-Q9R" firstAttribute="top" secondItem="nMN-la-iqT" secondAttribute="bottom" constant="10" id="RIr-G0-a0r"/>
+                        <constraint firstAttribute="trailing" secondItem="Dir-sO-OWo" secondAttribute="trailing" constant="5" id="W4b-fM-tnY"/>
+                        <constraint firstItem="nMN-la-iqT" firstAttribute="top" secondItem="l15-af-Cho" secondAttribute="bottom" constant="5" id="a3Q-1k-qXb"/>
+                        <constraint firstItem="Dir-sO-OWo" firstAttribute="leading" secondItem="oM7-Ks-XUF" secondAttribute="leading" constant="5" id="a6B-Rd-jOh"/>
+                        <constraint firstAttribute="trailing" secondItem="M65-u3-Q9R" secondAttribute="trailing" constant="20" id="evv-J0-8u9"/>
+                        <constraint firstItem="l15-af-Cho" firstAttribute="top" secondItem="Dir-sO-OWo" secondAttribute="bottom" constant="5" id="hpj-rz-Gyn"/>
+                        <constraint firstItem="bwL-ct-I2k" firstAttribute="leading" secondItem="oM7-Ks-XUF" secondAttribute="leading" constant="5" id="o4u-FL-UOg"/>
+                        <constraint firstItem="M65-u3-Q9R" firstAttribute="leading" secondItem="oM7-Ks-XUF" secondAttribute="leading" constant="20" id="sh4-B7-Igw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="feedbakAdd"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oM7-Ks-XUF" secondAttribute="trailing" id="AKw-1H-j80"/>
+                <constraint firstItem="oM7-Ks-XUF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jgg-Ym-gXc"/>
+                <constraint firstItem="oM7-Ks-XUF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qc5-OY-Hs3"/>
+            </constraints>
+            <point key="canvasLocation" x="256.5" y="199.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

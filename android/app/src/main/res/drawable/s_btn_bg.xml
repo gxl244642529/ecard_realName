@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    
+    <item android:state_enabled="false"><shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+
+            <solid android:color="#a4a9ae" />
+        </shape></item>
+    <item android:drawable="@drawable/s_btn_unpressed" android:state_pressed="false"></item>
+    <item android:drawable="@drawable/s_btn_pressed" android:state_pressed="true"></item>
+
+</selector>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip" >
+
+            <ImageView
+                android:id="@id/business_image"
+                android:layout_width="116dp"
+                android:layout_height="94dp"
+                android:background="@color/default_page_color"
+                android:src="@drawable/default_coupon_logo" />
+
+            <TextView
+                android:id="@id/business_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="加载中..."
+                android:textColor="@color/text_color_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/business_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/common_seperator2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dip" >
+
+                <ImageView
+                    android:id="@id/business_img0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:adjustViewBounds="true"
+                    android:background="@color/default_page_color"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_coupon_logo" />
+
+                <ImageView
+                    android:id="@id/business_img1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:adjustViewBounds="true"
+                    android:background="@color/default_page_color"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_coupon_logo" />
+
+                <ImageView
+                    android:id="@id/business_img2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:adjustViewBounds="true"
+                    android:background="@color/default_page_color"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_coupon_logo" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:id="@id/business_show_more_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector"
+                android:clickable="true"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="查看更多图片"
+                    android:textColor="@color/highlight_text"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:scaleType="fitXY"
+        android:src="@drawable/tab_bottom_line" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        layout="@layout/coupon_shop_info" />
+
+    <LinearLayout
+        android:id="@id/business_coupon_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/business_coupon_item0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            layout="@layout/coupon_item_v2" />
+
+        <include
+            android:id="@id/business_coupon_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            layout="@layout/coupon_item_v2" />
+
+        <include
+            android:id="@id/business_coupon_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            layout="@layout/coupon_item_v2" />
+    </LinearLayout>
+
+</LinearLayout>

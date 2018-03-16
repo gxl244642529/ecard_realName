@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_page_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/base_title_bar" />
+
+    <com.citywithincity.widget.TabPaneView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tab_host="http://schemas.android.com/apk/res-auto"
+        android:id="@id/_tab_pane_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tab_host:tab_subs="@array/state_list_list_views" >
+
+        <LinearLayout
+            android:id="@id/_id_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="拾卡查询"
+                    android:textColor="@color/top_menu_text_selector"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@id/_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="失卡查询"
+                    android:textColor="@color/top_menu_text_selector"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_below="@id/_id_tabs"
+            android:scaleType="fitXY"
+            android:src="@drawable/tab_bottom_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line"
+            android:persistentDrawingCache="animation" />
+    </com.citywithincity.widget.TabPaneView>
+
+</LinearLayout>

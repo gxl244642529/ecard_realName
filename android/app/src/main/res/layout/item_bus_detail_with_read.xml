@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/real_data"
+        android:background="@drawable/item_selector"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@id/route_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="754路"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/route_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="36分钟 | 3.1公里 ! 步行1577米"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/real_data"
+        android:layout_width="wrap_content"
+        android:layout_height="56dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/item_selector"
+        android:drawableLeft="@drawable/ic_doudou"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="实时"
+        android:textColor="@color/red" />
+
+</RelativeLayout>

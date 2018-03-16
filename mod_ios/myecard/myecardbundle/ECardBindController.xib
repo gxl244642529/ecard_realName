@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ECardBindController">
+            <connections>
+                <outlet property="view" destination="W8j-JD-fuW" id="yuu-Tg-cg8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="W8j-JD-fuW" customClass="DMFormView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡号：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwk-DM-akO">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="sQo-Ak-oFe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD7-fp-B25">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="c7I-d1-ERw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入e通卡卡号或异型卡卡号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzm-Gu-0UO" customClass="DMFormTextField">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="409-Yw-k7J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="cardId"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="required" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入本卡备注" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o9A-rs-4W6" customClass="DMFormTextField">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="H3r-RW-4YL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="name"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-Tg-V7y" customClass="CommonButton">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="B5X-Tl-z3h"/>
+                        <constraint firstAttribute="width" constant="200" id="I8v-a0-XVV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="绑定" backgroundImage="s_ic_btn.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" title="绑定"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="api" value="ecard/bind"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="server">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JD7-fp-B25" firstAttribute="top" secondItem="vwk-DM-akO" secondAttribute="bottom" constant="19" id="6wp-6Q-uWJ"/>
+                <constraint firstItem="vwk-DM-akO" firstAttribute="top" secondItem="W8j-JD-fuW" secondAttribute="top" constant="15" id="DgO-gO-fnj"/>
+                <constraint firstItem="o9A-rs-4W6" firstAttribute="centerY" secondItem="JD7-fp-B25" secondAttribute="centerY" id="L7n-yt-8zl"/>
+                <constraint firstAttribute="trailing" secondItem="o9A-rs-4W6" secondAttribute="trailing" constant="44" id="Oss-5b-7bz"/>
+                <constraint firstAttribute="trailing" secondItem="zzm-Gu-0UO" secondAttribute="trailing" constant="52" id="R98-BT-c0w"/>
+                <constraint firstAttribute="centerX" secondItem="tb2-Tg-V7y" secondAttribute="centerX" id="f3i-gA-NQG"/>
+                <constraint firstItem="vwk-DM-akO" firstAttribute="centerY" secondItem="zzm-Gu-0UO" secondAttribute="centerY" id="fKc-1c-fdz"/>
+                <constraint firstItem="zzm-Gu-0UO" firstAttribute="leading" secondItem="vwk-DM-akO" secondAttribute="trailing" constant="2" id="faB-Z0-uYZ"/>
+                <constraint firstItem="tb2-Tg-V7y" firstAttribute="top" secondItem="o9A-rs-4W6" secondAttribute="bottom" constant="22" id="fu6-8y-640"/>
+                <constraint firstItem="o9A-rs-4W6" firstAttribute="leading" secondItem="JD7-fp-B25" secondAttribute="trailing" constant="2" id="jJ8-lc-5AI"/>
+                <constraint firstItem="JD7-fp-B25" firstAttribute="leading" secondItem="W8j-JD-fuW" secondAttribute="leading" constant="18" id="lP2-0G-C9i"/>
+                <constraint firstItem="vwk-DM-akO" firstAttribute="leading" secondItem="W8j-JD-fuW" secondAttribute="leading" constant="18" id="tbM-Me-fDn"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="bindECard"/>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+    <resources>
+        <image name="s_ic_btn.png" width="111" height="35"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

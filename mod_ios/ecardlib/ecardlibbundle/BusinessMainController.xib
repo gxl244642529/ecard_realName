@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessMainController">
+            <connections>
+                <outlet property="list" destination="t0r-2j-Wrj" id="gWt-tg-ZRK"/>
+                <outlet property="view" destination="iN0-l3-epB" id="WkK-bY-Lo6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0r-2j-Wrj" customClass="DMStateList">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="api" value="business/recommand"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="server">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="entityName" value="BusinessVo"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="refreshable" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="controllerName" value="BusinessDetailController"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="tableHeader" value="BusinessHeader"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoExecute" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="useCache" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="cellName" value="BsCell"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rowHeight">
+                            <integer key="value" value="110"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cols">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="bundleName" value="ecardlibbundle.bundle"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="t0r-2j-Wrj" secondAttribute="trailing" id="5Fx-nt-Ki4"/>
+                <constraint firstAttribute="bottom" secondItem="t0r-2j-Wrj" secondAttribute="bottom" id="W4I-sC-HQb"/>
+                <constraint firstItem="t0r-2j-Wrj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pkm-Zi-8pw"/>
+                <constraint firstItem="t0r-2j-Wrj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y7r-Xn-icu"/>
+            </constraints>
+            <point key="canvasLocation" x="267" y="181"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

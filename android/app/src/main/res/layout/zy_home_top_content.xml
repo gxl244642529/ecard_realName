@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.citywithincity.widget.AdvView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/adv_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:item_layout="@layout/base_loading_image_view" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/_adv_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e1e1e1" />
+    </com.citywithincity.widget.AdvView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <Button
+            android:id="@id/btn_free_movie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_free_movie_bg"
+            android:drawableTop="@drawable/ic_free_raffle"
+            android:padding="10dp"
+            android:text="免费观影"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@id/btn_commen_movie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_commen_movie_bg"
+            android:drawableTop="@drawable/ic_commen_raffle"
+            android:padding="10dp"
+            android:text="20元观影"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8fc0f8"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/btn_vip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_zy_vip"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="e通卡&amp;中影联名会员卡"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@id/btn_student"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_zy_student"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="学生e通卡专享"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dip" >
+
+    <RelativeLayout
+        android:id="@id/_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@id/id_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_left_time"
+            android:drawablePadding="10dip"
+            android:padding="10dip" />
+
+        <CheckBox
+            android:id="@+id/show_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="仅显示我的行程" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_seperator1" />
+
+        <TextView
+            android:id="@id/route_start"
+            android:layout_width="fill_parent"
+            android:layout_height="46.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/route_switch"
+            android:background="@null"
+            android:drawableLeft="@drawable/nav_route_result_start_point"
+            android:drawablePadding="10.0dip"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:maxLength="100"
+            android:paddingLeft="12.0dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColorHint="#ffbfbfbf"
+            android:textSize="17.0sp" />
+
+        <ImageView
+            android:id="@id/route_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/item_selector"
+            android:padding="10dip"
+            android:scaleType="center"
+            android:src="@drawable/btn_route_icon_switch_selector" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item2"
+        android:layout_below="@id/_top_bar"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <View
+            android:id="@id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_seperator1" />
+
+        <TextView
+            android:id="@id/route_end"
+            android:layout_width="fill_parent"
+            android:layout_height="46.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/nav_route_result_end_point"
+            android:drawablePadding="10.0dip"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:maxLength="100"
+            android:paddingLeft="12.0dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColorHint="#ffbfbfbf"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@id/_id_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_log_refresh"
+            android:drawablePadding="5dip"
+            android:padding="10dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

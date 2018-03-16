@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:clickable="true" >
+
+    <TextView
+        android:id="@id/_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dip"
+        android:text="jkfds"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <AbsoluteLayout
+        android:id="@id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/_bottom_bar"
+        android:layout_below="@id/_title_text" >
+
+        <TextView
+            android:id="@id/editor_draw_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="jflkdskjjksdfjlsfk"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@id/_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" />
+    </AbsoluteLayout>
+
+    <LinearLayout
+        android:id="@id/_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/editor_tools_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:orientation="vertical" >
+            </View>
+
+            <SeekBar
+                android:id="@id/seek_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:max="360"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:thumb="@drawable/detail_icon_schedule_ball" />
+
+            <com.citywithincity.imageeditor.widget.ColorSelector
+                android:id="@id/editor_color_selector"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:background="@android:color/black"
+                android:clickable="true"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip" >
+            </com.citywithincity.imageeditor.widget.ColorSelector>
+
+            <SeekBar
+                android:id="@id/seek_bar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="360"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:thumb="@drawable/detail_icon_schedule_ball" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@id/_id_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="10dip"
+                android:src="@drawable/e_ic_cancel" />
+
+            <LinearLayout
+                android:id="@id/editor_tools"
+                android:layout_width="wrap_content"
+                android:layout_height="58dip"
+                android:layout_centerHorizontal="true" >
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:id="@id/_text_view"
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/e_ic_text1"
+                        android:gravity="center"
+                        android:text="文字"
+                        android:textColor="@color/editor_text_selector"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:id="@id/_text_view"
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/e_ic_text2"
+                        android:gravity="center"
+                        android:text="大小"
+                        android:textColor="@color/editor_text_selector"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:id="@id/_text_view"
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/e_ic_text3"
+                        android:gravity="center"
+                        android:text="颜色"
+                        android:textColor="@color/editor_text_selector"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@id/_id_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="10dip"
+                android:src="@drawable/e_ic_ok" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

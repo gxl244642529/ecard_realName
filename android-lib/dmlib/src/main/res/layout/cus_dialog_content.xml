@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cus_dialog_bg"
+        android:orientation="vertical"
+        android:paddingTop="20dip" >
+
+        <TextView
+            android:id="@id/cus_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <com.damai.alert.MaxHeightView
+            android:id="@id/cus_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip" >
+        </com.damai.alert.MaxHeightView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cus_dialog_line" />
+        
+        <include layout="@layout/cus_dialog_bottom"/>
+    </LinearLayout>
+
+</LinearLayout>

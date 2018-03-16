@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.damai.widget.FormView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/_title_bar" />
+
+    <com.damai.widget.FormEditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="请描述您在客户端使用中遇到的问题，我们很期待您的意见与建议。"
+        android:inputType="textMultiLine"
+        android:lines="5" />
+
+    <com.damai.widget.SubmitButton
+        lib:api="feedback/add"
+        lib:server="1"
+        android:id="@+id/submit"
+        style="@style/_main_button"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_margin="10dip"
+        android:text="提交" />
+
+</com.damai.widget.FormView>

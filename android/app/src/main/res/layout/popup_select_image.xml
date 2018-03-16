@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_popup_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ios_popup_bg"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@id/_popup_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ios_menu_bg"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <Button
+            android:id="@id/_select_from_capture"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/popup_button_bg_selector"
+            android:text="拍照" />
+
+        <Button
+            android:id="@id/_select_from_album"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/popup_button_bg_selector"
+            android:text="相册" />
+
+        <Button
+            android:id="@id/_id_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="24dip"
+            android:background="@drawable/popup_button_bg_cancel_selector"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>

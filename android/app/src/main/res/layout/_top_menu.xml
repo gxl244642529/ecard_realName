@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.citywithincity.widget.TopMenu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="1px">
+  <!--  top_menu:menu_types="@array/tab_host_test_tabs"-->
+  
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="36dip"
+        android:layout_weight="1"
+        android:background="@drawable/_item_selector"
+        android:clickable="true"
+        android:layout_marginRight="1dp" >
+
+        <TextView
+            android:id="@id/_text_view"
+            style="@style/_top_menu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="36dip"
+        android:layout_weight="1"
+        android:background="@drawable/_item_selector"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@id/_text_view"
+            style="@style/_top_menu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</com.citywithincity.widget.TopMenu>

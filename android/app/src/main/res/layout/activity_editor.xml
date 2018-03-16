@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_title_height" >
+
+            <ImageView
+                android:id="@id/_title_left"
+                android:layout_width="54dip"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/e_ic_back" />
+
+            <TextView
+                android:id="@id/_id_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dip"
+                android:text="保存"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageButton
+                    android:id="@id/undo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="10dip"
+                    android:src="@drawable/e_ic_undo"
+                    android:text="撤销" />
+
+                <ImageButton
+                    android:id="@id/redo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@null"
+                    android:padding="10dip"
+                    android:src="@drawable/e_ic_redo" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/_bottom_bar"
+            android:layout_below="@id/contrast" />
+
+        <!-- <ImageButton /> -->
+
+        <Button
+            android:id="@id/contrast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/_title_bar"
+            android:background="@null"
+            android:drawableLeft="@drawable/btn_contrast_bg"
+            android:drawablePadding="5dip"
+            android:padding="10dip"
+            android:text="对比"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <HorizontalScrollView
+            android:id="@id/_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:id="@id/editor_tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip" >
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/s_ic_edit1"
+                        android:gravity="center"
+                        android:text="编辑"
+                        android:textColor="@color/editor_text_color_outer"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/s_ic_edit2"
+                        android:gravity="center"
+                        android:text="滤镜"
+                        android:textColor="@color/editor_text_color_outer"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/e_ic_adjust_color"
+                        android:gravity="center"
+                        android:text="增强"
+                        android:textColor="@color/editor_text_color_outer"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/s_ic_edit4"
+                        android:gravity="center"
+                        android:text="文字"
+                        android:textColor="@color/editor_text_color_outer"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

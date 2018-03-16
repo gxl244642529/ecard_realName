@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:clickable="true" >
+
+    <TextView
+        android:id="@id/_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dip"
+        android:text="jkfds"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@id/_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/_bottom_bar"
+        android:layout_below="@id/_title_text"
+        android:padding="10dip"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:id="@id/_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@id/editor_tools_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <SeekBar
+                android:id="@id/seek_bar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:thumb="@drawable/detail_icon_schedule_ball" />
+
+            <SeekBar
+                android:id="@id/seek_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:thumb="@drawable/detail_icon_schedule_ball" />
+
+            <SeekBar
+                android:id="@id/seek_bar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:thumb="@drawable/detail_icon_schedule_ball" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@id/_id_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="10dip"
+                android:src="@drawable/e_ic_cancel" />
+
+            <LinearLayout
+                android:id="@id/editor_tools"
+                android:layout_width="wrap_content"
+                android:layout_height="58dip"
+                android:layout_centerHorizontal="true" >
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:id="@id/_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/s_ic_adjust1"
+                        android:gravity="center"
+                        android:text="饱和度"
+                        android:textColor="@color/editor_text_selector"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:id="@id/_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/s_ic_adjust2"
+                        android:gravity="center"
+                        android:text="亮度"
+                        android:textColor="@color/editor_text_selector"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="58dip"
+                    android:layout_height="58dip" >
+
+                    <TextView
+                        android:id="@id/_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/s_ic_adjust3"
+                        android:gravity="center"
+                        android:text="对比度"
+                        android:textColor="@color/editor_text_selector"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@id/_id_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="10dip"
+                android:src="@drawable/e_ic_ok" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include  layout="@layout/title_bar"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_rectangle_border"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+    
+    <ImageView 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="7dp"
+    	android:src="@drawable/insurance_settle_claim_info" />
+    
+    </RelativeLayout>
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="13sp"
+    			android:text="当您的保单发生合同约定的责任事故时，首先请您采取必要的紧急施救措施，然后按以下步骤操作：" />
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="7dp"
+    			android:text="1、电话报案" />
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="13sp"
+    			android:text="请您第一时间拨打我们的客服专线0592-95518报案，告知客服人员保单号（可在APP中“我的保单”对应查找）、事故发生的时间、地点、经过和损失情况等必要信息。" />
+
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="7dp"
+    			android:text="2、接案处理" />
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="13sp"
+    			android:text="我司将安排指定理赔专员与您联系，进一步了解事故详情并指导您后续操作。若有需要，我司理赔专员或受委托的第三方机构将赴现场查勘，在您的协助配合下完成初步查验。" />
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="7dp"
+    			android:text="3、提交索赔" />
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="13sp"
+    			android:text="请您根据我司理赔专员指引，收集并提供对应索赔资料，参考如下：" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="7dp"
+    	android:background="@drawable/round_rectangle_border"
+    	android:orientation="horizontal" >
+    	
+    		
+        <LinearLayout
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_weight="1" >
+    		
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:padding="7dp"
+    			android:text="涉及财产损失" />
+            
+            <View
+            android:layout_width="match_parent"
+    		android:layout_height="1px"
+    		android:background="@color/new_divider_color" />
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="3dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="12sp"
+    			android:text="a、保险索赔通知书；" />
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="3dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="12sp"
+    			android:text="b、身份证及银行卡复印件；" />
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="3dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="12sp"
+    			android:text="c、财产损失清单及对应票据；" />
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="3dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="12sp"
+    			android:text="d、其他索赔必须材料，具体以理赔专员告知为准" />
+            
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+    		android:layout_height="match_parent"
+    		android:background="@color/new_divider_color" />
+            
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:orientation="vertical" >
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:padding="7dp"
+    			android:text="涉及人员伤亡" />
+            
+            <View
+            android:layout_width="match_parent"
+    		android:layout_height="1px"
+    		android:background="@color/new_divider_color" />
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="3dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="12sp"
+    			android:text="a、保险金给付申请书；" />
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="3dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="12sp"
+    			android:text="b、身份证及银行卡复印件；" />
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="3dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="12sp"
+    			android:text="c、医疗费用发票原件、病历、药品清单、出院小结、检查报告等诊治资料；" />
+            
+            <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="3dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="12sp"
+    			android:text="d、其他索赔必须材料，具体以理赔专员告知为准。" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="7dp"
+    			android:text="4、理算处理" />
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="13sp"
+    			android:text="在您提交索赔资料齐全的情况下，我司将与您保持密切沟通，并在达成一致意见后完成案件理算。" />
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:padding="7dp"
+    			android:text="5、出款结案" />
+    
+    <TextView
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:paddingLeft="7dp"
+    			android:paddingRight="7dp"
+    			android:textColor="@color/text_color_gray"
+    			android:textSize="13sp"
+    			android:text="我司根据双方沟通结果安排对应赔款支付，案件至此办结。" />
+    
+    </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

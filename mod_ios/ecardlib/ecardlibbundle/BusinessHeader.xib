@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BusinessHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2u7-mn-xmC">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2nw-Vx-sVQ" customClass="DMButtonGroup">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ks-KB-vCw" customClass="DMButton">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="cBO-Qa-vZ1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="衣" image="ic_business_yi.png">
+                                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YS-au-98G" customClass="DMButton">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="食" image="ic_business_shi.png">
+                                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuN-VU-KKk" customClass="DMButton">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="住" image="ic_business_zhu.png">
+                                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A6-NJ-QRs" customClass="DMButton">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="行" image="ic_business_bus.png">
+                                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD5-HA-u6b" customClass="DMButton">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="购" image="ic_business_gou.png">
+                                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPp-DL-9r3" customClass="DMButton">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="娱" image="ic_business_yu.png">
+                                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpL-W5-rKM" customClass="DMButton">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="全部" image="ic_business_all.png">
+                                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJu-jI-OPz" customClass="DMButton">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="周边" image="ic_business_zhoubian.png">
+                                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.89398451889999997" green="0.89398451889999997" blue="0.89398451889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="SuN-VU-KKk" firstAttribute="top" secondItem="2nw-Vx-sVQ" secondAttribute="top" id="0OZ-xi-EML"/>
+                                <constraint firstItem="SuN-VU-KKk" firstAttribute="leading" secondItem="1YS-au-98G" secondAttribute="trailing" constant="1" id="2BH-3e-sxJ"/>
+                                <constraint firstItem="CD5-HA-u6b" firstAttribute="leading" secondItem="2nw-Vx-sVQ" secondAttribute="leading" id="31c-vB-6ts"/>
+                                <constraint firstAttribute="bottom" secondItem="CD5-HA-u6b" secondAttribute="bottom" constant="1" id="3hB-Jo-ESo"/>
+                                <constraint firstItem="2ks-KB-vCw" firstAttribute="leading" secondItem="2nw-Vx-sVQ" secondAttribute="leading" id="7PS-po-L5P"/>
+                                <constraint firstItem="kJu-jI-OPz" firstAttribute="top" secondItem="2A6-NJ-QRs" secondAttribute="bottom" constant="1" id="8Ic-oO-gYp"/>
+                                <constraint firstItem="CD5-HA-u6b" firstAttribute="height" secondItem="2ks-KB-vCw" secondAttribute="height" id="8R1-Q9-IDU"/>
+                                <constraint firstItem="2A6-NJ-QRs" firstAttribute="width" secondItem="2ks-KB-vCw" secondAttribute="width" id="AaE-GF-AUY"/>
+                                <constraint firstItem="1YS-au-98G" firstAttribute="height" secondItem="2ks-KB-vCw" secondAttribute="height" id="CXL-wQ-Bgq"/>
+                                <constraint firstItem="1YS-au-98G" firstAttribute="top" secondItem="2nw-Vx-sVQ" secondAttribute="top" id="DH8-NF-7h3"/>
+                                <constraint firstItem="kJu-jI-OPz" firstAttribute="leading" secondItem="JpL-W5-rKM" secondAttribute="trailing" constant="1" id="DMH-7C-26U"/>
+                                <constraint firstItem="CD5-HA-u6b" firstAttribute="width" secondItem="2ks-KB-vCw" secondAttribute="width" id="DvC-W1-6pz"/>
+                                <constraint firstItem="cPp-DL-9r3" firstAttribute="width" secondItem="2ks-KB-vCw" secondAttribute="width" id="INB-6h-YoS"/>
+                                <constraint firstItem="SuN-VU-KKk" firstAttribute="width" secondItem="2ks-KB-vCw" secondAttribute="width" id="LL2-wL-W1s"/>
+                                <constraint firstItem="CD5-HA-u6b" firstAttribute="top" secondItem="2ks-KB-vCw" secondAttribute="bottom" constant="1" id="Mdd-fA-Ouc"/>
+                                <constraint firstItem="1YS-au-98G" firstAttribute="leading" secondItem="2ks-KB-vCw" secondAttribute="trailing" constant="1" id="PIf-xw-Pjr"/>
+                                <constraint firstItem="JpL-W5-rKM" firstAttribute="top" secondItem="2A6-NJ-QRs" secondAttribute="bottom" constant="1" id="R7s-si-QVf"/>
+                                <constraint firstItem="2A6-NJ-QRs" firstAttribute="leading" secondItem="SuN-VU-KKk" secondAttribute="trailing" constant="1" id="RXV-Et-15s"/>
+                                <constraint firstAttribute="trailing" secondItem="2A6-NJ-QRs" secondAttribute="trailing" id="Sgy-Ym-pag"/>
+                                <constraint firstAttribute="trailing" secondItem="kJu-jI-OPz" secondAttribute="trailing" id="YZr-uX-QHC"/>
+                                <constraint firstItem="JpL-W5-rKM" firstAttribute="leading" secondItem="cPp-DL-9r3" secondAttribute="trailing" constant="1" id="ZEw-Ea-Rom"/>
+                                <constraint firstItem="1YS-au-98G" firstAttribute="width" secondItem="2ks-KB-vCw" secondAttribute="width" id="c6d-Kc-8Rc"/>
+                                <constraint firstItem="JpL-W5-rKM" firstAttribute="width" secondItem="2ks-KB-vCw" secondAttribute="width" id="cQc-6T-ZM3"/>
+                                <constraint firstItem="cPp-DL-9r3" firstAttribute="top" secondItem="1YS-au-98G" secondAttribute="bottom" constant="1" id="eIh-VM-Dez"/>
+                                <constraint firstItem="cPp-DL-9r3" firstAttribute="leading" secondItem="CD5-HA-u6b" secondAttribute="trailing" constant="1" id="fQj-rr-H6b"/>
+                                <constraint firstItem="JpL-W5-rKM" firstAttribute="height" secondItem="2ks-KB-vCw" secondAttribute="height" id="g8S-MX-xfU"/>
+                                <constraint firstItem="2A6-NJ-QRs" firstAttribute="height" secondItem="2ks-KB-vCw" secondAttribute="height" id="iDS-u5-5gv"/>
+                                <constraint firstItem="2ks-KB-vCw" firstAttribute="top" secondItem="2nw-Vx-sVQ" secondAttribute="top" id="ir6-Ox-Fgl"/>
+                                <constraint firstItem="2A6-NJ-QRs" firstAttribute="top" secondItem="2nw-Vx-sVQ" secondAttribute="top" id="is0-vo-9a5"/>
+                                <constraint firstItem="kJu-jI-OPz" firstAttribute="width" secondItem="2ks-KB-vCw" secondAttribute="width" id="nZN-s8-PSL"/>
+                                <constraint firstItem="cPp-DL-9r3" firstAttribute="height" secondItem="2ks-KB-vCw" secondAttribute="height" id="pQW-Sd-weZ"/>
+                                <constraint firstItem="kJu-jI-OPz" firstAttribute="height" secondItem="2ks-KB-vCw" secondAttribute="height" id="smQ-XI-9Zo"/>
+                                <constraint firstItem="SuN-VU-KKk" firstAttribute="height" secondItem="2ks-KB-vCw" secondAttribute="height" id="tSQ-Xo-jQJ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠商家" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDN-9w-uLa">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="2nw-Vx-sVQ" firstAttribute="top" secondItem="2u7-mn-xmC" secondAttribute="top" id="Dp2-N9-Fx0"/>
+                        <constraint firstItem="2nw-Vx-sVQ" firstAttribute="leading" secondItem="2u7-mn-xmC" secondAttribute="leading" id="J8i-1K-XhI"/>
+                        <constraint firstAttribute="trailing" secondItem="2nw-Vx-sVQ" secondAttribute="trailing" id="J9l-nU-veJ"/>
+                        <constraint firstItem="rDN-9w-uLa" firstAttribute="top" secondItem="2nw-Vx-sVQ" secondAttribute="bottom" constant="5" id="juT-2K-qdz"/>
+                        <constraint firstAttribute="bottom" secondItem="rDN-9w-uLa" secondAttribute="bottom" constant="5" id="ljx-Vy-6dB"/>
+                        <constraint firstItem="rDN-9w-uLa" firstAttribute="leading" secondItem="2u7-mn-xmC" secondAttribute="leading" constant="10" id="qvI-8h-EQe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2u7-mn-xmC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ff4-gc-oaI"/>
+                <constraint firstItem="2u7-mn-xmC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M1a-gL-z0r"/>
+                <constraint firstAttribute="trailing" secondItem="2u7-mn-xmC" secondAttribute="trailing" id="kJz-Dp-YWB"/>
+            </constraints>
+            <connections>
+                <outlet property="container" destination="2nw-Vx-sVQ" id="aBo-Q9-OAO"/>
+            </connections>
+            <point key="canvasLocation" x="273" y="-27.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_business_all.png" width="39" height="26"/>
+        <image name="ic_business_bus.png" width="39" height="26"/>
+        <image name="ic_business_gou.png" width="39" height="26"/>
+        <image name="ic_business_shi.png" width="39" height="26"/>
+        <image name="ic_business_yi.png" width="39" height="26"/>
+        <image name="ic_business_yu.png" width="39" height="26"/>
+        <image name="ic_business_zhoubian.png" width="39" height="26"/>
+        <image name="ic_business_zhu.png" width="39" height="26"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

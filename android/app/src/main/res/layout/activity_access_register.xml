@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.damai.widget.FormView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_page"
+    android:orientation="vertical" >
+
+    <include layout="@layout/_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <com.damai.widget.FormEditText
+            android:id="@id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/_white_item_selector"
+            android:hint="请输入您的手机号码"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp" >
+
+            <com.damai.widget.FormEditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/_white_item_selector"
+                android:ems="10"
+                android:hint="请输入验证码"
+                android:inputType="phone"
+                android:padding="10dip"
+                android:layout_toLeftOf="@+id/verifyButton"
+                android:textSize="13sp" />
+
+            <com.damai.widget.VerifyButton
+                android:id="@id/verifyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:background="@drawable/_item_selector"
+                android:text="获取验证码"
+                lib:api="passport/regVerify"
+                lib:server="1"
+                lib:submit_fields="phone"
+                android:textColor="@color/_title_text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/_white_item_selector"
+            android:orientation="horizontal" >
+
+            <com.damai.widget.FormEditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/toggle_button"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入6至20位的密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="10dip"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/_white_item_selector"
+            android:orientation="horizontal" >
+
+            <com.damai.widget.FormEditText
+                android:id="@+id/pass1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/toggle_button_2"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入确认密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="10dip"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.damai.widget.SubmitButton
+        android:id="@+id/submit"
+        style="@style/_main_button"
+        lib:api="passport/register"
+        lib:server="1"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dip"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/cantRecvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="收不到验证码？"
+        android:textColor="#f00" />
+
+</com.damai.widget.FormView>

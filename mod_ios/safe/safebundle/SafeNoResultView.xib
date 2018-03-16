@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-a5-zCp">
+                    <rect key="frame" x="40" y="184" width="240" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_insurance_no_order.png" translatesAutoresizingMaskIntoConstraints="NO" id="ke9-kW-tNt">
+                            <rect key="frame" x="75" y="0.0" width="90" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="V5I-Lb-CKC"/>
+                                <constraint firstAttribute="width" constant="90" id="Yqn-4C-m9d"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无相关保单" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfn-Nm-85x">
+                            <rect key="frame" x="75" y="142" width="90" height="21"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Xfn-Nm-85x" firstAttribute="top" secondItem="ke9-kW-tNt" secondAttribute="bottom" constant="42" id="4V4-RA-H7y"/>
+                        <constraint firstItem="ke9-kW-tNt" firstAttribute="centerX" secondItem="fOh-a5-zCp" secondAttribute="centerX" id="DKs-lu-5PJ"/>
+                        <constraint firstAttribute="width" constant="240" id="G47-SA-xNd"/>
+                        <constraint firstItem="Xfn-Nm-85x" firstAttribute="centerX" secondItem="fOh-a5-zCp" secondAttribute="centerX" id="NsW-zl-kfk"/>
+                        <constraint firstItem="ke9-kW-tNt" firstAttribute="top" secondItem="fOh-a5-zCp" secondAttribute="top" id="UBS-Qm-D3g"/>
+                        <constraint firstAttribute="height" constant="200" id="sIW-nT-jGZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fOh-a5-zCp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2oO-TW-Kdq"/>
+                <constraint firstItem="fOh-a5-zCp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pXZ-yu-uFe"/>
+            </constraints>
+            <point key="canvasLocation" x="203" y="307"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_insurance_no_order.png" width="184" height="205"/>
+    </resources>
+</document>

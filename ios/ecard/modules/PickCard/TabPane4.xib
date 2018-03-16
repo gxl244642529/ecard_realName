@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TabPane2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tl0-1S-0iE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mko-C7-rtq">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="jKH-Zf-Cwe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjX-VW-IjM">
+                            <rect key="frame" x="125" y="0.0" width="125" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="rk9-MU-RG6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCC-d2-9Rq">
+                            <rect key="frame" x="250" y="0.0" width="125" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="j80-ot-7am"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IjX-VW-IjM" firstAttribute="leading" secondItem="mko-C7-rtq" secondAttribute="trailing" id="2Ac-jM-HxW"/>
+                        <constraint firstAttribute="trailing" secondItem="CCC-d2-9Rq" secondAttribute="trailing" id="4Iw-1W-ipi"/>
+                        <constraint firstItem="IjX-VW-IjM" firstAttribute="width" secondItem="mko-C7-rtq" secondAttribute="width" id="5jM-8K-7X3"/>
+                        <constraint firstAttribute="height" constant="39" id="AWi-AI-vJw"/>
+                        <constraint firstItem="IjX-VW-IjM" firstAttribute="width" secondItem="CCC-d2-9Rq" secondAttribute="width" id="KQJ-rr-6jd"/>
+                        <constraint firstItem="CCC-d2-9Rq" firstAttribute="leading" secondItem="IjX-VW-IjM" secondAttribute="trailing" id="SYU-Jm-R6f"/>
+                        <constraint firstItem="mko-C7-rtq" firstAttribute="leading" secondItem="Tl0-1S-0iE" secondAttribute="leading" id="eMX-Sb-Z2l"/>
+                        <constraint firstAttribute="bottom" secondItem="CCC-d2-9Rq" secondAttribute="bottom" id="emD-22-7i4"/>
+                        <constraint firstItem="IjX-VW-IjM" firstAttribute="top" secondItem="Tl0-1S-0iE" secondAttribute="top" id="hH8-AN-zmn"/>
+                        <constraint firstItem="mko-C7-rtq" firstAttribute="top" secondItem="Tl0-1S-0iE" secondAttribute="top" id="jEB-y5-Pza"/>
+                        <constraint firstItem="CCC-d2-9Rq" firstAttribute="top" secondItem="Tl0-1S-0iE" secondAttribute="top" id="sKE-Sy-kja"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSn-3y-lhi" customClass="ViewPager">
+                    <rect key="frame" x="0.0" y="39" width="375" height="628"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vSn-3y-lhi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Xg-1p-dki"/>
+                <constraint firstAttribute="trailing" secondItem="vSn-3y-lhi" secondAttribute="trailing" id="9nk-CE-7YA"/>
+                <constraint firstAttribute="trailing" secondItem="Tl0-1S-0iE" secondAttribute="trailing" id="M9O-P4-xJX"/>
+                <constraint firstItem="Tl0-1S-0iE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ORQ-W9-65Z"/>
+                <constraint firstItem="vSn-3y-lhi" firstAttribute="top" secondItem="Tl0-1S-0iE" secondAttribute="bottom" id="QGJ-4f-CzL"/>
+                <constraint firstItem="Tl0-1S-0iE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VjO-zG-JTB"/>
+                <constraint firstAttribute="bottom" secondItem="vSn-3y-lhi" secondAttribute="bottom" id="lbH-CE-awW"/>
+            </constraints>
+            <point key="canvasLocation" x="198" y="199"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

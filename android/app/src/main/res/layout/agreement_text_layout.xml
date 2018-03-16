@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="免责声明" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="        在使用e通卡app定制卡服务前，请您务必仔细阅读并透彻理解本声明。您可以选择不使用e通卡app定制DIY卡服务，但如果您使用e通卡app定制DIY卡服务的，您的使用行为将被视为对本声明全部内容的认可。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        e通卡app上关于使用定制DIY卡服务的用户或其发布的相关作品（包括但不限于照片、设计图片、 联系人及联络信息，照片的描述和说明，相关图片、视讯等）的信息均由用户自行提供，用户依法应对其提供的任何信息承担全部责任。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        任何单位或个人认为e通卡app定制DIY卡服务内容（包括但不限于e通卡app用户发布的照片信息）可能涉嫌侵犯其合法权益，应该及时向e通卡app提出书面权利通知，并提供身份证明、权属证明、具体链接（URL）及详细侵权情况证明。e通卡app在收到上述法律文件后，将会依法尽快移除相关涉嫌侵权的内容。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        e通卡app转载作品（包括论坛内容）出于传递更多信息之目的，并不意味e通卡app（包括手机e通卡app关联企业）赞同其观点或证实其内容的真实性。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="知识产权声明" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="        e通卡app拥有e通卡app站内所有信息内容（除e通卡app用户发布的商品信息外，包括但不限于文字、图片、音频、视频）的版权。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        任何被授权的浏览、复制、打印和传播属于e通卡app站内信息内容都不得用于商业目的且所有信息内容及其任何部分的使用都必须包括此版权声明；" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        e通卡app所有的产品、技术与所有程序均属于e通卡app知识产权。“未经e通卡app许可，任何人不得擅自（包括但不限于：以非法的方式复制、传播、展示、镜像、上载、下载）使用。否则，e通卡app将依法追究法律责任。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        本app部分图片来源自网友上传，图片版权属于原作者，本站转载仅供大家学习和交流，切勿用于任何商业活动。" />
+
+</LinearLayout>

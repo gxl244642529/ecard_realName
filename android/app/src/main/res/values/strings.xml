@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="_cancel">取消</string>
+    <string name="_ok">确定</string>
+<string name="donot_show_next_time">下次不再显示</string>
+    <string name="agree">同意</string>
+    <string name="cus_dialog_text_hint">请输入文本</string>
+
+
+
+
+    <string name="_pull_to_refresh_pull_label">正在刷新…</string>
+    <string name="_pull_to_refresh_release_label">放开刷新…</string>
+    <string name="_pull_to_refresh_refreshing_label">正在加载…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="_pull_to_refresh_from_bottom_pull_label">@string/_pull_to_refresh_pull_label</string>
+    <string name="_pull_to_refresh_from_bottom_release_label">@string/_pull_to_refresh_release_label</string>
+    <string name="_pull_to_refresh_from_bottom_refreshing_label">@string/_pull_to_refresh_refreshing_label</string>
+
+
+
+    <string name="safe_piccc_off_line_insure_phone">4000040506</string>
+
+    <string name="safe_ecard">e通卡保</string>
+    <string name="safe_family">居家小窝</string>
+    <string name="safe_accident">背包乐游</string>
+    <string name="safe_age">爱车一族</string>
+    <string name="safe_car">汽车金融</string>
+    <string name="safe_cashier">个人金融</string>
+
+
+
+    <string name="scan_text1">将卡片背面[e通卡APP绑卡条码]</string>
+    <string name="scan_text2">放入框内，即可自动扫描</string>
+    <string name="scan_text3">若无找到此条码，请输入卡号绑卡</string>
+
+    <!-- 支付 -->
+    <string name="activity_remote_service_binding">售卡</string>
+    <string name="remote_call_failed">Failure calling remote service</string>
+    <string name="partnerHint">"partner"</string>
+    <string name="sellerHint">"seller"</string>
+    <string name="out_trade_noHint">"out_trade_no"</string>
+    <string name="subjectHint">"subject"</string>
+    <string name="bodyHint">"body"</string>
+    <string name="total_feeHint">"total_fee"</string>
+    <string name="notify_urlHint">"notify_url"</string>
+    <string name="charsetHint">"charset"</string>
+    <string name="signTypeHint">"signType"</string>
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="Ensure">"确定"</string>
+    <string name="Cancel">"取消"</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+    <string name="card_detail">详情</string>
+    <string name="card_pages_detail">卡面详情</string>
+    <string name="diy2">开始DIY</string>
+    <string name="addr_manage">地址管理</string>
+    <string name="mine">我的</string>
+    <string name="book">预约</string>
+    <string name="title_activity_smy_collection">SMyCollectionActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="card_store">购卡商城</string>
+    <string name="diy">DIY</string>
+    <!--
+    <string name="mine">我的</string>
+    <string name="book">预约</string>
+    -->
+    <string name="download">下载</string>
+    <string name="update_now">现在升级</string>
+    <string name="update_later">以后再说</string>
+    <string name="input_pick_card_number">请输入拾到的卡号</string>
+    <string name="coupon_use">使用</string>
+    <string name="coupon_verify">验证</string>
+    <string name="coupon_fetch">领券</string>
+    <string name="s_card_carddetail">卡面详情</string>
+    <string name="card_user_to_know">购卡须知</string>
+    <string name="card_share">分享</string>
+    <string name="card_colletion">收藏</string>
+    <string name="card_buy">购买</string>
+    <!-- diy -->
+    <string name="diy_photo">图片</string>
+    <string name="diy_priview">预览</string>
+    <string name="diy_submit">提交</string>
+    <string name="diy_take_picture">拍照</string>
+    <string name="diy_select_picture">手机图片</string>
+    <string name="diy_list_edit">编辑</string>
+    <string name="diy_list_delete">删除</string>
+    <string name="diy_filter">滤镜</string>
+    <string name="diy_submit_pay">提交付款</string>
+    <string name="diy_add_shop_car">购物车</string>
+    <string name="diy_close">关闭</string>
+    <string name="diy_posefree">同城包邮</string>
+    <string name="s_diy_work_name">作品名称： </string>
+    <string name="s_diy_work_author">作者： </string>
+    <string name="s_diy_work_date">时间： </string>
+    <string name="s_diy_detail">详情</string>
+    <string name="s_my_diy_detail">我的diy详情</string>
+    <string name="s_my_diy_front">定制正面</string>
+    <string name="s_my_diy_back">定制反面</string>
+    <string name="app_name">e通卡</string>
+    <!--
+    <string name="download">下载</string>
+    <string name="update_now">现在升级</string>
+    <string name="update_later">以后再说</string>
+    <string name="input_pick_card_number">请输入拾到的卡号</string>
+    <string name="coupon_use">使用</string>
+    <string name="coupon_verify">验证</string>
+    <string name="coupon_fetch">领券</string>
+    -->
+    <!-- 侧边栏菜单 -->
+    <string name="left_menu_map">周边</string>
+    <string name="left_menu_business">联盟商家</string>
+    <string name="left_menu_coupon">优惠劵</string>
+    <string name="left_menu_lottery">摇奖</string>
+    <string name="left_menu_news">新闻资讯</string>
+    <string name="map_info_action">确定</string>
+
+    <!-- 右边菜单 -->
+    <string name="right_menu_my_ecard">我的易通卡</string>
+    <string name="right_menu_my_collection">我的收藏</string>
+    <string name="right_menu_my_coupon">我的优惠券</string>
+    <string name="right_menu_my_lottery">我的奖品</string>
+    <string name="right_menu_personal">个人中心</string>
+    <string name="right_menu_my_gift">我的礼物</string>
+    <string name="right_menu_my_message">我的消息</string>
+    <string name="right_menu_more">更多</string>
+    <string name="right_menu_scan">商家验证</string>
+    <string name="right_menu_bottom_config">系统设置</string>
+    <string name="right_menu_bottom_help">帮助</string>
+    <!-- 主菜单 -->
+    <string name="menu_movie">电影</string>
+    <string name="menu_shopping">超市购物</string>
+    <string name="menu_food">美食达人</string>
+    <string name="menu_life">养生益气</string>
+    <string name="menu_building">房产</string>
+    <string name="menu_travel">旅游</string>
+    <string name="menu_adv">润初尚品</string>
+    <!-- 地图 -->
+    <string name="map_type_coupon">优惠券</string>
+    <string name="map_type_card">售卡点</string>
+    <string name="map_type_consum">消费点</string>
+    <string name="map_type_service">服务网点</string>
+    <string name="map_type_recharge">充值点</string>
+    <!-- 收藏 -->
+    <string name="my_collection_business">商家</string>
+    <string name="my_collection_coupon">优惠券</string>
+    <!-- 我的礼物 -->
+    <string name="my_gift_send">送出的礼物</string>
+    <string name="my_gift_mine">收到的礼物</string>
+
+    <!-- 提示 -->
+    <string name="input_username">请输入账号/手机/email</string>
+    <string name="input_phone">请输入手机号码</string>
+    <string name="input_phone_verify">请输入短信验证</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_ecard">请输入e通卡卡号</string>
+    <string name="login">登录</string>
+    <string name="register">免费注册</string>
+    <string name="next">下一步</string>
+    <string name="skip">跳过</string>
+    <string name="fetch_phone_verify">获取短信验证码</string>
+    <string name="finish">完成</string>
+    <string name="bind_ecard">绑定e通卡</string>
+    <string name="login_username">"账户名: "</string>
+    <string name="login_password">"密    码: "</string>
+    <string name="login_username_hint">请输入手机号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_btn_login">登    录</string>
+    <string name="register_btn">注    册</string>
+    <string name="hint_bind_ecard">请输入易通卡卡号</string>
+    <string name="btn_finish_register">完成</string>
+    <string name="btn_skip">跳过</string>
+    <string name="ecard_info">易通卡信息</string>
+    <string name="ecard_btn_remark">信息备注</string>
+    <string name="pick_card">拾卡</string>
+    <string name="lost_card">失卡</string>
+    <string name="input_login_password">请输入账号登录密码</string>
+    <string name="input_remark">请输入本卡备注</string>
+    <string name="bind_success">绑定e通卡成功</string>
+    <string name="bind_err_unknown">未知错误</string>
+    <string name="bind_err_password">密码错误</string>
+    <string name="bind_err_already_bind_by_other">本e通卡已被其他账号绑定</string>
+    <string name="bind_err_already_bind_by_me">本e通卡已被本账号绑定</string>
+    <string name="bind_err_not_exists">此卡号不存在</string>
+    <string name="label_card_id">"卡号: "</string>
+    <string name="title_remark">"备注: "</string>
+    <string name="title_password">"密码: "</string>
+    <string name="lost_card_info">1）您的信息将在1个工作日内进行审核,并保存到系统中；\n2）此信息将在点击发布失卡后才对外公布；\n3）公开的信息仅为拾卡人输入卡号信息才能获得；\n相信个个都是活雷锋，您也一样。</string>
+    <string name="pick_card_help">1）您的信息将在1个工作日内进行审核并最终发布；\n2）审核后发布于【拾卡招领】，丢卡人看到后可直接拨打电话认领。</string>
+    <string name="title_exam">学生卡/敬老卡年审查询</string>
+    <string name="title_my_ecard">我的e通卡</string>
+
+    <!-- 文本框提示 -->
+    <string name="input_card_or_user_no">请输入卡面上的e通卡号</string>
+
+    <!-- 等待对话框 -->
+    <string name="waiting_upload_position">正在上传自己的位置信息...</string>
+    <string name="waiting_exam">正在查询年审信息...</string>
+    <string name="waiting_loading">正在加载信息...</string>
+    <string name="waiting_sending">正在发送...</string>
+    <string name="waiting_revocation">正在撤销找回...</string>
+    <string name="waiting_login">正在登录...</string>
+    <string name="waiting_lottery">正在抢奖..</string>
+    <string name="waiting_version">正在获取版本信息...</string>
+    <string name="waiting_apk">正在加载apk信息...</string>
+    <string name="waiting_bind">正在绑定...</string>
+    <string name="waiting_publish">正在发布...</string>
+    <string name="waiting_refresh">正在刷新...</string>
+    <string name="waiting_update_password">正在修改密码...</string>
+    <string name="waiting_rename">正在修改备注...</string>
+    <string name="waiting_register">正在注册...</string>
+    <string name="waiting_unbind">正在解除绑定...</string>
+    <string name="waiting_search">正在搜索...</string>
+    <string name="title_activity_travel_clinic">TravelClinicActivity</string>
+    <!--
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    -->
+    <string name="czc_phone_num">0592968870</string>
+</resources>

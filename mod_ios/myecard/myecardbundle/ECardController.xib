@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ECardController">
+            <connections>
+                <outlet property="_tableView" destination="ksV-jy-J4d" id="CTw-MY-Fb1"/>
+                <outlet property="view" destination="uSl-1o-uoo" id="rsp-qb-sTa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="uSl-1o-uoo">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    友情提醒：卡片余额仅供参考，如需确定卡片余额，请持卡片到就近的服务网点进行查询。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jV-W2-MdB">
+                    <rect key="frame" x="10" y="10" width="355" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-JJ-WBt" userLabel="Line">
+                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.86668471530000002" green="0.86668471530000002" blue="0.86668471530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="azF-uU-c8d"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-jy-J4d" customClass="DMTableView">
+                    <rect key="frame" x="0.0" y="50" width="375" height="561"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewName" value="ecardList"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="api" value="myecard/list"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="server">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="paged" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoExecute" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="refreshable" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="entityName" value="MyECardVo"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="cellName" value="ECardCell"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="bundleName" value="myecardbundle.bundle"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOL-SJ-UkZ" customClass="PageButton">
+                    <rect key="frame" x="10" y="621" width="355" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="AjP-Gj-oIN"/>
+                    </constraints>
+                    <state key="normal" title="绑定e通卡">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" title="绑定e通卡"/>
+                    <connections>
+                        <action selector="onBindECard:" destination="-1" eventType="touchUpInside" id="Y37-GB-fgC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KOL-SJ-UkZ" firstAttribute="top" secondItem="ksV-jy-J4d" secondAttribute="bottom" constant="10" id="1KS-qs-pOs"/>
+                <constraint firstAttribute="trailing" secondItem="ksV-jy-J4d" secondAttribute="trailing" id="AMt-DX-D2W"/>
+                <constraint firstItem="mHJ-JJ-WBt" firstAttribute="top" secondItem="2jV-W2-MdB" secondAttribute="bottom" constant="10" id="FJB-WD-Kol"/>
+                <constraint firstItem="KOL-SJ-UkZ" firstAttribute="leading" secondItem="uSl-1o-uoo" secondAttribute="leading" constant="10" id="H9k-KY-zZq"/>
+                <constraint firstItem="ksV-jy-J4d" firstAttribute="leading" secondItem="uSl-1o-uoo" secondAttribute="leading" id="TzO-dp-TL5"/>
+                <constraint firstAttribute="trailing" secondItem="mHJ-JJ-WBt" secondAttribute="trailing" id="Uhd-gt-4CS"/>
+                <constraint firstAttribute="trailing" secondItem="2jV-W2-MdB" secondAttribute="trailing" constant="10" id="XUs-yK-7Zi"/>
+                <constraint firstItem="2jV-W2-MdB" firstAttribute="leading" secondItem="uSl-1o-uoo" secondAttribute="leading" constant="10" id="YCi-Jn-Q95"/>
+                <constraint firstItem="ksV-jy-J4d" firstAttribute="top" secondItem="2jV-W2-MdB" secondAttribute="bottom" constant="11" id="Yuz-dL-fA4"/>
+                <constraint firstAttribute="bottom" secondItem="KOL-SJ-UkZ" secondAttribute="bottom" constant="10" id="ZUT-l6-Lxi"/>
+                <constraint firstItem="mHJ-JJ-WBt" firstAttribute="leading" secondItem="uSl-1o-uoo" secondAttribute="leading" id="crP-UE-1Am"/>
+                <constraint firstAttribute="trailing" secondItem="KOL-SJ-UkZ" secondAttribute="trailing" constant="10" id="iD4-gR-7xa"/>
+                <constraint firstAttribute="centerX" secondItem="KOL-SJ-UkZ" secondAttribute="centerX" id="qh7-c3-yPV"/>
+                <constraint firstItem="2jV-W2-MdB" firstAttribute="top" secondItem="uSl-1o-uoo" secondAttribute="top" constant="10" id="zAP-uD-FTo"/>
+            </constraints>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

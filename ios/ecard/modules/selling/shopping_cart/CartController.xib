@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartController">
+            <connections>
+                <outlet property="btnDel" destination="iP0-bk-C6b" id="pDJ-Nf-B8z"/>
+                <outlet property="tableView" destination="3MF-a7-F94" id="zv3-Eq-h7U"/>
+                <outlet property="txtPrice" destination="zVU-ZC-qZz" id="L5x-a3-8OP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="156" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-a7-F94" customClass="PullToRefreshTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="516"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6M-tc-hL3">
+                    <rect key="frame" x="0.0" y="516" width="320" height="52"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="合计:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-rj-LsL">
+                            <rect key="frame" x="60" y="16" width="35" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="￥" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-Xf-QK3">
+                            <rect key="frame" x="90" y="19" width="21" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="0.270588249" blue="0.2078431547" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iP0-bk-C6b" customClass="ItemView">
+                            <rect key="frame" x="5" y="5" width="50" height="42"/>
+                            <subviews>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNs-yX-ReM">
+                                    <rect key="frame" x="18" y="2" width="14" height="22"/>
+                                    <state key="normal" image="s_ic_delete.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="删除" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-2C-RkE">
+                                    <rect key="frame" x="5" y="19" width="40" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="d6F-2g-MC7"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxj-up-hMU">
+                            <rect key="frame" x="204" y="9" width="111" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="111" id="QyQ-Re-zmG"/>
+                                <constraint firstAttribute="height" constant="35" id="RET-l1-Uf8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="去结算" backgroundImage="s_ic_btn_buy.png">
+                                <color key="titleColor" red="0.95157797030000002" green="0.95157797030000002" blue="0.95157797030000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onSubmit:" destination="-1" eventType="touchUpInside" id="cYW-qx-M49"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVU-ZC-qZz">
+                            <rect key="frame" x="103" y="15" width="86" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="1" green="0.270588249" blue="0.2078431547" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Gxj-up-hMU" secondAttribute="trailing" constant="5" id="33w-v5-bz4"/>
+                        <constraint firstItem="iP0-bk-C6b" firstAttribute="leading" secondItem="P6M-tc-hL3" secondAttribute="leading" constant="5" id="3s3-lP-hWb"/>
+                        <constraint firstAttribute="bottom" secondItem="iP0-bk-C6b" secondAttribute="bottom" constant="5" id="dPm-WY-ijB"/>
+                        <constraint firstAttribute="centerY" secondItem="Gxj-up-hMU" secondAttribute="centerY" id="eL9-i2-3fd"/>
+                        <constraint firstItem="iP0-bk-C6b" firstAttribute="top" secondItem="P6M-tc-hL3" secondAttribute="top" constant="5" id="ePA-CN-WmV"/>
+                        <constraint firstAttribute="height" constant="52" id="hbx-80-Bu8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P6M-tc-hL3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8w3-bb-LTR"/>
+                <constraint firstItem="P6M-tc-hL3" firstAttribute="top" secondItem="3MF-a7-F94" secondAttribute="bottom" id="Avn-5y-2Dc"/>
+                <constraint firstAttribute="trailing" secondItem="P6M-tc-hL3" secondAttribute="trailing" id="NUJ-x2-5dc"/>
+                <constraint firstAttribute="bottom" secondItem="P6M-tc-hL3" secondAttribute="bottom" id="RHD-mo-bo2"/>
+                <constraint firstItem="3MF-a7-F94" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mAS-YI-zAH"/>
+                <constraint firstItem="3MF-a7-F94" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="s5G-uh-iZk"/>
+                <constraint firstAttribute="trailing" secondItem="3MF-a7-F94" secondAttribute="trailing" id="ubY-iv-OlZ"/>
+            </constraints>
+            <point key="canvasLocation" x="305" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="s_ic_btn_buy.png" width="135" height="42"/>
+        <image name="s_ic_delete.png" width="13" height="15"/>
+    </resources>
+</document>

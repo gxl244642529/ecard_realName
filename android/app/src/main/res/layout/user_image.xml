@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.citywithincity.ecard.widget.UserImage xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/user_image"
+    android:layout_width="match_parent"
+    android:layout_height="210dp" >
+
+    <ImageView
+        android:id="@id/head_img"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/shouy_bg" />
+
+    <RelativeLayout
+        android:id="@id/main_account"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/home_head_bg"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/home_head_bundle_bg" >
+
+            <com.alan.roundimageview.RoundedImageView
+                android:id="@id/head_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:scaleType="centerCrop"
+                app:oval="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.citywithincity.ecard.widget.UserImage>

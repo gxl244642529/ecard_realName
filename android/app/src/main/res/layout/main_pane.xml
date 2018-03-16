@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.citywithincity.ecard.widget.MainPane xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_pane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/pane_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_pane_bg" >
+
+        <ImageView
+            android:id="@+id/main_pane_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/item_selector"
+            android:src="@drawable/ic_pan4" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dip"
+            android:background="@drawable/item_selector"
+            android:src="@drawable/ic_pan6" />
+
+        <ImageView
+            android:id="@+id/main_pane_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:background="@drawable/item_selector"
+            android:src="@drawable/ic_pan5" />
+
+        <ImageView
+            android:id="@+id/main_pane_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:background="@drawable/item_selector"
+            android:src="@drawable/ic_pan7" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_pan2" />
+
+</com.citywithincity.ecard.widget.MainPane>

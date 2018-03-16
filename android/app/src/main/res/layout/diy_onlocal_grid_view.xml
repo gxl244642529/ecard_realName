@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg_color"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@id/diy_grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/activity_bg_color"
+            android:horizontalSpacing="0dip"
+            android:numColumns="2"
+            android:padding="5dip"
+            android:verticalSpacing="10dip" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <corners android:radius="5dp" /> 
+            <solid android:color="@color/_action_sheet_button_border" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:bottom="1px"
+        android:left="1px"
+        android:right="1px"
+        android:top="1px">
+        <shape>
+            <corners android:radius="5dp" /> 
+            <solid android:color="@color/_action_sheet_button_cancel_bg" />
+        </shape>
+    </item>
+
+</layer-list>

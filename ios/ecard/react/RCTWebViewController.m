@@ -1,0 +1,49 @@
+//
+//  RCTWebViewController.m
+//  ebusiness
+//
+//  Created by 任雪亮 on 16/10/28.
+//  Copyright © 2016年 Facebook. All rights reserved.
+//
+
+#import "RCTWebViewController.h"
+
+@interface RCTWebViewController ()
+
+@end
+
+@implementation RCTWebViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+
+
+-(void)viewWillAppear:(BOOL)animated{
+  [super viewWillAppear:animated];
+  [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+  [super viewWillDisappear:animated];
+  [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

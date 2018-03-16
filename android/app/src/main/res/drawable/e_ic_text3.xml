@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/e_ic_text_color_h" android:state_selected="true"/>
+    <item android:drawable="@drawable/e_ic_text_color"/>
+
+</selector>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RoateToolView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoD-mF-73x" customClass="ItemView">
+                    <rect key="frame" x="0.0" y="33" width="58" height="58"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_rotate.png" translatesAutoresizingMaskIntoConstraints="NO" id="dBN-J2-7Yc">
+                            <rect key="frame" x="20" y="12" width="19" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旋转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pK-Nj-nBy">
+                            <rect key="frame" x="0.0" y="31" width="58" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="CI5-OP-54r"/>
+                        <constraint firstAttribute="height" constant="58" id="zXF-e3-nx3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIA-Ag-yHs" customClass="ItemView">
+                    <rect key="frame" x="58" y="33" width="58" height="58"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_flip_h.png" translatesAutoresizingMaskIntoConstraints="NO" id="fy3-AG-MCJ">
+                            <rect key="frame" x="20" y="12" width="19" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水平翻转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va9-PM-HgY">
+                            <rect key="frame" x="0.0" y="31" width="58" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="rVg-4x-uRf"/>
+                        <constraint firstAttribute="height" constant="58" id="x0T-PH-lct"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJE-nh-ALD" customClass="ItemView">
+                    <rect key="frame" x="116" y="33" width="58" height="58"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s_ic_flip_v.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q04-DV-vDW">
+                            <rect key="frame" x="20" y="12" width="19" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="垂直翻转" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlz-eF-Rb3">
+                            <rect key="frame" x="0.0" y="31" width="58" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="AcN-At-Tcl"/>
+                        <constraint firstAttribute="height" constant="58" id="k9C-uw-QaJ"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gk2-HD-of3">
+                    <rect key="frame" x="8" y="0.0" width="304" height="31"/>
+                </slider>
+            </subviews>
+            <constraints>
+                <constraint firstItem="UIA-Ag-yHs" firstAttribute="leading" secondItem="GoD-mF-73x" secondAttribute="trailing" id="1b9-eE-oIl"/>
+                <constraint firstItem="kJE-nh-ALD" firstAttribute="leading" secondItem="UIA-Ag-yHs" secondAttribute="trailing" id="AmX-aC-wrR"/>
+                <constraint firstAttribute="trailing" secondItem="Gk2-HD-of3" secondAttribute="trailing" constant="10" id="KhG-xC-dHh"/>
+                <constraint firstAttribute="bottom" secondItem="kJE-nh-ALD" secondAttribute="bottom" id="VcZ-Vb-a1X"/>
+                <constraint firstAttribute="bottom" secondItem="UIA-Ag-yHs" secondAttribute="bottom" id="WeV-vf-Irh"/>
+                <constraint firstItem="kJE-nh-ALD" firstAttribute="top" secondItem="Gk2-HD-of3" secondAttribute="bottom" constant="3" id="aeu-ta-dWw"/>
+                <constraint firstItem="GoD-mF-73x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jMx-UF-3ks"/>
+                <constraint firstItem="Gk2-HD-of3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="zcb-Ui-kGZ"/>
+                <constraint firstAttribute="bottom" secondItem="GoD-mF-73x" secondAttribute="bottom" id="zmc-ZI-DzS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn1" destination="GoD-mF-73x" id="bhV-Zo-crA"/>
+                <outlet property="btn2" destination="UIA-Ag-yHs" id="D46-Zg-7Lu"/>
+                <outlet property="btn3" destination="kJE-nh-ALD" id="ukh-ex-btj"/>
+                <outlet property="slider" destination="Gk2-HD-of3" id="YCU-6Q-A7Z"/>
+            </connections>
+            <point key="canvasLocation" x="389" y="20.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="s_ic_flip_h.png" width="17" height="16"/>
+        <image name="s_ic_flip_v.png" width="16" height="17"/>
+        <image name="s_ic_rotate.png" width="19" height="18"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.citywithincity.widget.StateListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@id/_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+    android:numColumns="2"
+    android:padding="5dip"
+    android:verticalSpacing="10dp"
+    ptr:list_type="@integer/_grid_view"
+    ptr:ptrMode="both" >
+
+</com.citywithincity.widget.StateListView>

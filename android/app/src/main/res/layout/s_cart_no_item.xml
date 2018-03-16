@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/bg_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_container"
+        android:background="@android:color/white"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:drawableTop="@drawable/s_cart_bg"
+            android:gravity="center_horizontal"
+            android:text="你的购物车是空的，快去放些宝贝吧！"
+            android:textColor="@color/s_delete_text_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dip"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <RelativeLayout
+            android:id="@id/s_cart_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/s_cart_collection"
+                android:drawablePadding="10dp"
+                android:text="看收藏"
+                android:textColor="@color/s_delete_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/go_shopping"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/s_cart_go_shop"
+                android:drawablePadding="10dp"
+                android:text="去购物"
+                android:textColor="@color/s_delete_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

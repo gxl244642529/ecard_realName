@@ -1,0 +1,15 @@
+<key>react</key>
+<string></string>
+<key>servers</key>
+<dict>
+	<key>tsp</key>
+	<string>http://218.5.80.17</string>
+	<key>tsp_port</key>
+	<string>2077</string>
+	<key>picc</key>
+	<string>http://www.xm95518.com:8989</string>
+	<key>java</key>
+	<string>http://218.5.80.17:28095/api/</string>
+	<key>php</key>
+	<string>http://218.5.80.17:8092</string>
+</dict>

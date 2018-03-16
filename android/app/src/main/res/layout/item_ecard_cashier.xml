@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.citywithincity.ecard.pay.ECardCashierItem xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dip" >
+
+    <TextView
+        android:id="@id/_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/union_pay"
+        android:drawablePadding="3dip"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <RadioButton
+        android:id="@id/_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/s_cart_btn_check"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</com.citywithincity.ecard.pay.ECardCashierItem>

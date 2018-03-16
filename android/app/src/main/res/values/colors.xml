@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 页面颜色 -->
+    <color name="_page">#F0F0F0</color>
+    <color name="_line">#D7D7D7</color>
+    <!-- 个人中心的分割线颜色 -->
+
+
+    <!-- 省市区选择 -->
+    <color name="province_line_border">#C7C7C7</color>
+    <!-- 标准控件开始 -->
+    <!-- main button -->
+    <!-- select -->
+    <!-- radio group -->
+    <!-- radio on/off -->
+    <!-- backbutton -->
+    <!-- right arraw -->
+    <!-- date picker -->
+    <!-- image picker -->
+    <!-- area picker -->
+    <!-- title tab -->
+    <!-- content tab -->
+    <color name="_tab_group_button_selected">#ff3d2c</color>
+    <color name="_tab_group_button_unselected">#9f9f9f</color>
+    <!-- form textfield -->
+    <!-- form textfield mutil lines -->
+    <!-- title right button -->
+
+
+    <!-- 可点击按下去 -->
+    <color name="_item_pressed">#E4E4E4</color>
+    <color name="_radio_button_checked">#000000</color>
+    <color name="_radio_button_unchecked">#333333</color>
+
+    <!-- 标题栏 -->
+    <color name="_title_btn_pressed">#f2f2f2</color>
+    <color name="_title_color">#FFF</color>
+    <color name="_title_shadow_color">#f2f2f2</color>
+    <color name="_title_text_color">#333333</color>
+    <color name="_title_text_real_color">#e8464c</color>
+    <!-- ActionSheet -->
+    <color name="_action_sheet_bg">#ededed</color>
+    <color name="_action_sheet_button_border">#c1c1c3</color>
+    <color name="_action_sheet_button_cancel_bg">#858c96</color>
+    <color name="_action_sheet_button_normal_bg">#ffffff</color>
+    <color name="_action_sheet_pressed">#E4E4E4</color>
+
+    <!-- 自定义对话框 -->
+    <color name="cus_dialog_line">#b8b8b8</color>
+
+    <!-- TopMenu -->
+    <color name="_top_menu_divider">#E0E0E0</color>
+    <!-- listview 分割线 -->
+    <color name="_tree_right_list_bg">#f2f2f2</color>
+    <!-- 树形菜单右边listview背景颜色 -->
+    <color name="_tree_main_selected">#f2f2f2</color>
+    <color name="_top_menu_item_text_highlight">#ff0000</color>
+    <!-- 项目高亮颜色 -->
+    <color name="_top_menu_item_text_normal">#000000</color>
+    <!-- 项目 -->
+
+
+    <!-- statelist -->
+    <color name="_state_list_bg">#fff</color>
+    
+
+     <color name="light_gray">#ccc</color>
+     <color name="dark_text">#333</color>
+
+
+    <!-- #umapay -->
+    <color name="btn_uma_pay_text">#FFFFFF</color>
+    <color name="btn_uma_pay_text_disabled">#A5A5A5</color>
+
+    <color name="btn_uma_pay_background">#EE7700</color>
+    <color name="btn_uma_pay_background_disabled">#C9CACA</color>
+
+    <!-- 自行车 -->
+    <color name="bicycle_page_bg_color">#f5e5cc</color>
+    <color name="shop_mine_address">#30E4E4e4</color>
+
+
+
+    <!-- 标题栏 -->
+    <color name="_title_bottom">#CD1F28</color>
+
+
+
+    <color name="text_default_color">#606060</color>
+
+    <!-- Editor -->
+
+    <color name="editor_text_color">#ffffff</color>
+    <color name="editor_item_pressed">#30E4E4E4</color>
+    <color name="editor_text_normal">#4e4e4e</color>
+    <color name="editor_text_high">#ffffff</color>
+    <color name="editor_text_color_outer">#949494</color>
+
+    <!-- 中影     -->
+    <color name="zy_call_bg_color">#007dc0</color>
+    <color name="zy_raffle_bg_color">#e7e7e7</color>
+
+    <!-- exam -->
+    <color name="exam_bg_color">#f3f3f3</color>
+
+    <!-- Zxing -->
+    <color name="zxin_transparent">#0000</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+
+    <!-- 改版 -->
+    <!-- <color name="title_text_color">#111111</color> -->
+    <color name="title_text_color">#7a706f</color>
+    <color name="activity_bg_color">#f2f2f2</color>
+
+    <color name="new_btn_normal_bg_color">#ee6060</color>
+    <color name="new_btn_pressed_bg_color">#eb4e4e</color>
+
+    <color name="card_detial_title_color">#5a5353</color>
+    <color name="card_consume_title_color">#616161</color>
+    <color name="card_bottom_text_bg_color">#5000</color>
+    <color name="new_divider_color">#ccc</color>
+    <color name="begin_app_btn_color">#ccc</color>
+    <color name="begin_app_btn_pressed_color">#ccc</color>
+
+
+
+    <color name="s_recharge_unselect_color">#bb000000</color>
+
+    <color name="img_edit_text_color">#7a706f</color>
+    <color name="btn_img_edit_text_pressed_color">#FFFFFF</color>
+    <color name="btn_img_edit_text_normal_color">#AEAAAB</color>
+
+    <color name="s_num_color">#ddff5c4b</color>
+    <color name="s_cashier_text_color">#333333</color>
+    <color name="s_pay_faild_color">#8e8d8d</color>
+
+    <color name="switch_button_up">#90333333</color>
+    <color name="switch_button_down">#909A9A9A</color>
+
+    <color name="s_state_wait_for_pay_color">#f86c19</color>
+    <color name="s_state_wait_for_pay_pressed_color">#ea5802</color>
+
+    <color name="s_state_wait_for_recieve_color">#84c302</color>
+    <color name="s_state_wait_for_recieve_pressed_color">#5f8d00</color>
+
+    <color name="s_state_wait_for_post_color">#84c302</color>
+    <color name="s_state_book_color">#9b9bf1</color>
+    <color name="s_state_order_back_color">#ff3d2c</color>
+    <color name="s_delete_text_color">#9da0b0</color>
+    <color name="s_edit_addr_text_color">#8b8b8b</color>
+    <color name="s_prompt_bg_color">#8e8d8d</color>
+    <color name="s_cart_item_text_color">#a4a4a3</color>
+    <color name="s_cart_item_divider_color">#e2e3e3</color>
+    <color name="s_cart_select_all_color">#7f7d7d</color>
+    <color name="s_btn_normal_color">#f51603</color>
+    <color name="s_btn_pressed_color">#ff3d2c</color>
+    <color name="s_cart_selected_solid_color">#ff3d2c</color>
+    <color name="s_cart_unselect_ring_color">#868686</color>
+    <color name="s_addr_list_btn_devider_color">#e8e8e8</color>
+    <color name="s_addr_list_btn_color">#484848</color>
+    <color name="s_addr_list_name_color">#484848</color>
+    <color name="s_addr_list_addr_color">#ff3d2c</color>
+    <color name="s_mine_item_text_color">#969696</color>
+    <color name="s_title_bg_color">#b2b1b1</color>
+    <color name="s_title_text_color">#ededed</color>
+    <!-- <color name="s_activity_bg_color">#e8e8e8</color> -->
+    <color name="s_activity_bg_color">#ffffff</color>
+    <color name="s_mine_note_color">#f86c19</color>
+    <color name="s_title_button_pressed_color">#abaaaa</color>
+    <color name="s_title_button_bg_color">#c2c2c2</color>
+    <color name="s_head_view_bg_color">#c9c9c9</color>
+    <color name="s_mine_menu_text_color">#7f7d7d</color>
+
+    <!-- tabHost -->
+    <color name="s_tab_host_text_normal_color">#545556</color>
+    <color name="s_tab_host_text_selected">#ff3d2c</color>
+    <color name="s_tab_host_divide_view_bg_color">#d5d5d7</color>
+    <color name="default_page_color">#F2F2F2</color>
+
+    <!-- popupmenu -->
+    <color name="ios_menu_bg">#ededed</color>
+    <color name="ios_popup_bg">#60000000</color>
+    <color name="popup_button_border">#c1c1c3</color>
+    <color name="popup_button_cancel_bg">#858c96</color>
+    <!-- top pulldown menu -->
+    <color name="menu_button_text_color">#5A5A5A</color>
+    <color name="menu_text_color">#474747</color>
+    <color name="tree_right">#f2f2f2</color>
+    <color name="tree_main_selected">#f2f2f2</color>
+    <color name="menu_item_text_highlight">#ff0000</color>
+    <color name="menu_item_text_normal">#000000</color>
+    <color name="menu_line">#E0E0E0</color>
+    <color name="dialog_color">#f3542d</color>
+    <color name="default_title_color">#FF5C4B</color>
+    <color name="title_bottom">#CD1F28</color>
+    <color name="transparent">#0000</color>
+    <color name="common_seperator1">#EEEEEE</color>
+    <color name="common_seperator2">#CECECE</color>
+    <color name="account_text_color">#969696</color>
+    <color name="text_color_gray">#9f9f9f</color>
+    <color name="highlight_text">#FF5C4B</color>
+    <color name="white">#FFF</color>
+    <!-- 高亮颜色（红色) -->
+    <color name="ecard_money">#FF5C4B</color>
+    <color name="main_text_color">#fff</color>
+    <color name="item_pressed">#E4E4E4</color>
+    <color name="ecard_menu_button_up">#eaeaea</color>
+    <color name="ecard_menu_bg">#90acacac</color>
+    <color name="log_text_bg">#50000000</color>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="black">#000</color>
+    <color name="disabled">#909090</color>
+    <color name="dark_gray">#777</color>
+
+    <!-- 链接 -->
+    <color name="link_color">#F04E2A</color>
+    <color name="default_link_pressed">#FFAEA6</color>
+
+    <!-- 优惠劵详情页面颜色配置 -->
+
+    <color name="text_title">#444444</color>
+    <color name="text_description">#7e7e7e</color>
+
+    <!-- travel -->
+    <color name="travel_title_color">#ffffff</color>
+    <color name="travel_page_color">#f1f1f1</color>
+    <color name="travel_button_up">#FB211E</color>
+    <color name="travel_button_down">#ff6757</color>
+    <color name="btn_pressed">#f1f1f1</color>
+    <color name="item_normal">#ffffff</color>
+    <color name="default_btn_pressed">#FFAEA6</color>
+    <color name="default_btn_main">#ff6757</color>
+
+    <!-- 切换按钮 -->
+    <color name="switch_button_v">#BB6E63</color>
+    <!-- 竖线 -->
+
+
+
+    <!-- 标题栏 -->
+    <!--   <color name="title_bottom">#CD1F28</color> -->
+    <color name="title_btn_pressed">#FFAEA6</color>
+    <color name="title_color">#FF5C4B</color>
+    <color name="new_title_bottom">#f2f2f2</color>
+    <!-- <color name="title_text_color">#7a706f</color>-->
+
+
+    <!-- popupmenu -->
+    <!--  <color name="ios_menu_bg">#ededed</color>
+     <color name="ios_popup_bg">#60000000</color>
+     <color name="popup_button_border">#c1c1c3</color>
+     <color name="popup_button_cancel_bg">#858c96</color>
+      <color name="item_pressed">#E4E4E4</color> -->
+
+
+    <!-- 自定义对话框 -->
+    <color name="cus_dialog_color">#f3542d</color>
+
+    <!-- MyRadioButton -->
+    <color name="checked_text_color">#000000</color>
+    <color name="normal_text_color">#b5b5b5</color>
+    <color name="checked_background_color">#f1f1f1</color>
+    <color name="normal_background_color">#ffffff</color>
+
+
+
+
+    
+</resources>
